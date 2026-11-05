@@ -94,3 +94,76 @@ jobs:
                           day, month, year = map(int, date_match.groups())
                           try:
                               parsed = date(year, month, day)
+                              current_day = parsed.isoformat() if today <= parsed <= last_day else None
+                          except ValueError:
+                              current_day = None
+                      if current_day:
+                          for time_match in re.finditer(r"(?<!\d)(\d{1,2})[h:](\d{2})(?!\d)", value, re.I):
+                              time = f"{int(time_match.group(1)):02d}:{time_match.group(2)}"
+                              sessions.setdefault(current_day, []).append(time)
+
+              if not sessions:
+                  continue
+
+              old = old_by_title.get(normalize(title), {})
+              detail_description = ""
+              detail_image = ""
+              if detail_url:
+                  try:
+                      detail_soup = get_page(detail_url)
+                      description_tag = detail_soup.find("meta", attrs={"property": "og:description"})
+                      image_tag = detail_soup.find("meta", attrs={"property": "og:image"})
+                      if description_tag:
+                          detail_description = description_tag.get("content", "").strip()
+                      if image_tag:
+                          detail_image = image_tag.get("content", "").strip()
+                  except Exception as exc:
+                      print(f"Détails non récupérés pour {title}: {exc}")
+
+              film = {
+                  "id": old.get("id") or slug(title),
+                  "title": title,
+                  "genre": old.get("genre") or "Non renseigné",
+                  "duration": old.get("duration") or "Non renseignée",
+                  "director": old.get("director") or "Non renseigné",
+                  "press": old.get("press"),
+                  "audience": old.get("audience"),
+                  "synopsis": old.get("synopsis") or detail_description,
+                  "sessions": sessions,
+                  "source": detail_url or CINEMA_URL,
+                  "poster": old.get("poster") or detail_image,
+              }
+              if old.get("posterNote"):
+                  film["posterNote"] = old["posterNote"]
+              films.append(film)
+
+          if len(films) < 3:
+              raise SystemExit(
+                  f"Arrêt de sécurité : seulement {len(films)} films avec séances trouvés. "
+                  "films.json n'a pas été modifié."
+              )
+
+          new_data = {
+              "cinema": old_data.get("cinema", "Le Grand Palace"),
+              "city": old_data.get("city", "Les Sables-d’Olonne"),
+              "lastChecked": today.isoformat(),
+              "weekLabel": f"Programme actualisé le {today.strftime('%d/%m/%Y')}",
+              "films": films,
+          }
+          with open(path, "w", encoding="utf-8") as f:
+              json.dump(new_data, f, ensure_ascii=False, indent=2)
+              f.write("\n")
+          print(f"Programme actualisé : {len(films)} films, du {today} au {last_day}.")
+          PY
+
+      - name: Publier la mise à jour dans GitHub
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add films.json
+          if git diff --cached --quiet; then
+            echo "Aucun changement du programme à publier."
+          else
+            git commit -m "Actualisation hebdomadaire du programme cinéma"
+            git push
+          fi
