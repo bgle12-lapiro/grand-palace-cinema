@@ -1,0 +1,10 @@
+{
+  "name": "Grand Palace – Mon cinéma",
+  "short_name": "Grand Palace",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#101827",
+  "theme_color": "#101827",
+  "description": "Films, séances et critiques du cinéma Le Grand Palace aux Sables-d’Olonne.",
+  "icons": []
+}

@@ -1,0 +1,17 @@
+GRAND PALACE – MON CINÉMA (version avec visuels)
+
+Contenu :
+- index.html : interface de l'application
+- films.json : films, affiches/visuels, synopsis, notes et séances du relevé du 5 novembre 2026
+- manifest.webmanifest et sw.js : éléments de base pour l'installation PWA
+
+Pour tester localement :
+1. Décompresser le dossier.
+2. Ouvrir index.html dans Chrome ou Edge.
+3. Les fonctions de recherche, de tri et de favoris fonctionnent.
+   (L'installation PWA complète nécessite un hébergement HTTPS, par exemple Netlify.)
+
+Important :
+Cette version est un prototype de l'interface. Les données ne se mettent pas encore à jour automatiquement dans l'application.
+L'automatisation hebdomadaire de préparation du programme est distincte ; l'intégration d'un flux de données automatique à l'application constitue l'étape suivante.
+Les horaires sont un relevé ponctuel : consulter les liens sources avant déplacement.

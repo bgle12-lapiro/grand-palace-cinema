@@ -1,0 +1,158 @@
+{
+  "cinema": "Le Grand Palace",
+  "city": "Les Sables-d’Olonne",
+  "lastChecked": "2026-11-05",
+  "weekLabel": "Programme repéré le 5 novembre 2026",
+  "films": [
+    {
+      "id": "un-bon-patron",
+      "title": "Un bon patron",
+      "genre": "Comédie",
+      "duration": "1 h 27",
+      "director": "Philippe de Chauveron",
+      "press": "2,7",
+      "audience": "3,1",
+      "synopsis": "Antoine Blanchet, héritier d’une fabrique familiale de balances, voit son quotidien basculer lorsque les problèmes s’accumulent dans l’entreprise.",
+      "sessions": {
+        "2026-11-05": [
+          "14:10",
+          "20:30"
+        ]
+      },
+      "source": "https://www.allocine.fr/seance/salle_gen_csalle=P1908.html",
+      "poster": "https://fr.web.img4.acsta.net/img/cc/a6/cca6b2f8062c5636dfcfae1153092a74.jpg",
+      "posterNote": "Visuel promotionnel (pas l’affiche officielle)"
+    },
+    {
+      "id": "wild-horse-nine",
+      "title": "Wild Horse Nine",
+      "genre": "Thriller",
+      "duration": "1 h 58",
+      "director": "Martin McDonagh",
+      "press": "3,8",
+      "audience": "3,9",
+      "synopsis": "Peu avant le coup d’État chilien de 1973, deux agents de la CIA sont envoyés sur l’île de Pâques. Leur passé et les intrigues en cours menacent leur mission.",
+      "sessions": {
+        "2026-11-05": [
+          "16:20",
+          "20:20"
+        ]
+      },
+      "source": "https://www.allocine.fr/seance/salle_gen_csalle=P1908.html",
+      "poster": "https://theawesomer.com/photos/2026/03/wild_horse_nine_1.jpg",
+      "posterNote": "Affiche du film"
+    },
+    {
+      "id": "affaire-marie-claire",
+      "title": "L’Affaire Marie-Claire",
+      "genre": "Drame historique / judiciaire",
+      "duration": "1 h 42",
+      "director": "Lauriane Escaffre, Yvo Muller",
+      "press": "3,2",
+      "audience": "4,5",
+      "synopsis": "En novembre 1972, au tribunal de Bobigny, Marie-Claire Chevalier, 16 ans, est jugée après un avortement clandestin. Son avocate Gisèle Halimi choisit une défense qui met la loi elle-même en accusation.",
+      "sessions": {
+        "2026-11-05": [
+          "16:50",
+          "20:30"
+        ]
+      },
+      "source": "https://www.allocine.fr/seance/salle_gen_csalle=P1908.html",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMGU5Y2VjNTgtZDM0YS00Y2NkLTg5Y2YtNzg4ZTc0NDc2Nzg1XkEyXkFqcGc%40._V1_FMjpg_UX1000_.jpg",
+      "posterNote": "Affiche du film"
+    },
+    {
+      "id": "karma",
+      "title": "Karma",
+      "genre": "Drame / Thriller",
+      "duration": "2 h 20",
+      "director": "Guillaume Canet",
+      "press": "3,0",
+      "audience": "4,0",
+      "synopsis": "Jeanne tente de reconstruire sa vie dans le nord de l’Espagne. Lorsque son filleul disparaît, son passé la rattrape et elle doit fuir vers la communauté qu’elle avait quittée.",
+      "sessions": {
+        "2026-11-05": [
+          "14:05",
+          "20:05"
+        ]
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://tr.web.img4.acsta.net/img/37/68/376899ecafee7d4b20b3e73f1944be34.jpg",
+      "posterNote": "Affiche du film"
+    },
+    {
+      "id": "les-miserables",
+      "title": "Les Misérables",
+      "genre": "Drame historique",
+      "duration": "2 h 58",
+      "director": "Fred Cavayé",
+      "press": "3,1",
+      "audience": "4,0",
+      "synopsis": "Libéré après dix-neuf ans de bagne, Jean Valjean décide de changer de vie. Mais son passé finit par le rattraper.",
+      "sessions": {
+        "2026-11-05": [
+          "14:05",
+          "19:40"
+        ]
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://www.cinemaclock.com/images/posters/1000x1500/36/les-miserables-2026-orig-poster.jpg",
+      "posterNote": "Affiche du film"
+    },
+    {
+      "id": "fantome-opera",
+      "title": "Le Fantôme de l’Opéra",
+      "genre": "Drame sentimental / Fantastique",
+      "duration": "2 h 14",
+      "director": "Alexandre Castagnetti",
+      "press": null,
+      "audience": null,
+      "synopsis": "Anastasia, jeune danseuse à l’Opéra de Paris, répète un opéra maudit et tombe amoureuse d’un mystérieux pianiste. Des événements troublants entourent la première représentation.",
+      "sessions": {
+        "2026-11-05": [
+          "16:35",
+          "20:10"
+        ]
+      },
+      "source": "https://www.telerama.fr/seances-cinema/le_grand_palace-P1908?date=2026-11-05",
+      "poster": "https://cdn.sortiraparis.com/images/80/69688/1275422-le-fantome-de-l-opera-l-affiche-teaser-du-film-2026.jpg",
+      "posterNote": "Affiche du film"
+    },
+    {
+      "id": "lucy-lost",
+      "title": "Le Mystère Lucy Lost",
+      "genre": "Animation / Aventure",
+      "duration": "1 h 29",
+      "director": "Olivier Clert",
+      "press": null,
+      "audience": null,
+      "synopsis": "Lucy vit sur une île isolée. Lorsqu’elle rencontre une petite fille que personne d’autre ne voit, elle part à la découverte de ses pouvoirs mystérieux.",
+      "sessions": {
+        "2026-11-05": [
+          "14:45"
+        ]
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.squarespace-cdn.com/content/v1/5b05553a45776ef6b2b7b0ab/1776936649096-4PG0TS7NSF05A1MFHZNQ/image-asset.jpeg",
+      "posterNote": "Affiche du film"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Site officiel du Grand Palace",
+      "url": "https://www.cinema-legrandpalace.fr/"
+    },
+    {
+      "label": "Billetterie et séances",
+      "url": "https://ems9996-draft.ticketingcine.com/cine/99S05SBN.html"
+    },
+    {
+      "label": "AlloCiné – séances et notes",
+      "url": "https://www.allocine.fr/seance/salle_gen_csalle=P1908.html"
+    },
+    {
+      "label": "Télérama – séances",
+      "url": "https://www.telerama.fr/seances-cinema/le_grand_palace-P1908?date=2026-11-05"
+    }
+  ]
+}

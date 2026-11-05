@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>Grand Palace – Mon cinéma</title>
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+:root{--bg:#101827;--panel:#1b2940;--panel2:#253650;--line:#3c506c;--txt:#f5f7fb;--muted:#b5c1d1;--gold:#e8bd6b;--green:#92d5b0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,#263a55 0,#101827 48%);color:var(--txt);font:15px/1.5 "Segoe UI",Arial,sans-serif}
+header{padding:30px max(18px,calc((100vw - 1180px)/2));background:#0b1220;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border-radius:14px;background:linear-gradient(145deg,#f1ce85,#9d7130);display:grid;place-items:center;color:#1b1b1b;font-size:25px}
+h1{font-size:clamp(25px,4vw,36px);margin:0}header p{margin:4px 0 0;color:var(--muted)}
+main{max-width:1180px;margin:22px auto;padding:0 18px}
+.hero{padding:18px;border:1px solid #665637;border-radius:15px;background:linear-gradient(120deg,#3a3020,#1d2a3d);margin-bottom:16px}
+.hero b{color:#ffe1a2}.small{font-size:12px;color:var(--muted)}
+.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0}
+input,select,button{font:inherit;padding:11px 13px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--txt)}
+input{flex:1;min-width:220px}button{cursor:pointer;background:var(--gold);color:#211a0c;border:0;font-weight:700}
+button.secondary{background:var(--panel2);color:var(--txt);border:1px solid var(--line)}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.stat{background:var(--panel);border:1px solid var(--line);padding:9px 13px;border-radius:10px;color:var(--muted)}.stat strong{color:var(--gold);font-size:18px;margin-right:5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:15px}
+.card{background:linear-gradient(160deg,#1d2c43,#172337);border:1px solid var(--line);border-radius:15px;overflow:hidden;display:flex;flex-direction:column;min-height:100%}
+.poster{height:330px;display:flex;align-items:center;justify-content:center;text-align:center;padding:0;background:#0b1220;border-bottom:1px solid var(--line);overflow:hidden}
+.poster img{width:100%;height:100%;object-fit:contain;display:block}
+.poster span{display:none;font-family:Georgia,serif;font-size:23px;font-weight:bold;letter-spacing:.04em;text-shadow:0 2px 8px #000;padding:14px}
+.poster-note{font-size:10px;color:var(--muted);padding:3px 12px 0;text-align:center;background:#0b1220}
+.body{padding:15px;display:flex;flex-direction:column;gap:8px;flex:1}.tag{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);font-weight:700}
+h2{font-size:20px;line-height:1.25;margin:0}.meta{color:var(--muted);font-size:13px}.synopsis{margin:0;color:#dce4ef}
+.scores{display:grid;grid-template-columns:1fr 1fr;gap:8px}.score{background:var(--panel2);padding:8px 10px;border-radius:9px}.score strong{font-size:18px;color:var(--green);display:block}.score small{color:var(--muted)}
+.sessions{font-size:13px;background:#111c2d;padding:9px 10px;border-radius:9px}.sessions b{color:var(--gold)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:auto;padding-top:7px}.actions a,.sources a{font-size:13px;color:var(--gold);text-decoration:none;border-bottom:1px solid #8a7044}
+.empty{background:var(--panel);border-radius:12px;padding:24px;text-align:center;color:var(--muted)}
+footer{max-width:1180px;margin:25px auto 40px;padding:0 18px;color:var(--muted);font-size:13px}.sources{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px}
+@media(max-width:600px){header{padding:20px 15px}main{padding:0 12px}.toolbar>*{width:100%}.poster{height:270px}}
+</style>
+</head>
+<body>
+<header><div class="brand"><div class="logo">🎬</div><div><h1>Grand Palace – Mon cinéma</h1><p>Les Sables-d’Olonne · Films, séances et regards critiques</p></div></div></header>
+<main>
+<div class="hero"><b id="weekLabel">Programme de la semaine</b><div>Une sélection des films actuellement annoncés au Grand Palace.</div><div class="small">Les séances affichées ici sont un relevé daté. Vérifie toujours la billetterie avant de te déplacer.</div></div>
+<div class="toolbar">
+<input id="q" placeholder="Rechercher un titre, un genre, un réalisateur…">
+<select id="genre"><option value="">Tous les genres</option></select>
+<select id="sort"><option value="title">Trier par titre</option><option value="press">Meilleure note presse</option><option value="audience">Meilleure note spectateurs</option></select>
+<button class="secondary" id="favorites">★ Mes films</button>
+<button class="secondary" id="reset">Tout afficher</button>
+</div>
+<div class="stats"><div class="stat"><strong id="count">0</strong>films affichés</div><div class="stat"><strong id="date">—</strong>date du relevé</div><div class="stat"><strong>2</strong>sources de notes</div></div>
+<div id="grid" class="grid"></div>
+</main>
+<footer><b>Sources et vérification</b><div class="sources" id="sources"></div>
+<p class="small">Cette première version est un prototype installable. Les données intégrées correspondent au relevé du 5 novembre 2026. L’actualisation automatique directement dans l’application sera ajoutée lors de la mise en place de l’hébergement et de la source de données.</p>
+</footer>
+<script>
+let data, onlyFavorites=false;
+const saved=()=>JSON.parse(localStorage.getItem('gp-favs')||'[]');
+const $=id=>document.getElementById(id);
+const norm=s=>(s||'').toLocaleLowerCase('fr');
+function render(){
+ if(!data)return;
+ $('weekLabel').textContent=data.weekLabel;
+ $('date').textContent=new Date(data.lastChecked+'T12:00:00').toLocaleDateString('fr-FR',{day:'2-digit',month:'short',year:'numeric'});
+ const genres=[...new Set(data.films.map(f=>f.genre))].sort();
+ const current=$('genre').value;
+ $('genre').innerHTML='<option value="">Tous les genres</option>'+genres.map(g=>`<option value="${g}">${g}</option>`).join('');
+ $('genre').value=current;
+ let arr=data.films.filter(f=>{
+   const hay=norm([f.title,f.genre,f.director,f.synopsis].join(' '));
+   return hay.includes(norm($('q').value)) && (!current||f.genre===current) && (!onlyFavorites||saved().includes(f.id));
+ });
+ const sort=$('sort').value;
+ if(sort==='press')arr.sort((a,b)=>(Number(b.press)||0)-(Number(a.press)||0));
+ else if(sort==='audience')arr.sort((a,b)=>(Number(b.audience)||0)-(Number(a.audience)||0));
+ else arr.sort((a,b)=>a.title.localeCompare(b.title,'fr'));
+ $('count').textContent=arr.length;
+ $('grid').innerHTML=arr.map(f=>{
+   const fav=saved().includes(f.id);
+   const sessions=Object.entries(f.sessions||{}).map(([d,t])=>`${new Date(d+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'short',day:'2-digit',month:'short'})} : ${t.join(' · ')}`).join('<br>');
+   return `<article class="card"><div class="poster">${f.poster?`<img src="${f.poster}" alt="${f.posterNote||'Visuel de '+f.title}" referrerpolicy="no-referrer" loading="eager" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">`:''}<span>${f.title}</span></div>${f.posterNote?`<div class="poster-note">${f.posterNote}</div>`:''}<div class="body"><div class="tag">${f.genre}</div><h2>${f.title}</h2><div class="meta">${f.duration||'Durée non confirmée'} · Réalisation : ${f.director}</div><p class="synopsis">${f.synopsis}</p><div class="scores"><div class="score"><strong>${f.press?f.press+' / 5':'—'}</strong><small>Note presse</small></div><div class="score"><strong>${f.audience?f.audience+' / 5':'—'}</strong><small>Note spectateurs</small></div></div><div class="sessions"><b>Séances relevées</b><br>${sessions||'Horaires à vérifier'}</div><div class="actions"><a href="${f.source}" target="_blank" rel="noopener">Vérifier les séances ↗</a><button class="secondary fav" data-id="${f.id}">${fav?'★ Retirer':'☆ À voir'}</button></div></div></article>`;
+ }).join('')||'<div class="empty">Aucun film ne correspond à cette recherche.</div>';
+ document.querySelectorAll('.fav').forEach(b=>b.onclick=()=>{let a=saved();a=a.includes(b.dataset.id)?a.filter(x=>x!==b.dataset.id):[...a,b.dataset.id];localStorage.setItem('gp-favs',JSON.stringify(a));render();});
+ $('sources').innerHTML=data.sources.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">${s.label} ↗</a>`).join('');
+}
+const fallbackData = {"cinema": "Le Grand Palace", "city": "Les Sables-d’Olonne", "lastChecked": "2026-11-05", "weekLabel": "Programme repéré le 5 novembre 2026", "films": [{"id": "un-bon-patron", "title": "Un bon patron", "genre": "Comédie", "duration": "1 h 27", "director": "Philippe de Chauveron", "press": "2,7", "audience": "3,1", "synopsis": "Antoine Blanchet, héritier d’une fabrique familiale de balances, voit son quotidien basculer lorsque les problèmes s’accumulent dans l’entreprise.", "sessions": {"2026-11-05": ["14:10", "20:30"]}, "source": "https://www.allocine.fr/seance/salle_gen_csalle=P1908.html"}, {"id": "wild-horse-nine", "title": "Wild Horse Nine", "genre": "Thriller", "duration": "1 h 58", "director": "Martin McDonagh", "press": "3,8", "audience": "3,9", "synopsis": "Peu avant le coup d’État chilien de 1973, deux agents de la CIA sont envoyés sur l’île de Pâques. Leur passé et les intrigues en cours menacent leur mission.", "sessions": {"2026-11-05": ["16:20", "20:20"]}, "source": "https://www.allocine.fr/seance/salle_gen_csalle=P1908.html"}, {"id": "affaire-marie-claire", "title": "L’Affaire Marie-Claire", "genre": "Drame historique / judiciaire", "duration": "1 h 42", "director": "Lauriane Escaffre, Yvo Muller", "press": "3,2", "audience": "4,5", "synopsis": "En novembre 1972, au tribunal de Bobigny, Marie-Claire Chevalier, 16 ans, est jugée après un avortement clandestin. Son avocate Gisèle Halimi choisit une défense qui met la loi elle-même en accusation.", "sessions": {"2026-11-05": ["16:50", "20:30"]}, "source": "https://www.allocine.fr/seance/salle_gen_csalle=P1908.html"}, {"id": "karma", "title": "Karma", "genre": "Drame / Thriller", "duration": "2 h 20", "director": "Guillaume Canet", "press": "3,0", "audience": "4,0", "synopsis": "Jeanne tente de reconstruire sa vie dans le nord de l’Espagne. Lorsque son filleul disparaît, son passé la rattrape et elle doit fuir vers la communauté qu’elle avait quittée.", "sessions": {"2026-11-05": ["14:05", "20:05"]}, "source": "https://www.ticketingcine.com/cine/99S05SBN.html"}, {"id": "les-miserables", "title": "Les Misérables", "genre": "Drame historique", "duration": "2 h 58", "director": "Fred Cavayé", "press": "3,1", "audience": "4,0", "synopsis": "Libéré après dix-neuf ans de bagne, Jean Valjean décide de changer de vie. Mais son passé finit par le rattraper.", "sessions": {"2026-11-05": ["14:05", "19:40"]}, "source": "https://www.ticketingcine.com/cine/99S05SBN.html"}, {"id": "fantome-opera", "title": "Le Fantôme de l’Opéra", "genre": "Drame sentimental / Fantastique", "duration": "2 h 14", "director": "Alexandre Castagnetti", "press": null, "audience": null, "synopsis": "Anastasia, jeune danseuse à l’Opéra de Paris, répète un opéra maudit et tombe amoureuse d’un mystérieux pianiste. Des événements troublants entourent la première représentation.", "sessions": {"2026-11-05": ["16:35", "20:10"]}, "source": "https://www.telerama.fr/seances-cinema/le_grand_palace-P1908?date=2026-11-05"}, {"id": "lucy-lost", "title": "Le Mystère Lucy Lost", "genre": "Animation / Aventure", "duration": "1 h 29", "director": "Olivier Clert", "press": null, "audience": null, "synopsis": "Lucy vit sur une île isolée. Lorsqu’elle rencontre une petite fille que personne d’autre ne voit, elle part à la découverte de ses pouvoirs mystérieux.", "sessions": {"2026-11-05": ["14:45"]}, "source": "https://www.ticketingcine.com/cine/99S05SBN.html"}], "sources": [{"label": "Site officiel du Grand Palace", "url": "https://www.cinema-legrandpalace.fr/"}, {"label": "Billetterie et séances", "url": "https://ems9996-draft.ticketingcine.com/cine/99S05SBN.html"}, {"label": "AlloCiné – séances et notes", "url": "https://www.allocine.fr/seance/salle_gen_csalle=P1908.html"}, {"label": "Télérama – séances", "url": "https://www.telerama.fr/seances-cinema/le_grand_palace-P1908?date=2026-11-05"}]};
+fetch('./films.json').then(r=>{if(!r.ok)throw new Error('offline');return r.json()}).then(d=>{data=d;render()}).catch(()=>{data=fallbackData;const p={"un-bon-patron": "https://fr.web.img4.acsta.net/img/cc/a6/cca6b2f8062c5636dfcfae1153092a74.jpg", "wild-horse-nine": "https://theawesomer.com/photos/2026/03/wild_horse_nine_1.jpg", "affaire-marie-claire": "https://m.media-amazon.com/images/M/MV5BMGU5Y2VjNTgtZDM0YS00Y2NkLTg5Y2YtNzg4ZTc0NDc2Nzg1XkEyXkFqcGc%40._V1_FMjpg_UX1000_.jpg", "karma": "https://tr.web.img4.acsta.net/img/37/68/376899ecafee7d4b20b3e73f1944be34.jpg", "les-miserables": "https://www.cinemaclock.com/images/posters/1000x1500/36/les-miserables-2026-orig-poster.jpg", "fantome-opera": "https://cdn.sortiraparis.com/images/80/69688/1275422-le-fantome-de-l-opera-l-affiche-teaser-du-film-2026.jpg", "lucy-lost": "https://images.squarespace-cdn.com/content/v1/5b05553a45776ef6b2b7b0ab/1776936649096-4PG0TS7NSF05A1MFHZNQ/image-asset.jpeg"};data.films.forEach(f=>{f.poster=p[f.id];f.posterNote=f.id==='un-bon-patron'?'Visuel promotionnel (pas l’affiche officielle)':'Affiche du film'});render()});
+['q','genre','sort'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',render));
+$('favorites').onclick=()=>{onlyFavorites=!onlyFavorites;$('favorites').textContent=onlyFavorites?'★ Tous les films':'★ Mes films';render()};
+$('reset').onclick=()=>{$('q').value='';$('genre').value='';$('sort').value='title';onlyFavorites=false;$('favorites').textContent='★ Mes films';render()};
+if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+</script>
+</body></html>
