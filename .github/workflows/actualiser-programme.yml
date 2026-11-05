@@ -1,0 +1,96 @@
+name: Actualiser le programme du Grand Palace
+
+on:
+  schedule:
+    # Tous les lundis à 07:15 UTC (08:15 en hiver, 09:15 en été en France)
+    - cron: '15 7 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  actualiser:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer les fichiers de l'application
+        uses: actions/checkout@v4
+
+      - name: Préparer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Installer les outils de lecture du programme
+        run: pip install requests beautifulsoup4
+
+      - name: Lire le programme et actualiser films.json
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          import unicodedata
+          from datetime import date, datetime, timedelta
+          from zoneinfo import ZoneInfo
+          from urllib.parse import urljoin
+
+          import requests
+          from bs4 import BeautifulSoup, NavigableString, Tag
+
+          CINEMA_URL = "https://www.ticketingcine.com/cine/99S05SBN.html"
+          HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; GrandPalaceProgrammeBot/1.0)"}
+
+          def normalize(value):
+              value = unicodedata.normalize("NFKD", value or "")
+              value = "".join(c for c in value if not unicodedata.combining(c))
+              return re.sub(r"[^a-z0-9]+", " ", value.lower()).strip()
+
+          def slug(value):
+              return re.sub(r"[^a-z0-9]+", "-", normalize(value)).strip("-") or "film"
+
+          def get_page(url):
+              response = requests.get(url, headers=HEADERS, timeout=30)
+              response.raise_for_status()
+              return BeautifulSoup(response.text, "html.parser")
+
+          path = "films.json"
+          with open(path, "r", encoding="utf-8") as f:
+              old_data = json.load(f)
+          old_films = old_data.get("films", [])
+          old_by_title = {normalize(f.get("title", "")): f for f in old_films}
+
+          soup = get_page(CINEMA_URL)
+          heading_tags = {"h1", "h2", "h3", "h4", "h5", "h6"}
+          film_headings = []
+          for tag in soup.find_all(list(heading_tags)):
+              text = tag.get_text(" ", strip=True)
+              match = re.match(r"Les séances du film\s*[-–:]\s*(.+)", text, re.I)
+              if match:
+                  film_headings.append((tag, match.group(1).strip()))
+
+          today = datetime.now(ZoneInfo("Europe/Paris")).date()
+          last_day = today + timedelta(days=14)
+          films = []
+
+          for heading, title in film_headings:
+              sessions = {}
+              current_day = None
+              detail_url = None
+              for element in heading.next_elements:
+                  if isinstance(element, Tag) and element.name in heading_tags:
+                      heading_text = element.get_text(" ", strip=True)
+                      if re.match(r"Les séances du film\s*[-–:]", heading_text, re.I):
+                          break
+                  if isinstance(element, Tag) and element.name == "a" and detail_url is None:
+                      href = element.get("href", "")
+                      if "/film/" in href:
+                          detail_url = urljoin(CINEMA_URL, href)
+                  if isinstance(element, NavigableString):
+                      value = str(element).strip()
+                      if not value:
+                          continue
+                      date_match = re.search(r"(\d{2})/(\d{2})/(\d{4})", value)
+                      if date_match:
+                          day, month, year = map(int, date_match.groups())
+                          try:
+                              parsed = date(year, month, day)
