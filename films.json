@@ -2,65 +2,8 @@
   "cinema": "Le Grand Palace",
   "city": "Les Sables-d’Olonne",
   "lastChecked": "2026-11-05",
-  "weekLabel": "Programme repéré le 5 novembre 2026",
+  "weekLabel": "Programme actualisé le 05/11/2026",
   "films": [
-    {
-      "id": "un-bon-patron",
-      "title": "Un bon patron",
-      "genre": "Comédie",
-      "duration": "1 h 27",
-      "director": "Philippe de Chauveron",
-      "press": "2,7",
-      "audience": "3,1",
-      "synopsis": "Antoine Blanchet, héritier d’une fabrique familiale de balances, voit son quotidien basculer lorsque les problèmes s’accumulent dans l’entreprise.",
-      "sessions": {
-        "2026-11-05": [
-          "14:10",
-          "20:30"
-        ]
-      },
-      "source": "https://www.allocine.fr/seance/salle_gen_csalle=P1908.html",
-      "poster": "https://fr.web.img4.acsta.net/img/cc/a6/cca6b2f8062c5636dfcfae1153092a74.jpg",
-      "posterNote": "Visuel promotionnel (pas l’affiche officielle)"
-    },
-    {
-      "id": "wild-horse-nine",
-      "title": "Wild Horse Nine",
-      "genre": "Thriller",
-      "duration": "1 h 58",
-      "director": "Martin McDonagh",
-      "press": "3,8",
-      "audience": "3,9",
-      "synopsis": "Peu avant le coup d’État chilien de 1973, deux agents de la CIA sont envoyés sur l’île de Pâques. Leur passé et les intrigues en cours menacent leur mission.",
-      "sessions": {
-        "2026-11-05": [
-          "16:20",
-          "20:20"
-        ]
-      },
-      "source": "https://www.allocine.fr/seance/salle_gen_csalle=P1908.html",
-      "poster": "https://theawesomer.com/photos/2026/03/wild_horse_nine_1.jpg",
-      "posterNote": "Affiche du film"
-    },
-    {
-      "id": "affaire-marie-claire",
-      "title": "L’Affaire Marie-Claire",
-      "genre": "Drame historique / judiciaire",
-      "duration": "1 h 42",
-      "director": "Lauriane Escaffre, Yvo Muller",
-      "press": "3,2",
-      "audience": "4,5",
-      "synopsis": "En novembre 1972, au tribunal de Bobigny, Marie-Claire Chevalier, 16 ans, est jugée après un avortement clandestin. Son avocate Gisèle Halimi choisit une défense qui met la loi elle-même en accusation.",
-      "sessions": {
-        "2026-11-05": [
-          "16:50",
-          "20:30"
-        ]
-      },
-      "source": "https://www.allocine.fr/seance/salle_gen_csalle=P1908.html",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMGU5Y2VjNTgtZDM0YS00Y2NkLTg5Y2YtNzg4ZTc0NDc2Nzg1XkEyXkFqcGc%40._V1_FMjpg_UX1000_.jpg",
-      "posterNote": "Affiche du film"
-    },
     {
       "id": "karma",
       "title": "Karma",
@@ -74,9 +17,28 @@
         "2026-11-05": [
           "14:05",
           "20:05"
+        ],
+        "2026-11-06": [
+          "14:05"
+        ],
+        "2026-11-07": [
+          "14:05",
+          "20:05"
+        ],
+        "2026-11-08": [
+          "14:05",
+          "20:05"
+        ],
+        "2026-11-09": [
+          "14:05",
+          "20:05"
+        ],
+        "2026-11-10": [
+          "14:05",
+          "20:05"
         ]
       },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "source": "https://www.ticketingcine.com/film/6QVJU.html",
       "poster": "https://tr.web.img4.acsta.net/img/37/68/376899ecafee7d4b20b3e73f1944be34.jpg",
       "posterNote": "Affiche du film"
     },
@@ -93,30 +55,142 @@
         "2026-11-05": [
           "14:05",
           "19:40"
+        ],
+        "2026-11-06": [
+          "14:05",
+          "19:40"
+        ],
+        "2026-11-07": [
+          "14:05"
+        ],
+        "2026-11-08": [
+          "14:05",
+          "19:40"
+        ],
+        "2026-11-09": [
+          "14:05"
+        ],
+        "2026-11-10": [
+          "14:05"
         ]
       },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "source": "https://www.ticketingcine.com/film/4QY3X.html",
       "poster": "https://www.cinemaclock.com/images/posters/1000x1500/36/les-miserables-2026-orig-poster.jpg",
       "posterNote": "Affiche du film"
     },
     {
-      "id": "fantome-opera",
-      "title": "Le Fantôme de l’Opéra",
-      "genre": "Drame sentimental / Fantastique",
-      "duration": "2 h 14",
-      "director": "Alexandre Castagnetti",
-      "press": null,
-      "audience": null,
-      "synopsis": "Anastasia, jeune danseuse à l’Opéra de Paris, répète un opéra maudit et tombe amoureuse d’un mystérieux pianiste. Des événements troublants entourent la première représentation.",
+      "id": "un-bon-patron",
+      "title": "Un bon patron",
+      "genre": "Comédie",
+      "duration": "1 h 27",
+      "director": "Philippe de Chauveron",
+      "press": "2,7",
+      "audience": "3,1",
+      "synopsis": "Antoine Blanchet, héritier d’une fabrique familiale de balances, voit son quotidien basculer lorsque les problèmes s’accumulent dans l’entreprise.",
       "sessions": {
         "2026-11-05": [
-          "16:35",
-          "20:10"
+          "14:10",
+          "20:30"
+        ],
+        "2026-11-06": [
+          "14:10",
+          "20:30"
+        ],
+        "2026-11-07": [
+          "14:10",
+          "20:30"
+        ],
+        "2026-11-08": [
+          "14:10",
+          "20:30"
+        ],
+        "2026-11-09": [
+          "14:10",
+          "20:30"
+        ],
+        "2026-11-10": [
+          "14:10",
+          "20:30"
         ]
       },
-      "source": "https://www.telerama.fr/seances-cinema/le_grand_palace-P1908?date=2026-11-05",
-      "poster": "https://cdn.sortiraparis.com/images/80/69688/1275422-le-fantome-de-l-opera-l-affiche-teaser-du-film-2026.jpg",
-      "posterNote": "Affiche du film"
+      "source": "https://www.ticketingcine.com/film/8X5VA.html",
+      "poster": "https://fr.web.img4.acsta.net/img/cc/a6/cca6b2f8062c5636dfcfae1153092a74.jpg",
+      "posterNote": "Visuel promotionnel (pas l’affiche officielle)"
+    },
+    {
+      "id": "la-maison-de-nos-reves",
+      "title": "La Maison de nos rêves",
+      "genre": "Non renseigné",
+      "duration": "Non renseignée",
+      "director": "Non renseigné",
+      "press": null,
+      "audience": null,
+      "synopsis": "La Maison de nos rêves est un film réalisé par Claude Zidi Jr. avec Kev Adams, Chantal Ladesou, Camille Aguilar, Bernard Farcy, Jonathan Lambert, Michel…",
+      "sessions": {
+        "2026-11-05": [
+          "14:20"
+        ],
+        "2026-11-06": [
+          "14:20"
+        ],
+        "2026-11-09": [
+          "14:20"
+        ],
+        "2026-11-10": [
+          "14:20"
+        ]
+      },
+      "source": "https://www.ticketingcine.com/film/TET2S.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FRTET2S/ZR9463YJ.webp"
+    },
+    {
+      "id": "le-corset",
+      "title": "Le Corset",
+      "genre": "Non renseigné",
+      "duration": "Non renseignée",
+      "director": "Non renseigné",
+      "press": null,
+      "audience": null,
+      "synopsis": "Le Corset est un film réalisé par Louis Clichy avec Gary Clichy, Rod Paradot, Dimitri Colas, Aurélie Vassort, Brune Moulin. Synopsis : Dans une ferme au cœur…",
+      "sessions": {
+        "2026-11-05": [
+          "14:30"
+        ],
+        "2026-11-06": [
+          "14:30"
+        ],
+        "2026-11-09": [
+          "14:30"
+        ],
+        "2026-11-10": [
+          "14:30"
+        ]
+      },
+      "source": "https://www.ticketingcine.com/film/Q0FYB.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FRQ0FYB/4PTVPQV7.webp"
+    },
+    {
+      "id": "notre-salut",
+      "title": "Notre salut",
+      "genre": "Non renseigné",
+      "duration": "Non renseignée",
+      "director": "Non renseigné",
+      "press": null,
+      "audience": null,
+      "synopsis": "Notre salut est un film réalisé par Emmanuel Marre avec Swann Arlaud, Sandrine Blancke, Mathieu Perotto, Harpo Guit, Mathilde Abd El Kader. Synopsis…",
+      "sessions": {
+        "2026-11-05": [
+          "14:40"
+        ],
+        "2026-11-06": [
+          "14:40"
+        ],
+        "2026-11-10": [
+          "14:40"
+        ]
+      },
+      "source": "https://www.ticketingcine.com/film/A02S6.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FRA02S6/W7XMVSBN.webp"
     },
     {
       "id": "lucy-lost",
@@ -130,29 +204,133 @@
       "sessions": {
         "2026-11-05": [
           "14:45"
+        ],
+        "2026-11-07": [
+          "14:45"
+        ],
+        "2026-11-09": [
+          "14:45"
         ]
       },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "source": "https://www.ticketingcine.com/film/LPWEP.html",
       "poster": "https://images.squarespace-cdn.com/content/v1/5b05553a45776ef6b2b7b0ab/1776936649096-4PG0TS7NSF05A1MFHZNQ/image-asset.jpeg",
       "posterNote": "Affiche du film"
-    }
-  ],
-  "sources": [
-    {
-      "label": "Site officiel du Grand Palace",
-      "url": "https://www.cinema-legrandpalace.fr/"
     },
     {
-      "label": "Billetterie et séances",
-      "url": "https://ems9996-draft.ticketingcine.com/cine/99S05SBN.html"
+      "id": "moulin",
+      "title": "Moulin",
+      "genre": "Non renseigné",
+      "duration": "Non renseignée",
+      "director": "Non renseigné",
+      "press": null,
+      "audience": null,
+      "synopsis": "Moulin est un film réalisé par Lászlo Nemes avec Gilles Lellouche, Lars Eidinger, Louise Bourgoin, Marcin Czarnik, Max Warburton. Synopsis : Jean Moulin est…",
+      "sessions": {
+        "2026-11-05": [
+          "16:10",
+          "20:05"
+        ],
+        "2026-11-06": [
+          "14:00",
+          "16:10",
+          "20:05"
+        ],
+        "2026-11-07": [
+          "16:10",
+          "20:05"
+        ],
+        "2026-11-08": [
+          "14:00",
+          "16:10",
+          "20:05"
+        ],
+        "2026-11-09": [
+          "16:10",
+          "20:05"
+        ],
+        "2026-11-10": [
+          "14:00",
+          "16:10",
+          "20:05",
+          "20:10"
+        ]
+      },
+      "source": "https://www.ticketingcine.com/film/LXIDH.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FRLXIDH/2G5T86XR.webp"
     },
     {
-      "label": "AlloCiné – séances et notes",
-      "url": "https://www.allocine.fr/seance/salle_gen_csalle=P1908.html"
+      "id": "wild-horse-nine",
+      "title": "Wild Horse Nine",
+      "genre": "Thriller",
+      "duration": "1 h 58",
+      "director": "Martin McDonagh",
+      "press": "3,8",
+      "audience": "3,9",
+      "synopsis": "Peu avant le coup d’État chilien de 1973, deux agents de la CIA sont envoyés sur l’île de Pâques. Leur passé et les intrigues en cours menacent leur mission.",
+      "sessions": {
+        "2026-11-05": [
+          "16:20",
+          "20:20"
+        ],
+        "2026-11-06": [
+          "16:20",
+          "20:20"
+        ],
+        "2026-11-07": [
+          "16:20",
+          "20:20"
+        ],
+        "2026-11-08": [
+          "16:20",
+          "20:20"
+        ],
+        "2026-11-09": [
+          "16:20",
+          "20:20"
+        ],
+        "2026-11-10": [
+          "16:20",
+          "20:20"
+        ]
+      },
+      "source": "https://www.ticketingcine.com/film/Q5S88.html",
+      "poster": "https://theawesomer.com/photos/2026/03/wild_horse_nine_1.jpg",
+      "posterNote": "Affiche du film"
     },
     {
-      "label": "Télérama – séances",
-      "url": "https://www.telerama.fr/seances-cinema/le_grand_palace-P1908?date=2026-11-05"
+      "id": "papa-ou-t-es",
+      "title": "Papa où t'es ?",
+      "genre": "Non renseigné",
+      "duration": "Non renseignée",
+      "director": "Non renseigné",
+      "press": null,
+      "audience": null,
+      "synopsis": "Papa oÃ¹ t'es ? est un film rÃ©alisÃ© par Basile Monnot, Samy BouyssiÃ© avec Nicolas TrouvÃ©, Bounama TourÃ©, Mohamed TourÃ©. Synopsis : Ã 27 ans, Nicolas nâaâ¦",
+      "sessions": {
+        "2026-11-05": [
+          "16:30",
+          "17:25"
+        ],
+        "2026-11-06": [
+          "16:30"
+        ],
+        "2026-11-07": [
+          "17:25",
+          "20:30"
+        ],
+        "2026-11-08": [
+          "17:25"
+        ],
+        "2026-11-09": [
+          "16:30",
+          "20:30"
+        ],
+        "2026-11-10": [
+          "16:30"
+        ]
+      },
+      "source": "https://www.ticketingcine.com/film/QHR15.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FRQHR15/PEE83DZP.webp"
     }
   ]
 }
