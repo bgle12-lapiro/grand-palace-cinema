@@ -103,16 +103,13 @@
     {
       "id": "la-maison-de-nos-reves",
       "title": "La Maison de nos rêves",
-      "genre": "Comédie ",
-      "duration": "1h 30",
+      "genre": "Comédie",
+      "duration": "1 h 30",
       "director": "Claude Zidi Jr.",
       "press": "2,0",
       "audience": "2,5",
       "synopsis": "Un jeune couple pense avoir enfin trouvé la solution miracle pour devenir propriétaire : Un Viager, une maison sublime au bord du lac, une dame mourante, bref, le plan parfait. Mais une fois le contrat signé la dame va beaucoup mieux et va transformer leur rêve immobilier en véritable cauchemar.",
       "sessions": {
-        "2026-11-06": [
-          "14:20"
-        ],
         "2026-11-09": [
           "14:20"
         ],
@@ -121,7 +118,8 @@
         ]
       },
       "source": "https://www.ticketingcine.com/film/TET2S.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FRTET2S/ZR9463YJ.webp"
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FRTET2S/ZR9463YJ.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000031247.html"
     },
     {
       "id": "le-corset",
@@ -133,9 +131,6 @@
       "audience": null,
       "synopsis": "Dans une ferme au cœur de la Beauce, Christophe, 11 ans, règle ses pas sur ceux de son père. Mais à l’école, à la maison, sur le tracteur, Christophe penche… et tombe. Il est obligé de porter un corset pour filer droit. Tandis que la ferme traverse des moments difficiles, Christophe grandit comme il peut. Il découvre la musique et fait la rencontre de Clara, avec qui tout semble devenir possible.",
       "sessions": {
-        "2026-11-06": [
-          "14:30"
-        ],
         "2026-11-09": [
           "14:30"
         ],
