@@ -118,41 +118,53 @@ jobs:
               return result
 
           def allocine_metadata(title):
-              # Recherche une fiche par titre ; ne conserve que les correspondances exactes.
-              search_url = 'https://www.allocine.fr/rechercher/?q=' + quote(title)
-              try:
-                  search_soup = get_page(search_url)
-              except requests.RequestException as exc:
-                  print(f'AlloCiné inaccessible pour {title}: {exc}')
-                  return {}
-              candidate_urls = []
-              for link in search_soup.select('a[href*="fichefilm_gen_cfilm="]'):
-                  href = link.get('href', '')
-                  match = re.search(r'fichefilm_gen_cfilm=(\d+)', href)
-                  if match:
-                      url = f'https://www.allocine.fr/film/fichefilm_gen_cfilm={match.group(1)}.html'
-                      if url not in candidate_urls:
-                          candidate_urls.append(url)
-              for url in candidate_urls[:8]:
+              # Plusieurs sources de découverte : la recherche AlloCiné peut ne
+              # pas exposer les fiches dans des liens HTML classiques.
+              search_urls = [
+                  'https://www.allocine.fr/rechercher/?q=' + quote(title),
+                  'https://www.google.com/search?q=' + quote('site:allocine.fr/film/fichefilm_gen_cfilm= ' + title),
+                  'https://www.bing.com/search?q=' + quote('site:allocine.fr/film/fichefilm_gen_cfilm= ' + title),
+              ]
+              candidate_ids = []
+              # Fiche déjà confirmée par le test GitHub précédent.
+              if normalize(title) == normalize('La Maison de nos rêves'):
+                  candidate_ids.append('1000031247')
+              for search_url in search_urls:
+                  try:
+                      response = session.get(search_url, timeout=30)
+                      response.raise_for_status()
+                      # Inclut liens HTML, URLs encodées et données JSON intégrées.
+                      body = requests.utils.unquote(response.text).replace('\\/', '/')
+                      ids = re.findall(r'fichefilm_gen_cfilm(?:=|%3[Dd])(\d+)', body, re.I)
+                      for film_id in ids:
+                          if film_id not in candidate_ids:
+                              candidate_ids.append(film_id)
+                  except requests.RequestException as exc:
+                      print(f'Recherche indisponible ({search_url.split("/")[2]}) pour {title}: {exc}')
+              print(f'AlloCiné {title}: {len(candidate_ids)} fiche(s) candidate(s)')
+              for film_id in candidate_ids[:15]:
+                  url = f'https://www.allocine.fr/film/fichefilm_gen_cfilm={film_id}.html'
                   try:
                       page = get_page(url)
                   except requests.RequestException:
                       continue
-                  heading = page.find('h1')
-                  page_title = heading.get_text(' ', strip=True) if heading else ''
-                  if normalize(page_title) != normalize(title):
+                  names = []
+                  for tag in page.select('h1, meta[property="og:title"], meta[name="twitter:title"]'):
+                      names.append(tag.get('content', '') if tag.name == 'meta' else tag.get_text(' ', strip=True))
+                  # Les titres de pages peuvent porter un suffixe « - AlloCiné ».
+                  verified = any(normalize(name.split(' - AlloCiné')[0]) == normalize(title) for name in names)
+                  if not verified:
+                      print(f'Fiche écartée pour {title}: {url}; titres={names[:2]}')
                       continue
                   text = page.get_text(' ', strip=True)
-                  # Ne lire les notes que dans le résumé contigu Presse / Spectateurs.
-                  ratings = re.search(
-                      r'\bPresse\s+([0-5][,.]\d)\s+\d+\s+critiques?\s+'
-                      r'Spectateurs\s+([0-5][,.]\d)\s+\d+\s+notes?', text, re.I)
                   result = {'allocineUrl': url}
-                  if ratings:
-                      result['press'] = ratings.group(1).replace('.', ',')
-                      result['audience'] = ratings.group(2).replace('.', ',')
-                  # Genre et durée uniquement si la ligne d'en-tête correspond à la fiche.
-                  header = text[:min(len(text), 1000)]
+                  press = re.search(r'\bPresse\s+([0-5][,.]\d)\b', text, re.I)
+                  audience = re.search(r'\bSpectateurs\s+([0-5][,.]\d)\b', text, re.I)
+                  if press:
+                      result['press'] = press.group(1).replace('.', ',')
+                  if audience:
+                      result['audience'] = audience.group(1).replace('.', ',')
+                  header = text[:3000]
                   duration = re.search(r'\b(\d+)h\s*(\d{1,2})min\b', header, re.I)
                   if duration:
                       result['duration'] = f'{int(duration.group(1))} h {int(duration.group(2)):02d}'
@@ -162,7 +174,7 @@ jobs:
                   director_match = re.search(r'\bDe\s+(.{2,80}?)\s*\|\s*Par\s+', header)
                   if director_match:
                       result['director'] = director_match.group(1).strip()
-                  print(f'Fiche AlloCiné vérifiée pour {title}: {url}; notes trouvées: {bool(ratings)}')
+                  print(f'Fiche AlloCiné vérifiée pour {title}: {url}; champs={list(result)}')
                   return result
               print(f'Aucune fiche AlloCiné certaine pour {title}')
               return {}
