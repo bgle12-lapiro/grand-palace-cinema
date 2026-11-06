@@ -1,8 +1,8 @@
 {
   "cinema": "Le Grand Palace",
   "city": "Les Sables-d’Olonne",
-  "lastChecked": "2026-11-05",
-  "weekLabel": "Programme actualisé le 05/11/2026",
+  "lastChecked": "2026-11-06",
+  "weekLabel": "Programme actualisé le 06/11/2026",
   "films": [
     {
       "id": "karma",
@@ -12,12 +12,8 @@
       "director": "Guillaume Canet",
       "press": "3,0",
       "audience": "4,0",
-      "synopsis": "Jeanne tente de reconstruire sa vie dans le nord de l’Espagne. Lorsque son filleul disparaît, son passé la rattrape et elle doit fuir vers la communauté qu’elle avait quittée.",
+      "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans une communauté religieuse dans laquelle elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
       "sessions": {
-        "2026-11-05": [
-          "14:05",
-          "20:05"
-        ],
         "2026-11-06": [
           "14:05"
         ],
@@ -50,12 +46,8 @@
       "director": "Fred Cavayé",
       "press": "3,1",
       "audience": "4,0",
-      "synopsis": "Libéré après dix-neuf ans de bagne, Jean Valjean décide de changer de vie. Mais son passé finit par le rattraper.",
+      "synopsis": "Libéré après 19 ans de bagne pour le vol d'un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
       "sessions": {
-        "2026-11-05": [
-          "14:05",
-          "19:40"
-        ],
         "2026-11-06": [
           "14:05",
           "19:40"
@@ -86,12 +78,8 @@
       "director": "Philippe de Chauveron",
       "press": "2,7",
       "audience": "3,1",
-      "synopsis": "Antoine Blanchet, héritier d’une fabrique familiale de balances, voit son quotidien basculer lorsque les problèmes s’accumulent dans l’entreprise.",
+      "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l'ancestrale fabrique familiale de balances.",
       "sessions": {
-        "2026-11-05": [
-          "14:10",
-          "20:30"
-        ],
         "2026-11-06": [
           "14:10",
           "20:30"
@@ -122,14 +110,11 @@
       "title": "La Maison de nos rêves",
       "genre": "Non renseigné",
       "duration": "Non renseignée",
-      "director": "Non renseigné",
+      "director": "Claude Zidi Jr.",
       "press": null,
       "audience": null,
-      "synopsis": "La Maison de nos rêves est un film réalisé par Claude Zidi Jr. avec Kev Adams, Chantal Ladesou, Camille Aguilar, Bernard Farcy, Jonathan Lambert, Michel…",
+      "synopsis": "Un jeune couple pense avoir enfin trouvé la solution miracle pour devenir propriétaire : Un Viager, une maison sublime au bord du lac, une dame mourante, bref, le plan parfait. Mais une fois le contrat signé la dame va beaucoup mieux et va transformer leur rêve immobilier en véritable cauchemar.",
       "sessions": {
-        "2026-11-05": [
-          "14:20"
-        ],
         "2026-11-06": [
           "14:20"
         ],
@@ -148,14 +133,11 @@
       "title": "Le Corset",
       "genre": "Non renseigné",
       "duration": "Non renseignée",
-      "director": "Non renseigné",
+      "director": "Louis Clichy",
       "press": null,
       "audience": null,
-      "synopsis": "Le Corset est un film réalisé par Louis Clichy avec Gary Clichy, Rod Paradot, Dimitri Colas, Aurélie Vassort, Brune Moulin. Synopsis : Dans une ferme au cœur…",
+      "synopsis": "Dans une ferme au cœur de la Beauce, Christophe, 11 ans, règle ses pas sur ceux de son père. Mais à l’école, à la maison, sur le tracteur, Christophe penche… et tombe. Il est obligé de porter un corset pour filer droit. Tandis que la ferme traverse des moments difficiles, Christophe grandit comme il peut. Il découvre la musique et fait la rencontre de Clara, avec qui tout semble devenir possible.",
       "sessions": {
-        "2026-11-05": [
-          "14:30"
-        ],
         "2026-11-06": [
           "14:30"
         ],
@@ -174,14 +156,11 @@
       "title": "Notre salut",
       "genre": "Non renseigné",
       "duration": "Non renseignée",
-      "director": "Non renseigné",
+      "director": "Emmanuel Marre",
       "press": null,
       "audience": null,
       "synopsis": "Notre salut est un film réalisé par Emmanuel Marre avec Swann Arlaud, Sandrine Blancke, Mathieu Perotto, Harpo Guit, Mathilde Abd El Kader. Synopsis…",
       "sessions": {
-        "2026-11-05": [
-          "14:40"
-        ],
         "2026-11-06": [
           "14:40"
         ],
@@ -200,11 +179,8 @@
       "director": "Olivier Clert",
       "press": null,
       "audience": null,
-      "synopsis": "Lucy vit sur une île isolée. Lorsqu’elle rencontre une petite fille que personne d’autre ne voit, elle part à la découverte de ses pouvoirs mystérieux.",
+      "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre Milly - une petite fille qu'elle seule peut voir - Lucy embarque dans une grande aventure pour percer le secret de ses mystérieux pouvoirs.",
       "sessions": {
-        "2026-11-05": [
-          "14:45"
-        ],
         "2026-11-07": [
           "14:45"
         ],
@@ -221,15 +197,11 @@
       "title": "Moulin",
       "genre": "Non renseigné",
       "duration": "Non renseignée",
-      "director": "Non renseigné",
+      "director": "Lászlo Nemes",
       "press": null,
       "audience": null,
       "synopsis": "Moulin est un film réalisé par Lászlo Nemes avec Gilles Lellouche, Lars Eidinger, Louise Bourgoin, Marcin Czarnik, Max Warburton. Synopsis : Jean Moulin est…",
       "sessions": {
-        "2026-11-05": [
-          "16:10",
-          "20:05"
-        ],
         "2026-11-06": [
           "14:00",
           "16:10",
@@ -268,10 +240,6 @@
       "audience": "3,9",
       "synopsis": "Peu avant le coup d’État chilien de 1973, deux agents de la CIA sont envoyés sur l’île de Pâques. Leur passé et les intrigues en cours menacent leur mission.",
       "sessions": {
-        "2026-11-05": [
-          "16:20",
-          "20:20"
-        ],
         "2026-11-06": [
           "16:20",
           "20:20"
@@ -302,15 +270,11 @@
       "title": "Papa où t'es ?",
       "genre": "Non renseigné",
       "duration": "Non renseignée",
-      "director": "Non renseigné",
+      "director": "Basile Monnot, Samy Bouyssié",
       "press": null,
       "audience": null,
-      "synopsis": "Papa oÃ¹ t'es ? est un film rÃ©alisÃ© par Basile Monnot, Samy BouyssiÃ© avec Nicolas TrouvÃ©, Bounama TourÃ©, Mohamed TourÃ©. Synopsis : Ã 27 ans, Nicolas nâaâ¦",
+      "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Séparé de sa mère à l’âge de trois ans, il a grandi placé entre familles d’accueil et foyers. Décidé à retrouver ce père qui l’a abandonné à la naissance, Nicolas récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace. Une enquête qui va le mener jusqu’au Sénégal, à la rencontre de sa famille et d’une histoire qu’il connaît à peine.",
       "sessions": {
-        "2026-11-05": [
-          "16:30",
-          "17:25"
-        ],
         "2026-11-06": [
           "16:30"
         ],
