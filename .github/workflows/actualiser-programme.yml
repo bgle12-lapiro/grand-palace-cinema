@@ -107,6 +107,8 @@ jobs:
                   description = text_value(movie.get('description'))
                   if description and not description.endswith(('…', '...')):
                       result['synopsis'] = description
+              # La fiche de billetterie est prioritaire pour les données éditoriales.
+              # Éviter les descriptions génériques de la plateforme.
               description_tag = soup.find('meta', attrs={'property': 'og:description'})
               image_tag = soup.find('meta', attrs={'property': 'og:image'})
               if description_tag and 'synopsis' not in result:
@@ -114,7 +116,9 @@ jobs:
                   if description and not description.endswith(('…', '...')):
                       result['synopsis'] = description
               if image_tag:
-                  result['poster'] = urljoin(CINEMA_URL, image_tag.get('content', ''))
+                  image_url = image_tag.get('content', '').strip()
+                  if image_url and not image_url.startswith('data:'):
+                      result['poster'] = urljoin(CINEMA_URL, image_url)
               return result
 
           def allocine_metadata(title):
@@ -242,6 +246,9 @@ jobs:
                       metadata = extract_metadata(get_page(detail_url), title)
                   except Exception as exc:
                       print(f'Détails non récupérés pour {title}: {exc}')
+              print(f'Billetterie {title}: fiche={bool(detail_url)}, '
+                    f'synopsis={bool(metadata.get("synopsis"))}, '
+                    f'affiche={bool(metadata.get("poster"))}')
               allocine = allocine_metadata(title)
               film = {
                   'id': old.get('id') or slug(title),
@@ -254,7 +261,7 @@ jobs:
                   'synopsis': metadata.get('synopsis') or old.get('synopsis') or '',
                   'sessions': {day: sorted(set(times)) for day, times in sessions.items()},
                   'source': detail_url or CINEMA_URL,
-                  'poster': old.get('poster') or metadata.get('poster') or '',
+                  'poster': metadata.get('poster') or old.get('poster') or '',
               }
               if allocine.get('allocineUrl'):
                   film['allocineUrl'] = allocine['allocineUrl']
