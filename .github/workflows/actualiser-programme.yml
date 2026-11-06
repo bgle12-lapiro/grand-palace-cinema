@@ -121,6 +121,25 @@ jobs:
                       result['poster'] = urljoin(CINEMA_URL, image_url)
               return result
 
+          def verified_ticketing_metadata(url, title):
+              # Ne jamais attribuer une fiche de billetterie sans titre confirmé.
+              page = get_page(url)
+              names = []
+              for selector in ('h1', 'meta[property="og:title"]', 'meta[name="twitter:title"]'):
+                  for tag in page.select(selector):
+                      name = tag.get('content', '') if tag.name == 'meta' else tag.get_text(' ', strip=True)
+                      if name:
+                          names.append(name)
+              movie = movie_jsonld(page, title)
+              if movie:
+                  names.append(str(movie.get('name', '')))
+              verified = any(normalize(name) == normalize(title) for name in names)
+              if not verified:
+                  print(f'Fiche billetterie rejetée pour {title}: {url}; titres={names[:3]}')
+                  return {}
+              print(f'Fiche billetterie vérifiée pour {title}: {url}')
+              return extract_metadata(page, title)
+
           def allocine_metadata(title):
               # Réutiliser d'abord une fiche déjà vérifiée, si elle existe.
               old = old_by_title.get(normalize(title), {})
@@ -243,7 +262,7 @@ jobs:
               metadata = {}
               if detail_url:
                   try:
-                      metadata = extract_metadata(get_page(detail_url), title)
+                      metadata = verified_ticketing_metadata(detail_url, title)
                   except Exception as exc:
                       print(f'Détails non récupérés pour {title}: {exc}')
               print(f'Billetterie {title}: fiche={bool(detail_url)}, '
@@ -258,17 +277,17 @@ jobs:
                   'director': allocine.get('director') or metadata.get('director') or old.get('director') or 'Non renseigné',
                   'press': allocine.get('press') or old.get('press'),
                   'audience': allocine.get('audience') or old.get('audience'),
-                  'synopsis': metadata.get('synopsis') or old.get('synopsis') or '',
+                  'synopsis': metadata.get('synopsis') or '',
                   'sessions': {day: sorted(set(times)) for day, times in sessions.items()},
-                  'source': detail_url or CINEMA_URL,
-                  'poster': metadata.get('poster') or old.get('poster') or '',
+                  'source': detail_url if metadata else CINEMA_URL,
+                  'poster': metadata.get('poster') or '',
               }
               if allocine.get('allocineUrl'):
                   film['allocineUrl'] = allocine['allocineUrl']
               elif old.get('allocineUrl'):
                   film['allocineUrl'] = old['allocineUrl']
-              if old.get('posterNote'):
-                  film['posterNote'] = old['posterNote']
+              if film['poster']:
+                  film['posterNote'] = 'Affiche du film (fiche vérifiée)'
               films.append(film)
           if len(films) < 3:
               raise SystemExit(f'Arrêt de sécurité : seulement {len(films)} films trouvés. films.json inchangé.')
