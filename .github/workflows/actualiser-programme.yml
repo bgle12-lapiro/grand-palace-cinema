@@ -3,7 +3,7 @@ name: Actualiser le programme du Grand Palace
 on:
   schedule:
     # Tous les lundis à 07:15 UTC (08:15 en hiver, 09:15 en été en France)
-    - cron: '15 7 * * 1'
+    - cron: '15 7 * * 3'
   workflow_dispatch:
 
 permissions:
