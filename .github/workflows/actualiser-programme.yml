@@ -26,6 +26,7 @@ jobs:
 
       - name: Lire le programme et actualiser films.json
         run: |
+          python - <<'PYCODE'
           import json
           import re
           import unicodedata
@@ -216,6 +217,7 @@ jobs:
               json.dump(new_data, f, ensure_ascii=False, indent=2)
               f.write("\n")
           print(f"Programme actualisé : {len(films)} films, du {today} au {last_day}.")
+          PYCODE
 
       - name: Publier la mise à jour dans GitHub
         run: |
