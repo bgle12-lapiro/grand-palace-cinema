@@ -118,43 +118,56 @@ jobs:
               return result
 
           def allocine_metadata(title):
-              # Plusieurs sources de découverte : la recherche AlloCiné peut ne
-              # pas exposer les fiches dans des liens HTML classiques.
-              search_urls = [
-                  'https://www.allocine.fr/rechercher/?q=' + quote(title),
-                  'https://www.google.com/search?q=' + quote('site:allocine.fr/film/fichefilm_gen_cfilm= ' + title),
-                  'https://www.bing.com/search?q=' + quote('site:allocine.fr/film/fichefilm_gen_cfilm= ' + title),
-              ]
+              # Réutiliser d'abord une fiche déjà vérifiée, si elle existe.
+              old = old_by_title.get(normalize(title), {})
               candidate_ids = []
-              # Fiche déjà confirmée par le test GitHub précédent.
-              if normalize(title) == normalize('La Maison de nos rêves'):
-                  candidate_ids.append('1000031247')
-              for search_url in search_urls:
-                  try:
-                      response = session.get(search_url, timeout=30)
-                      response.raise_for_status()
-                      # Inclut liens HTML, URLs encodées et données JSON intégrées.
-                      body = requests.utils.unquote(response.text).replace('\\/', '/')
-                      ids = re.findall(r'fichefilm_gen_cfilm(?:=|%3[Dd])(\d+)', body, re.I)
-                      for film_id in ids:
+              def add_candidates(raw):
+                  # Plusieurs couches de décodage pour les liens de moteurs.
+                  from html import unescape
+                  for _ in range(3):
+                      raw = unescape(requests.utils.unquote(raw)).replace('\\/', '/')
+                  for pattern in (
+                      r'fichefilm_gen_cfilm\s*=\s*(\d+)',
+                      r'fichefilm_gen_cfilm%3[dD](\d+)',
+                      r'fichefilm_gen_cfilm\\u003[dD](\d+)',
+                  ):
+                      for film_id in re.findall(pattern, raw, re.I):
                           if film_id not in candidate_ids:
                               candidate_ids.append(film_id)
+              add_candidates(old.get('allocineUrl', ''))
+              if normalize(title) == normalize('La Maison de nos rêves'):
+                  add_candidates('fichefilm_gen_cfilm=1000031247')
+              queries = [
+                  ('AlloCiné', 'https://www.allocine.fr/rechercher/?q=' + quote(title)),
+                  ('Bing', 'https://www.bing.com/search?q=' + quote('"' + title + '" film allocine')),
+                  ('Bing RSS', 'https://www.bing.com/search?format=rss&q=' + quote('"' + title + '" site:allocine.fr/film/')),
+                  ('Google', 'https://www.google.com/search?q=' + quote('"' + title + '" site:allocine.fr/film/')),
+              ]
+              for source, url in queries:
+                  try:
+                      response = session.get(url, timeout=25)
+                      response.raise_for_status()
+                      before = len(candidate_ids)
+                      add_candidates(response.text)
+                      # Les liens de résultats peuvent ne pas comporter de numéro
+                      # sous la forme canonique : les diagnostiquer explicitement.
+                      print(f'Recherche {source} pour {title}: +{len(candidate_ids)-before} candidat(s), HTTP {response.status_code}')
                   except requests.RequestException as exc:
-                      print(f'Recherche indisponible ({search_url.split("/")[2]}) pour {title}: {exc}')
+                      print(f'Recherche {source} indisponible pour {title}: {exc}')
               print(f'AlloCiné {title}: {len(candidate_ids)} fiche(s) candidate(s)')
-              for film_id in candidate_ids[:15]:
+              for film_id in candidate_ids[:25]:
                   url = f'https://www.allocine.fr/film/fichefilm_gen_cfilm={film_id}.html'
                   try:
                       page = get_page(url)
-                  except requests.RequestException:
+                  except requests.RequestException as exc:
+                      print(f'Fiche non accessible {film_id}: {exc}')
                       continue
                   names = []
                   for tag in page.select('h1, meta[property="og:title"], meta[name="twitter:title"]'):
                       names.append(tag.get('content', '') if tag.name == 'meta' else tag.get_text(' ', strip=True))
-                  # Les titres de pages peuvent porter un suffixe « - AlloCiné ».
-                  verified = any(normalize(name.split(' - AlloCiné')[0]) == normalize(title) for name in names)
+                  verified = any(normalize(re.split(r'\s+-\s+AlloCin[eé]', name, flags=re.I)[0]) == normalize(title) for name in names)
                   if not verified:
-                      print(f'Fiche écartée pour {title}: {url}; titres={names[:2]}')
+                      print(f'Fiche écartée pour {title}: {film_id}; titres={names[:2]}')
                       continue
                   text = page.get_text(' ', strip=True)
                   result = {'allocineUrl': url}
