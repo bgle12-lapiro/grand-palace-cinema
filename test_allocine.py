@@ -1,23 +1,25 @@
-
+import re
 import requests
 from bs4 import BeautifulSoup
 
 url = "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000031247.html"
 
-try:
-    response = requests.get(
-        url,
-        headers={"User-Agent": "Mozilla/5.0"},
-        timeout=20
-    )
-    print("Code de réponse :", response.status_code)
+response = requests.get(
+    url,
+    headers={"User-Agent": "Mozilla/5.0"},
+    timeout=20
+)
+response.raise_for_status()
 
-    soup = BeautifulSoup(response.text, "html.parser")
-    texte = soup.get_text(" ", strip=True)
+soup = BeautifulSoup(response.text, "html.parser")
+texte = soup.get_text(" ", strip=True)
 
-    print("Titre trouvé :", "La Maison de nos rêves" in texte)
-    print("Mention Presse :", "Presse" in texte)
-    print("Mention Spectateurs :", "Spectateurs" in texte)
+for rubrique in ["Presse", "Spectateurs"]:
+    print(f"\n--- {rubrique} ---")
 
-except requests.RequestException as erreur:
-    print("Erreur :", erreur)
+    for match in list(re.finditer(
+        re.escape(rubrique), texte, re.IGNORECASE
+    ))[:5]:
+        debut = max(0, match.start() - 80)
+        fin = min(len(texte), match.end() + 160)
+        print(texte[debut:fin])
