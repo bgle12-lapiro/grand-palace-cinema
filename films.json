@@ -43,7 +43,7 @@
       "director": "Fred Cavayé",
       "press": "3,1",
       "audience": "4,0",
-      "synopsis": "",
+      "synopsis": "Libéré après 19 ans de bagne pour le vol d'un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
       "sessions": {
         "2026-11-06": [
           "19:40"
@@ -151,7 +151,7 @@
       "director": "Emmanuel Marre",
       "press": null,
       "audience": null,
-      "synopsis": "",
+      "synopsis": "Septembre 1940, le régime de Pétain se met en place. Henri Marre, 49 ans, débarque à Vichy sans le sou, sans contact, loin de sa femme et ses enfants. Il voit dans la nouvelle administration l’opportunité de trouver enfin la place qu’il mérite. Dans sa valise, son traité politique édité à compte d’auteur, Notre Salut, où il défend ses convictions patriotiques et ses méthodes d'ingénieur. Son credo: « gagner en efficacité » pour relever la France de la débâcle. Mais peut-être qu’Henri cherche avant tout à fuir sa propre débâcle…",
       "sessions": {
         "2026-11-10": [
           "14:40"
@@ -185,12 +185,12 @@
     {
       "id": "moulin",
       "title": "Moulin",
-      "genre": "Non renseigné",
-      "duration": "Non renseignée",
-      "director": "Lászlo Nemes",
-      "press": null,
-      "audience": null,
-      "synopsis": "",
+      "genre": "Drame , Historique",
+      "duration": "2 h 14",
+      "director": "László Nemes",
+      "press": "3,3",
+      "audience": "3,5",
+      "synopsis": "Jean Moulin est parachuté en France occupée pour unifier les réseaux de la Résistance, sous l’égide du général de Gaulle. Malgré ses efforts pour rester dans l’ombre, Moulin est trahi puis livré à la Gestapo à Lyon, dirigée par l’impitoyable Klaus Barbie. Torturé sans relâche, il ne cède jamais. Sa détermination silencieuse contribuera à galvaniser les forces de la Résistance et à faire naître un nouvel esprit de combat et de liberté en France…",
       "sessions": {
         "2026-11-06": [
           "16:10",
@@ -218,6 +218,7 @@
       },
       "source": "https://www.ticketingcine.com/film/LXIDH.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FRLXIDH/2G5T86XR.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000020311.html",
       "posterNote": "Affiche du film (fiche vérifiée)"
     },
     {
@@ -228,7 +229,7 @@
       "director": "Martin McDonagh",
       "press": "3,8",
       "audience": "3,9",
-      "synopsis": "",
+      "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
       "sessions": {
         "2026-11-06": [
           "16:20",
