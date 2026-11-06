@@ -128,8 +128,8 @@
       "genre": "Non renseigné",
       "duration": "Non renseignée",
       "director": "Louis Clichy",
-      "press": null,
-      "audience": null,
+      "press": 4.3,
+      "audience": 4.4,
       "synopsis": "Dans une ferme au cœur de la Beauce, Christophe, 11 ans, règle ses pas sur ceux de son père. Mais à l’école, à la maison, sur le tracteur, Christophe penche… et tombe. Il est obligé de porter un corset pour filer droit. Tandis que la ferme traverse des moments difficiles, Christophe grandit comme il peut. Il découvre la musique et fait la rencontre de Clara, avec qui tout semble devenir possible.",
       "sessions": {
         "2026-11-09": [
@@ -141,7 +141,10 @@
       },
       "source": "https://www.ticketingcine.com/film/Q0FYB.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FRQ0FYB/4PTVPQV7.webp",
-      "posterNote": "Affiche du film (fiche vérifiée)"
+      "posterNote": "Affiche du film (fiche vérifiée)",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=321790.html"
+      
+  
     },
     {
       "id": "notre-salut",
