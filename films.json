@@ -32,7 +32,7 @@
         ]
       },
       "source": "https://www.ticketingcine.com/film/6QVJU.html",
-      "poster": "https://tr.web.img4.acsta.net/img/37/68/376899ecafee7d4b20b3e73f1944be34.jpg",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FR6QVJU/4KSIK2XR.webp",
       "posterNote": "Affiche du film"
     },
     {
@@ -63,7 +63,7 @@
         ]
       },
       "source": "https://www.ticketingcine.com/film/4QY3X.html",
-      "poster": "https://www.cinemaclock.com/images/posters/1000x1500/36/les-miserables-2026-orig-poster.jpg",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FR4QY3X/LCP34QFH.webp",
       "posterNote": "Affiche du film"
     },
     {
@@ -97,7 +97,7 @@
         ]
       },
       "source": "https://www.ticketingcine.com/film/8X5VA.html",
-      "poster": "https://fr.web.img4.acsta.net/img/cc/a6/cca6b2f8062c5636dfcfae1153092a74.jpg",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FR8X5VA/3XKTHKO4.webp",
       "posterNote": "Visuel promotionnel (pas l’affiche officielle)"
     },
     {
@@ -176,7 +176,7 @@
         ]
       },
       "source": "https://www.ticketingcine.com/film/LPWEP.html",
-      "poster": "https://images.squarespace-cdn.com/content/v1/5b05553a45776ef6b2b7b0ab/1776936649096-4PG0TS7NSF05A1MFHZNQ/image-asset.jpeg",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FRLPWEP/JHRFTYJT.webp",
       "posterNote": "Affiche du film"
     },
     {
@@ -248,17 +248,17 @@
         ]
       },
       "source": "https://www.ticketingcine.com/film/Q5S88.html",
-      "poster": "https://theawesomer.com/photos/2026/03/wild_horse_nine_1.jpg",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FRQ5S88/JU8ZKBYJ.webp",
       "posterNote": "Affiche du film"
     },
     {
       "id": "papa-ou-t-es",
       "title": "Papa où t'es ?",
-      "genre": "Non renseigné",
-      "duration": "Non renseignée",
+      "genre": "Documentaire",
+      "duration": "1 h 41",
       "director": "Basile Monnot, Samy Bouyssié",
-      "press": null,
-      "audience": null,
+      "press": "3,2",
+      "audience": "4,4",
       "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Séparé de sa mère à l’âge de trois ans, il a grandi placé entre familles d’accueil et foyers. Décidé à retrouver ce père qui l’a abandonné à la naissance, Nicolas récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace. Une enquête qui va le mener jusqu’au Sénégal, à la rencontre de sa famille et d’une histoire qu’il connaît à peine.",
       "sessions": {
         "2026-11-06": [
@@ -280,7 +280,8 @@
         ]
       },
       "source": "https://www.ticketingcine.com/film/QHR15.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FRQHR15/PEE83DZP.webp"
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FRQHR15/PEE83DZP.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000051934.html"
     }
   ]
 }
