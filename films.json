@@ -152,8 +152,8 @@
       "genre": "Drame, Historique",
       "duration": "Non renseignée",
       "director": "Emmanuel Marre",
-      "press": null,
-      "audience": null,
+      "press": 4.5,
+      "audience": 3.7,
       "synopsis": "Septembre 1940, le régime de Pétain se met en place. Henri Marre, 49 ans, débarque à Vichy sans le sou, sans contact, loin de sa femme et ses enfants. Il voit dans la nouvelle administration l’opportunité de trouver enfin la place qu’il mérite. Dans sa valise, son traité politique édité à compte d’auteur, Notre Salut, où il défend ses convictions patriotiques et ses méthodes d'ingénieur. Son credo: « gagner en efficacité » pour relever la France de la débâcle. Mais peut-être qu’Henri cherche avant tout à fuir sa propre débâcle…",
       "sessions": {
         "2026-11-10": [
@@ -162,7 +162,8 @@
       },
       "source": "https://www.ticketingcine.com/film/A02S6.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FRA02S6/W7XMVSBN.webp",
-      "posterNote": "Affiche du film (fiche vérifiée)"
+      "posterNote": "Affiche du film (fiche vérifiée)",
+"allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000007388.html"
     },
     {
       "id": "lucy-lost",
