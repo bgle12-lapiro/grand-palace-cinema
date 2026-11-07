@@ -170,8 +170,8 @@
       "genre": "Animation / Aventure",
       "duration": "1 h 29",
       "director": "Olivier Clert",
-      "press": null,
-      "audience": null,
+      "press": 3.9,
+      "audience": 4.5,
       "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre Milly - une petite fille qu'elle seule peut voir - Lucy embarque dans une grande aventure pour percer le secret de ses mystérieux pouvoirs.",
       "sessions": {
         "2026-11-07": [
@@ -184,6 +184,7 @@
       "source": "https://www.ticketingcine.com/film/LPWEP.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FRLPWEP/JHRFTYJT.webp",
       "posterNote": "Affiche du film (fiche vérifiée)"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000012316.html"
     },
     {
       "id": "moulin",
