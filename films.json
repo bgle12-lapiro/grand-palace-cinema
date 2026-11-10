@@ -1,40 +1,9 @@
 {
   "cinema": "Le Grand Palace",
   "city": "Les Sables-d’Olonne",
-  "lastChecked": "2026-11-06",
-  "weekLabel": "Programme actualisé le 06/11/2026",
+  "lastChecked": "2026-11-10",
+  "weekLabel": "Programme actualisé le 10/11/2026",
   "films": [
-    {
-      "id": "karma",
-      "title": "Karma",
-      "genre": "Drame / Thriller",
-      "duration": "2 h 20",
-      "director": "Guillaume Canet",
-      "press": "3,0",
-      "audience": "4,0",
-      "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans une communauté religieuse dans laquelle elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
-      "sessions": {
-        "2026-11-07": [
-          "14:05",
-          "20:05"
-        ],
-        "2026-11-08": [
-          "14:05",
-          "20:05"
-        ],
-        "2026-11-09": [
-          "14:05",
-          "20:05"
-        ],
-        "2026-11-10": [
-          "14:05",
-          "20:05"
-        ]
-      },
-      "source": "https://www.ticketingcine.com/film/6QVJU.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FR6QVJU/4KSIK2XR.webp",
-      "posterNote": "Affiche du film (fiche vérifiée)"
-    },
     {
       "id": "les-miserables",
       "title": "Les Misérables",
@@ -45,25 +14,71 @@
       "audience": "4,0",
       "synopsis": "Libéré après 19 ans de bagne pour le vol d'un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
       "sessions": {
-        "2026-11-06": [
-          "19:40"
+        "2026-11-11": [
+          "19:45"
         ],
-        "2026-11-07": [
-          "14:05"
+        "2026-11-12": [
+          "14:15"
         ],
-        "2026-11-08": [
-          "14:05",
-          "19:40"
+        "2026-11-13": [
+          "14:15"
         ],
-        "2026-11-09": [
-          "14:05"
+        "2026-11-15": [
+          "19:45"
         ],
-        "2026-11-10": [
-          "14:05"
+        "2026-11-16": [
+          "14:15",
+          "19:45"
+        ],
+        "2026-11-17": [
+          "14:15"
         ]
       },
       "source": "https://www.ticketingcine.com/film/4QY3X.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FR4QY3X/LCP34QFH.webp",
+      "posterNote": "Affiche du film (fiche vérifiée)"
+    },
+    {
+      "id": "karma",
+      "title": "Karma",
+      "genre": "Drame / Thriller",
+      "duration": "2 h 20",
+      "director": "Guillaume Canet",
+      "press": "3,0",
+      "audience": "4,0",
+      "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans une communauté religieuse dans laquelle elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
+      "sessions": {
+        "2026-11-10": [
+          "20:05"
+        ],
+        "2026-11-11": [
+          "14:15"
+        ],
+        "2026-11-12": [
+          "14:15",
+          "20:00"
+        ],
+        "2026-11-13": [
+          "14:15",
+          "20:00"
+        ],
+        "2026-11-14": [
+          "14:15",
+          "20:00"
+        ],
+        "2026-11-15": [
+          "14:15"
+        ],
+        "2026-11-16": [
+          "14:15"
+        ],
+        "2026-11-17": [
+          "14:15",
+          "20:00"
+        ]
+      },
+      "source": "https://www.ticketingcine.com/film/6QVJU.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FR6QVJU/4KSIK2XR.webp",
       "posterNote": "Affiche du film (fiche vérifiée)"
     },
     {
@@ -73,119 +88,64 @@
       "duration": "1 h 27",
       "director": "Philippe de Chauveron",
       "press": "2,7",
-      "audience": "3,1",
+      "audience": "2,5",
       "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l'ancestrale fabrique familiale de balances.",
       "sessions": {
-        "2026-11-06": [
-          "20:30"
-        ],
-        "2026-11-07": [
-          "14:10",
-          "20:30"
-        ],
-        "2026-11-08": [
-          "14:10",
-          "20:30"
-        ],
-        "2026-11-09": [
-          "14:10",
-          "20:30"
-        ],
         "2026-11-10": [
-          "14:10",
+          "20:30"
+        ],
+        "2026-11-11": [
+          "17:00",
+          "20:30"
+        ],
+        "2026-11-12": [
+          "17:00",
+          "20:30"
+        ],
+        "2026-11-13": [
+          "17:00",
+          "20:30"
+        ],
+        "2026-11-14": [
+          "17:00",
+          "20:30"
+        ],
+        "2026-11-15": [
+          "17:00",
+          "20:30"
+        ],
+        "2026-11-16": [
+          "17:00",
+          "20:30"
+        ],
+        "2026-11-17": [
+          "17:00",
           "20:30"
         ]
       },
       "source": "https://www.ticketingcine.com/film/8X5VA.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FR8X5VA/3XKTHKO4.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000031925.html",
       "posterNote": "Affiche du film (fiche vérifiée)"
-    },
-    {
-      "id": "la-maison-de-nos-reves",
-      "title": "La Maison de nos rêves",
-      "genre": "Comédie",
-      "duration": "1 h 30",
-      "director": "Claude Zidi Jr.",
-      "press": "2,0",
-      "audience": "2,5",
-      "synopsis": "Un jeune couple pense avoir enfin trouvé la solution miracle pour devenir propriétaire : Un Viager, une maison sublime au bord du lac, une dame mourante, bref, le plan parfait. Mais une fois le contrat signé la dame va beaucoup mieux et va transformer leur rêve immobilier en véritable cauchemar.",
-      "sessions": {
-        "2026-11-09": [
-          "14:20"
-        ],
-        "2026-11-10": [
-          "14:20"
-        ]
-      },
-      "source": "https://www.ticketingcine.com/film/TET2S.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FRTET2S/ZR9463YJ.webp",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000031247.html",
-      "posterNote": "Affiche du film (fiche vérifiée)"
-    },
-    {
-      "id": "le-corset",
-      "title": "Le Corset",
-      "genre": "Animation, Famille",
-      "duration": "Non renseignée",
-      "director": "Louis Clichy",
-      "press": 4.3,
-      "audience": 4.4,
-      "synopsis": "Dans une ferme au cœur de la Beauce, Christophe, 11 ans, règle ses pas sur ceux de son père. Mais à l’école, à la maison, sur le tracteur, Christophe penche… et tombe. Il est obligé de porter un corset pour filer droit. Tandis que la ferme traverse des moments difficiles, Christophe grandit comme il peut. Il découvre la musique et fait la rencontre de Clara, avec qui tout semble devenir possible.",
-      "sessions": {
-        "2026-11-09": [
-          "14:30"
-        ],
-        "2026-11-10": [
-          "14:30"
-        ]
-      },
-      "source": "https://www.ticketingcine.com/film/Q0FYB.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FRQ0FYB/4PTVPQV7.webp",
-      "posterNote": "Affiche du film (fiche vérifiée)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=321790.html"
-      
-  
-    },
-    {
-      "id": "notre-salut",
-      "title": "Notre salut",
-      "genre": "Drame, Historique",
-      "duration": "Non renseignée",
-      "director": "Emmanuel Marre",
-      "press": 4.5,
-      "audience": 3.7,
-      "synopsis": "Septembre 1940, le régime de Pétain se met en place. Henri Marre, 49 ans, débarque à Vichy sans le sou, sans contact, loin de sa femme et ses enfants. Il voit dans la nouvelle administration l’opportunité de trouver enfin la place qu’il mérite. Dans sa valise, son traité politique édité à compte d’auteur, Notre Salut, où il défend ses convictions patriotiques et ses méthodes d'ingénieur. Son credo: « gagner en efficacité » pour relever la France de la débâcle. Mais peut-être qu’Henri cherche avant tout à fuir sa propre débâcle…",
-      "sessions": {
-        "2026-11-10": [
-          "14:40"
-        ]
-      },
-      "source": "https://www.ticketingcine.com/film/A02S6.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FRA02S6/W7XMVSBN.webp",
-      "posterNote": "Affiche du film (fiche vérifiée)",
-"allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000007388.html"
     },
     {
       "id": "lucy-lost",
       "title": "Le Mystère Lucy Lost",
-      "genre": "Animation / Aventure",
+      "genre": "Animation , Aventure , Famille",
       "duration": "1 h 29",
       "director": "Olivier Clert",
-      "press": 3.9,
-      "audience": 4.5,
+      "press": "3,9",
+      "audience": "4,5",
       "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre Milly - une petite fille qu'elle seule peut voir - Lucy embarque dans une grande aventure pour percer le secret de ses mystérieux pouvoirs.",
       "sessions": {
-        "2026-11-07": [
-          "14:45"
-        ],
-        "2026-11-09": [
-          "14:45"
+        "2026-11-11": [
+          "16:15"
         ]
       },
       "source": "https://www.ticketingcine.com/film/LPWEP.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FRLPWEP/JHRFTYJT.webp",
-      "posterNote": "Affiche du film (fiche vérifiée)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000012316.html"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000012316.html",
+      "posterNote": "Affiche du film (fiche vérifiée)"
     },
     {
       "id": "moulin",
@@ -197,28 +157,36 @@
       "audience": "3,5",
       "synopsis": "Jean Moulin est parachuté en France occupée pour unifier les réseaux de la Résistance, sous l’égide du général de Gaulle. Malgré ses efforts pour rester dans l’ombre, Moulin est trahi puis livré à la Gestapo à Lyon, dirigée par l’impitoyable Klaus Barbie. Torturé sans relâche, il ne cède jamais. Sa détermination silencieuse contribuera à galvaniser les forces de la Résistance et à faire naître un nouvel esprit de combat et de liberté en France…",
       "sessions": {
-        "2026-11-06": [
-          "16:10",
-          "20:05"
-        ],
-        "2026-11-07": [
-          "16:10",
-          "20:05"
-        ],
-        "2026-11-08": [
-          "14:00",
-          "16:10",
-          "20:05"
-        ],
-        "2026-11-09": [
-          "16:10",
-          "20:05"
-        ],
         "2026-11-10": [
-          "14:00",
-          "16:10",
-          "20:05",
-          "20:10"
+          "20:05"
+        ],
+        "2026-11-11": [
+          "14:10",
+          "20:05"
+        ],
+        "2026-11-12": [
+          "14:10",
+          "20:05"
+        ],
+        "2026-11-13": [
+          "14:10",
+          "20:05"
+        ],
+        "2026-11-14": [
+          "14:10",
+          "20:05"
+        ],
+        "2026-11-15": [
+          "14:10",
+          "20:05"
+        ],
+        "2026-11-16": [
+          "14:10",
+          "20:05"
+        ],
+        "2026-11-17": [
+          "14:10",
+          "20:05"
         ]
       },
       "source": "https://www.ticketingcine.com/film/LXIDH.html",
@@ -236,25 +204,36 @@
       "audience": "3,9",
       "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
       "sessions": {
-        "2026-11-06": [
-          "16:20",
-          "20:20"
-        ],
-        "2026-11-07": [
-          "16:20",
-          "20:20"
-        ],
-        "2026-11-08": [
-          "16:20",
-          "20:20"
-        ],
-        "2026-11-09": [
-          "16:20",
-          "20:20"
-        ],
         "2026-11-10": [
-          "16:20",
           "20:20"
+        ],
+        "2026-11-11": [
+          "14:05",
+          "16:40"
+        ],
+        "2026-11-12": [
+          "16:40",
+          "20:20"
+        ],
+        "2026-11-13": [
+          "14:05",
+          "16:40"
+        ],
+        "2026-11-14": [
+          "16:40",
+          "20:20"
+        ],
+        "2026-11-15": [
+          "14:05",
+          "20:20"
+        ],
+        "2026-11-16": [
+          "16:40",
+          "20:20"
+        ],
+        "2026-11-17": [
+          "14:05",
+          "16:40"
         ]
       },
       "source": "https://www.ticketingcine.com/film/Q5S88.html",
@@ -271,27 +250,131 @@
       "audience": "4,4",
       "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Séparé de sa mère à l’âge de trois ans, il a grandi placé entre familles d’accueil et foyers. Décidé à retrouver ce père qui l’a abandonné à la naissance, Nicolas récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace. Une enquête qui va le mener jusqu’au Sénégal, à la rencontre de sa famille et d’une histoire qu’il connaît à peine.",
       "sessions": {
-        "2026-11-06": [
-          "16:30"
+        "2026-11-11": [
+          "14:10"
         ],
-        "2026-11-07": [
-          "17:25",
-          "20:30"
+        "2026-11-12": [
+          "14:10"
         ],
-        "2026-11-08": [
-          "17:25"
+        "2026-11-13": [
+          "14:10"
         ],
-        "2026-11-09": [
-          "16:30",
-          "20:30"
+        "2026-11-14": [
+          "14:10"
         ],
-        "2026-11-10": [
-          "16:30"
+        "2026-11-15": [
+          "16:15"
+        ],
+        "2026-11-16": [
+          "14:10"
+        ],
+        "2026-11-17": [
+          "14:10"
         ]
       },
       "source": "https://www.ticketingcine.com/film/QHR15.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FRQHR15/PEE83DZP.webp",
       "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000051934.html",
+      "posterNote": "Affiche du film (fiche vérifiée)"
+    },
+    {
+      "id": "le-fantome-de-l-opera",
+      "title": "Le Fantôme de l'Opéra",
+      "genre": "Non renseigné",
+      "duration": "Non renseignée",
+      "director": "Alexandre Castagnetti",
+      "press": null,
+      "audience": null,
+      "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste. A l’approche de la première représentation, entre accidents inexpliqués et révélations troublantes, Anastasia se trouve plongée dans une histoire d'amour impossible, à la frontière du réel et du fantastique.",
+      "sessions": {
+        "2026-11-10": [
+          "20:10"
+        ],
+        "2026-11-11": [
+          "14:00"
+        ],
+        "2026-11-12": [
+          "14:00"
+        ],
+        "2026-11-13": [
+          "14:00"
+        ],
+        "2026-11-14": [
+          "14:00"
+        ],
+        "2026-11-16": [
+          "14:00"
+        ],
+        "2026-11-17": [
+          "14:00"
+        ]
+      },
+      "source": "https://www.ticketingcine.com/film/41TVG.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FR41TVG/N22LGSLS.webp",
+      "posterNote": "Affiche du film (fiche vérifiée)"
+    },
+    {
+      "id": "l-affaire-marie-claire",
+      "title": "L'Affaire Marie-Claire",
+      "genre": "Non renseigné",
+      "duration": "Non renseignée",
+      "director": "Lauriane Escaffre, Yvo Muller",
+      "press": null,
+      "audience": null,
+      "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre. Au nom de toutes.",
+      "sessions": {
+        "2026-11-10": [
+          "20:30"
+        ],
+        "2026-11-11": [
+          "16:25",
+          "20:30"
+        ],
+        "2026-11-12": [
+          "16:25",
+          "20:30"
+        ],
+        "2026-11-13": [
+          "16:25",
+          "20:30"
+        ],
+        "2026-11-14": [
+          "16:25",
+          "20:30"
+        ],
+        "2026-11-15": [
+          "16:25",
+          "20:30"
+        ],
+        "2026-11-16": [
+          "16:25",
+          "20:30"
+        ],
+        "2026-11-17": [
+          "16:25",
+          "20:30"
+        ]
+      },
+      "source": "https://www.ticketingcine.com/film/ITYIL.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FRITYIL/Q27C42W0.webp",
+      "posterNote": "Affiche du film (fiche vérifiée)"
+    },
+    {
+      "id": "carmen-the-royal-opera",
+      "title": "Carmen (The Royal Opera)",
+      "genre": "Non renseigné",
+      "duration": "Non renseignée",
+      "director": "Damiano Michieletto",
+      "press": null,
+      "audience": null,
+      "synopsis": "Sous la chaleur oppressante du soleil espagnol, l'indomptable Carmen attire l'attention de Don José. Elle le met en garde, il ne doit pas tomber amoureux d'elle, mais l'obsession de l'homme est plus forte. La production torride de Michieletto fait son grand retour, et jette une lumière aveuglante sur la luxure, la violence et le désir destructeur au cœur de l'opéra plébiscité de Bizet. Une distribution prestigieuse donne vie à ce drame incandescent : Ginger Costa-Jackson incarne le flamboyant rôle-titre, tandis que Russell Thomas se glisse dans la peau de Don José, rongé par la jalousie et le désespoir. Après ses débuts au Royal Opera en 2023, Sesto Quatrini revient pour diriger la partition électrisante et sensuelle de Bizet.",
+      "sessions": {
+        "2026-11-10": [
+          "20:00"
+        ]
+      },
+      "source": "https://www.ticketingcine.com/film/KY2CE.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/600/FRKY2CE/6CSA4PIA.webp",
       "posterNote": "Affiche du film (fiche vérifiée)"
     }
   ]
