@@ -132,9 +132,11 @@ jobs:
                           value = element.get_text(' ', strip=True)
                           if len(value) >= 110:
                               visible_candidates.append(value)if isinstance(element, Tag) and element.name == 'img':
-    image_src = element.get('src', '').lower()
-    if 'vost.png' in image_src or 'vf.png' in image_src:
-        print('Pictogramme détecté :', image_src)
+                        if isinstance(element, Tag) and element.name == 'img':
+                          image_src = element.get('src', '').lower()
+                          if 'vost.png' in image_src or 'vf.png' in image_src:
+                              print('Pictogramme détecté :', image_src)
+                     
                       elif isinstance(element, NavigableString):
                           value = str(element).strip()
                           if len(value) >= 110:
