@@ -248,114 +248,93 @@ jobs:
               old_data = json.load(f)
           old_by_title = {normalize(f.get('title', '')): f for f in old_data.get('films', [])}
           soup = get_page(CINEMA_URL)
-          # Les versions sont fournies par les données structurées gProg de TicketingCiné.
-          # On ne déduit jamais une version d'un autre horaire.
-          versions_by_title = {}
+          programme = None
           for script in soup.find_all('script'):
               content = script.string or script.get_text()
               match = re.search(r'\bvar\s+gProg\s*=\s*(\{.*?\})\s*;', content, re.S)
-              if not match:
-                  continue
-              try:
-                  programme = json.loads(match.group(1))
-              except (ValueError, TypeError):
-                  continue
-              if programme.get('ticketing_web_id') != '99S05SBN':
-                  continue
-              for event in programme.get('events', []):
-                  key = normalize(event.get('title', ''))
-                  if not key:
-                      continue
-                  for show in event.get('sessions', []):
-                      stamp = str(show.get('date', ''))
-                      if not re.fullmatch(r'\d{12}', stamp):
-                          continue
-                      day = f'{stamp[:4]}-{stamp[4:6]}-{stamp[6:8]}'
-                      hour = f'{stamp[8:10]}:{stamp[10:12]}'
-                      features = [str(v).lower() for v in show.get('display_features', [])]
-                      raw_features = [str(v).lower() for v in show.get('features', [])]
-                      version = None
-                      if 'vost' in features or ('vo' in raw_features and 'subtitle' in raw_features):
-                          version = 'VOST'
-                      elif 'vf' in features or 'vf' in raw_features:
-                          version = 'VF'
-                      elif 'vo' in features or 'vo' in raw_features:
-                          version = 'VO'
-                      if version:
-                          versions_by_title.setdefault(key, {}).setdefault(day, {})[hour] = version
-              break
-          print(f'Versions de séances disponibles pour {len(versions_by_title)} films.')
-          heading_tags = {'h1', 'h2', 'h3', 'h4', 'h5', 'h6'}
-          film_headings = []
-          for tag in soup.find_all(list(heading_tags)):
-              match = re.match(r'Les séances du film\s*[-–:]\s*(.+)', tag.get_text(' ', strip=True), re.I)
               if match:
-                  film_headings.append((tag, match.group(1).strip()))
+                  try:
+                      candidate = json.loads(match.group(1))
+                  except (ValueError, TypeError):
+                      continue
+                  if candidate.get('ticketing_web_id') == '99S05SBN':
+                      programme = candidate
+                      break
+          if not programme or not isinstance(programme.get('events'), list):
+              raise SystemExit('Arrêt de sécurité : données gProg introuvables. films.json inchangé.')
           today = datetime.now(ZoneInfo('Europe/Paris')).date()
           last_day = today + timedelta(days=14)
           films = []
-          for heading, title in film_headings:
+          seen = set()
+          for event in programme['events']:
+              title = str(event.get('title') or '').strip()
+              if not title:
+                  continue
               sessions = {}
-              current_day = None
-              detail_url = None
-              for element in heading.next_elements:
-                  if isinstance(element, Tag) and element.name in heading_tags:
-                      if re.match(r'Les séances du film\s*[-–:]', element.get_text(' ', strip=True), re.I):
-                          break
-                  if isinstance(element, Tag) and element.name == 'a' and detail_url is None:
-                      href = element.get('href', '')
-                      if '/film/' in href:
-                          detail_url = urljoin(CINEMA_URL, href)
-                  if isinstance(element, NavigableString):
-                      value = str(element).strip()
-                      if not value:
-                          continue
-                      date_match = re.search(r'(\d{2})/(\d{2})/(\d{4})', value)
-                      if date_match:
-                          day, month, year = map(int, date_match.groups())
-                          try:
-                              parsed = date(year, month, day)
-                              current_day = parsed.isoformat() if today <= parsed <= last_day else None
-                          except ValueError:
-                              current_day = None
-                      if current_day:
-                          for match in re.finditer(r'(?<!\d)(\d{1,2})[h:](\d{2})(?!\d)', value, re.I):
-                              time = f'{int(match.group(1)):02d}:{match.group(2)}'
-                              sessions.setdefault(current_day, []).append(time)
+              session_versions = {}
+              for show in event.get('sessions', []):
+                  stamp = str(show.get('date') or '')
+                  if not re.fullmatch(r'\d{12}', stamp):
+                      continue
+                  try:
+                      show_day = date(int(stamp[:4]), int(stamp[4:6]), int(stamp[6:8]))
+                  except ValueError:
+                      continue
+                  if not today <= show_day <= last_day:
+                      continue
+                  day = show_day.isoformat()
+                  hour = f'{stamp[8:10]}:{stamp[10:12]}'
+                  sessions.setdefault(day, []).append(hour)
+                  features = [str(v).lower() for v in (show.get('display_features') or [])]
+                  raw_features = [str(v).lower() for v in (show.get('features') or [])]
+                  version = None
+                  if 'vost' in features or ('vo' in raw_features and 'subtitle' in raw_features):
+                      version = 'VOST'
+                  elif 'vf' in features or 'vf' in raw_features:
+                      version = 'VF'
+                  elif 'vo' in features or 'vo' in raw_features:
+                      version = 'VO'
+                  if version:
+                      session_versions.setdefault(day, {})[hour] = version
               if not sessions:
                   continue
-              old = old_by_title.get(normalize(title), {})
-              metadata = {}
-              if detail_url:
-                  try:
-                      metadata = verified_ticketing_metadata(detail_url, title)
-                  except Exception as exc:
-                      print(f'Détails non récupérés pour {title}: {exc}')
-              print(f'Billetterie {title}: fiche={bool(detail_url)}, '
-                    f'synopsis={bool(metadata.get("synopsis"))}, '
-                    f'affiche={bool(metadata.get("poster"))}')
-              allocine = allocine_metadata(title)
+              key = normalize(title)
+              if key in seen:
+                  print(f'Doublon ignoré : {title}')
+                  continue
+              seen.add(key)
+              old = old_by_title.get(key, {})
+              # Les données de la billetterie sont directement liées au film.
+              genre = str(event.get('localized_genres') or '').strip()
+              director = str(event.get('director') or '').strip()
+              synopsis = str(event.get('synopsis') or '').strip()
+              poster = str(event.get('bill_url') or '').strip()
+              duration_raw = str(event.get('duration') or '').strip()
+              duration = ''
+              if duration_raw.isdigit() and int(duration_raw) > 0:
+                  minutes = int(duration_raw)
+                  duration = f'{minutes // 60} h {minutes % 60:02d}' if minutes >= 60 else f'{minutes} min'
+              # Conserver les notes déjà vérifiées, sans en inventer.
               film = {
                   'id': old.get('id') or slug(title),
                   'title': title,
-                  'genre': allocine.get('genre') or metadata.get('genre') or old.get('genre') or 'Non renseigné',
-                  'duration': allocine.get('duration') or metadata.get('duration') or old.get('duration') or 'Non renseignée',
-                  'director': allocine.get('director') or metadata.get('director') or old.get('director') or 'Non renseigné',
-                  'press': allocine.get('press') or old.get('press'),
-                  'audience': allocine.get('audience') or old.get('audience'),
-                  'synopsis': metadata.get('synopsis') or '',
+                  'genre': genre or old.get('genre') or 'Non renseigné',
+                  'duration': duration or old.get('duration') or 'Non renseignée',
+                  'director': director or old.get('director') or 'Non renseigné',
+                  'press': old.get('press'),
+                  'audience': old.get('audience'),
+                  'synopsis': synopsis or old.get('synopsis') or '',
                   'sessions': {day: sorted(set(times)) for day, times in sessions.items()},
-                  'sessionVersions': {day: {hour: versions_by_title.get(normalize(title), {}).get(day, {}).get(hour) for hour in set(times) if versions_by_title.get(normalize(title), {}).get(day, {}).get(hour)} for day, times in sessions.items()},
-                  'source': detail_url if metadata else CINEMA_URL,
-                  'poster': metadata.get('poster') or '',
+                  'sessionVersions': session_versions,
+                  'source': CINEMA_URL,
+                  'poster': poster or old.get('poster') or '',
               }
-              if allocine.get('allocineUrl'):
-                  film['allocineUrl'] = allocine['allocineUrl']
-              elif old.get('allocineUrl'):
+              if old.get('allocineUrl'):
                   film['allocineUrl'] = old['allocineUrl']
               if film['poster']:
-                  film['posterNote'] = 'Affiche du film (fiche vérifiée)'
+                  film['posterNote'] = 'Affiche du film (billetterie)'
               films.append(film)
+          print(f'Données structurées : {len(programme["events"])} événements, {len(films)} films avec séances dans la période.')
           if len(films) < 3:
               raise SystemExit(f'Arrêt de sécurité : seulement {len(films)} films trouvés. films.json inchangé.')
           new_data = {
@@ -381,5 +360,3 @@ jobs:
             git commit -m "Actualisation hebdomadaire du programme cinéma"
             git push
           fi
-
-   
