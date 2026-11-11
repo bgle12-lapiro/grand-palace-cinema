@@ -7,8 +7,8 @@
     {
       "id": "les-miserables",
       "title": "Les Misérables",
-      "genre": "Drame historique",
-      "duration": "2 h 58",
+      "genre": "Drame, Histoire, Romance, Aventure",
+      "duration": "2 h 59",
       "director": "Fred Cavayé",
       "press": "3,1",
       "audience": "4,0",
@@ -48,21 +48,21 @@
           "19:45": "VF"
         },
         "2026-11-16": {
-          "19:45": "VF",
-          "14:15": "VF"
+          "14:15": "VF",
+          "19:45": "VF"
         },
         "2026-11-17": {
           "14:15": "VF"
         }
       },
-      "source": "https://www.ticketingcine.com/film/4QY3X.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FR4QY3X/LCP34QFH.webp",
-      "posterNote": "Affiche du film (fiche vérifiée)"
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FR4QY3X/KLWVDBN5.webp",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "karma",
       "title": "Karma",
-      "genre": "Drame / Thriller",
+      "genre": "Thriller, Drame, Suspense",
       "duration": "2 h 20",
       "director": "Guillaume Canet",
       "press": "3,0",
@@ -100,16 +100,16 @@
           "14:15": "VF"
         },
         "2026-11-12": {
-          "20:00": "VF",
-          "14:15": "VF"
+          "14:15": "VF",
+          "20:00": "VF"
         },
         "2026-11-13": {
-          "20:00": "VF",
-          "14:15": "VF"
+          "14:15": "VF",
+          "20:00": "VF"
         },
         "2026-11-14": {
-          "20:00": "VF",
-          "14:15": "VF"
+          "14:15": "VF",
+          "20:00": "VF"
         },
         "2026-11-15": {
           "14:15": "VF"
@@ -118,13 +118,13 @@
           "14:15": "VF"
         },
         "2026-11-17": {
-          "20:00": "VF",
-          "14:15": "VF"
+          "14:15": "VF",
+          "20:00": "VF"
         }
       },
-      "source": "https://www.ticketingcine.com/film/6QVJU.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FR6QVJU/4KSIK2XR.webp",
-      "posterNote": "Affiche du film (fiche vérifiée)"
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FR6QVJU/EKMGQLKO.webp",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "un-bon-patron",
@@ -167,43 +167,43 @@
       },
       "sessionVersions": {
         "2026-11-11": {
-          "20:30": "VF",
-          "17:00": "VF"
+          "17:00": "VF",
+          "20:30": "VF"
         },
         "2026-11-12": {
-          "20:30": "VF",
-          "17:00": "VF"
+          "17:00": "VF",
+          "20:30": "VF"
         },
         "2026-11-13": {
-          "20:30": "VF",
-          "17:00": "VF"
+          "17:00": "VF",
+          "20:30": "VF"
         },
         "2026-11-14": {
-          "20:30": "VF",
-          "17:00": "VF"
+          "17:00": "VF",
+          "20:30": "VF"
         },
         "2026-11-15": {
-          "20:30": "VF",
-          "17:00": "VF"
+          "17:00": "VF",
+          "20:30": "VF"
         },
         "2026-11-16": {
-          "20:30": "VF",
-          "17:00": "VF"
+          "17:00": "VF",
+          "20:30": "VF"
         },
         "2026-11-17": {
-          "20:30": "VF",
-          "17:00": "VF"
+          "17:00": "VF",
+          "20:30": "VF"
         }
       },
-      "source": "https://www.ticketingcine.com/film/8X5VA.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FR8X5VA/3XKTHKO4.webp",
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FR8X5VA/O9G0SECQ.webp",
       "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000031925.html",
-      "posterNote": "Affiche du film (fiche vérifiée)"
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "lucy-lost",
       "title": "Le Mystère Lucy Lost",
-      "genre": "Animation , Aventure , Famille",
+      "genre": "Animation, Aventure, Familial, Fantastique, Guerre",
       "duration": "1 h 29",
       "director": "Olivier Clert",
       "press": "3,9",
@@ -219,17 +219,17 @@
           "16:15": "VF"
         }
       },
-      "source": "https://www.ticketingcine.com/film/LPWEP.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FRLPWEP/JHRFTYJT.webp",
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRLPWEP/IVTL8N5C.webp",
       "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000012316.html",
-      "posterNote": "Affiche du film (fiche vérifiée)"
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "moulin",
       "title": "Moulin",
-      "genre": "Drame , Historique",
+      "genre": "Histoire, Drame, Biopic, Guerre, Biographie",
       "duration": "2 h 14",
-      "director": "László Nemes",
+      "director": "Lászlo Nemes",
       "press": "3,3",
       "audience": "3,5",
       "synopsis": "Jean Moulin est parachuté en France occupée pour unifier les réseaux de la Résistance, sous l’égide du général de Gaulle. Malgré ses efforts pour rester dans l’ombre, Moulin est trahi puis livré à la Gestapo à Lyon, dirigée par l’impitoyable Klaus Barbie. Torturé sans relâche, il ne cède jamais. Sa détermination silencieuse contribuera à galvaniser les forces de la Résistance et à faire naître un nouvel esprit de combat et de liberté en France…",
@@ -293,16 +293,16 @@
           "20:05": "VF"
         }
       },
-      "source": "https://www.ticketingcine.com/film/LXIDH.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FRLXIDH/2G5T86XR.webp",
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRLXIDH/YUNFORSL.webp",
       "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000020311.html",
-      "posterNote": "Affiche du film (fiche vérifiée)"
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "wild-horse-nine",
       "title": "Wild Horse Nine",
-      "genre": "Thriller",
-      "duration": "1 h 58",
+      "genre": "Thriller, Comédie, Drame, Crime, Policier",
+      "duration": "1 h 57",
       "director": "Martin McDonagh",
       "press": "3,8",
       "audience": "3,9",
@@ -339,16 +339,16 @@
       },
       "sessionVersions": {
         "2026-11-11": {
-          "16:40": "VF",
-          "14:05": "VF"
+          "14:05": "VF",
+          "16:40": "VF"
         },
         "2026-11-12": {
           "16:40": "VF",
           "20:20": "VOST"
         },
         "2026-11-13": {
-          "16:40": "VF",
-          "14:05": "VF"
+          "14:05": "VF",
+          "16:40": "VF"
         },
         "2026-11-14": {
           "16:40": "VF",
@@ -363,19 +363,19 @@
           "20:20": "VOST"
         },
         "2026-11-17": {
-          "16:40": "VF",
-          "14:05": "VF"
+          "14:05": "VF",
+          "16:40": "VF"
         }
       },
-      "source": "https://www.ticketingcine.com/film/Q5S88.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FRQ5S88/JU8ZKBYJ.webp",
-      "posterNote": "Affiche du film (fiche vérifiée)"
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRQ5S88/FWDY5ZH2.webp",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "papa-ou-t-es",
       "title": "Papa où t'es ?",
       "genre": "Documentaire",
-      "duration": "1 h 41",
+      "duration": "1 h 40",
       "director": "Basile Monnot, Samy Bouyssié",
       "press": "3,2",
       "audience": "4,3",
@@ -426,16 +426,16 @@
           "14:10": "VF"
         }
       },
-      "source": "https://www.ticketingcine.com/film/QHR15.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FRQHR15/PEE83DZP.webp",
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRQHR15/WPXFJ2W0.webp",
       "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000051934.html",
-      "posterNote": "Affiche du film (fiche vérifiée)"
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "le-fantome-de-l-opera",
       "title": "Le Fantôme de l'Opéra",
-      "genre": "Non renseigné",
-      "duration": "Non renseignée",
+      "genre": "Fantastique, Romance, Drame, Thriller, Mystère",
+      "duration": "2 h 14",
       "director": "Alexandre Castagnetti",
       "press": null,
       "audience": null,
@@ -480,15 +480,15 @@
           "14:00": "VF"
         }
       },
-      "source": "https://www.ticketingcine.com/film/41TVG.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FR41TVG/N22LGSLS.webp",
-      "posterNote": "Affiche du film (fiche vérifiée)"
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FR41TVG/L3FOCG6X.webp",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "l-affaire-marie-claire",
       "title": "L'Affaire Marie-Claire",
-      "genre": "Non renseigné",
-      "duration": "Non renseignée",
+      "genre": "Histoire, Drame, Thriller, Judiciaire, Biographie, Biopic",
+      "duration": "1 h 42",
       "director": "Lauriane Escaffre, Yvo Muller",
       "press": null,
       "audience": null,
@@ -525,43 +525,43 @@
       },
       "sessionVersions": {
         "2026-11-11": {
-          "20:30": "VF",
-          "16:25": "VF"
+          "16:25": "VF",
+          "20:30": "VF"
         },
         "2026-11-12": {
-          "20:30": "VF",
-          "16:25": "VF"
+          "16:25": "VF",
+          "20:30": "VF"
         },
         "2026-11-13": {
-          "20:30": "VF",
-          "16:25": "VF"
+          "16:25": "VF",
+          "20:30": "VF"
         },
         "2026-11-14": {
-          "20:30": "VF",
-          "16:25": "VF"
+          "16:25": "VF",
+          "20:30": "VF"
         },
         "2026-11-15": {
-          "20:30": "VF",
-          "16:25": "VF"
+          "16:25": "VF",
+          "20:30": "VF"
         },
         "2026-11-16": {
-          "20:30": "VF",
-          "16:25": "VF"
+          "16:25": "VF",
+          "20:30": "VF"
         },
         "2026-11-17": {
-          "20:30": "VF",
-          "16:25": "VF"
+          "16:25": "VF",
+          "20:30": "VF"
         }
       },
-      "source": "https://www.ticketingcine.com/film/ITYIL.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FRITYIL/Q27C42W0.webp",
-      "posterNote": "Affiche du film (fiche vérifiée)"
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRITYIL/361FTO48.webp",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "il-faut-bruler-maman",
       "title": "Il faut brûler Maman",
-      "genre": "Non renseigné",
-      "duration": "Non renseignée",
+      "genre": "Comédie, Drame",
+      "duration": "1 h 22",
       "director": "Albert Dupontel",
       "press": null,
       "audience": null,
@@ -598,37 +598,411 @@
       },
       "sessionVersions": {
         "2026-11-11": {
-          "20:30": "VF",
-          "14:15": "VF"
+          "14:15": "VF",
+          "20:30": "VF"
         },
         "2026-11-12": {
-          "20:30": "VF",
-          "14:15": "VF"
+          "14:15": "VF",
+          "20:30": "VF"
         },
         "2026-11-13": {
-          "20:30": "VF",
-          "14:15": "VF"
+          "14:15": "VF",
+          "20:30": "VF"
         },
         "2026-11-14": {
-          "20:30": "VF",
-          "14:15": "VF"
+          "14:15": "VF",
+          "20:30": "VF"
         },
         "2026-11-15": {
-          "20:30": "VF",
-          "14:15": "VF"
+          "14:15": "VF",
+          "20:30": "VF"
         },
         "2026-11-16": {
-          "20:30": "VF",
-          "14:15": "VF"
+          "14:15": "VF",
+          "20:30": "VF"
         },
         "2026-11-17": {
-          "20:30": "VF",
-          "14:15": "VF"
+          "14:15": "VF",
+          "20:30": "VF"
         }
       },
-      "source": "https://www.ticketingcine.com/film/AVK3D.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/600/FRAVK3D/K75F6O3Y.webp",
-      "posterNote": "Affiche du film (fiche vérifiée)"
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRAVK3D/73YO02XR.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "l-ile-des-souvenirs",
+      "title": "L'île des souvenirs",
+      "genre": "Animation, Aventure, Comédie, Familial, Fantastique",
+      "duration": "1 h 49",
+      "director": "Januel Mercado, Joel Crawford",
+      "press": null,
+      "audience": null,
+      "synopsis": "Pendant qu'elles passent une dernière soirée ensemble avant de s'engager sur des voies différentes, Jo et Raissa, amies depuis toujours, trouvent un portail mystérieux qui les transporte sur Nakali, une île mythique peuplée de créatures magiques dont leurs familles philippines leur ont parlé. Alors qu'elles cherchent à rentrer chez elles, Jo et Raissa découvrent que leurs souvenirs sont en péril. Réussiront-elles à quitter l'île avant de s'oublier l'une l'autre ?",
+      "sessions": {
+        "2026-11-11": [
+          "14:50"
+        ],
+        "2026-11-14": [
+          "14:50"
+        ],
+        "2026-11-15": [
+          "14:50"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-11": {
+          "14:50": "VF"
+        },
+        "2026-11-14": {
+          "14:50": "VF"
+        },
+        "2026-11-15": {
+          "14:50": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRXGT5X/TIKWQMMM.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "scrooge",
+      "title": "Scrooge",
+      "genre": "Fantastique, Drame, Comédie, Aventure",
+      "duration": "1 h 55",
+      "director": "Ti West",
+      "press": null,
+      "audience": null,
+      "synopsis": "Ebenezer Scrooge est un vieil homme avare, pingre et solitaire. Bien évidemment, il déteste et méprise Noël et tout ce qui engendre le bonheur. C'est alors qu'il reçoit la visite du fantôme d'un ancien associé ainsi que par les esprits de Noëls du passé, du présent et du futur.",
+      "sessions": {
+        "2026-11-11": [
+          "16:05",
+          "20:25"
+        ],
+        "2026-11-12": [
+          "16:05",
+          "20:25"
+        ],
+        "2026-11-13": [
+          "16:05",
+          "20:25"
+        ],
+        "2026-11-14": [
+          "16:05",
+          "20:25"
+        ],
+        "2026-11-15": [
+          "16:05",
+          "20:25"
+        ],
+        "2026-11-16": [
+          "16:05",
+          "20:25"
+        ],
+        "2026-11-17": [
+          "16:05",
+          "20:25"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-11": {
+          "16:05": "VF",
+          "20:25": "VF"
+        },
+        "2026-11-12": {
+          "16:05": "VF",
+          "20:25": "VOST"
+        },
+        "2026-11-13": {
+          "16:05": "VF",
+          "20:25": "VF"
+        },
+        "2026-11-14": {
+          "16:05": "VF",
+          "20:25": "VF"
+        },
+        "2026-11-15": {
+          "16:05": "VF",
+          "20:25": "VF"
+        },
+        "2026-11-16": {
+          "16:05": "VF",
+          "20:25": "VOST"
+        },
+        "2026-11-17": {
+          "16:05": "VF",
+          "20:25": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRCTAY1/XK4A3AMM.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "ce-qui-nous-mene-a-toi",
+      "title": "Ce qui nous mène à toi",
+      "genre": "Drame",
+      "duration": "1 h 36",
+      "director": "Khalil Cherti",
+      "press": null,
+      "audience": null,
+      "synopsis": "Charlie et Hicham, la trentaine, s’aiment follement mais ne parviennent pas à avoir d’enfant : leur couple est infertile. Ils entament alors un parcours d’Aide Médicale à la Procréation. Pendant trois ans, entre espoirs et déceptions, ils vont mettre leur amour et leurs corps à l’épreuve, vivre une odyssée qui va les bouleverser…",
+      "sessions": {
+        "2026-11-11": [
+          "16:50",
+          "20:30"
+        ],
+        "2026-11-12": [
+          "14:20",
+          "16:50"
+        ],
+        "2026-11-13": [
+          "16:50",
+          "20:30"
+        ],
+        "2026-11-14": [
+          "14:20",
+          "16:50"
+        ],
+        "2026-11-15": [
+          "16:50"
+        ],
+        "2026-11-16": [
+          "14:20",
+          "16:50"
+        ],
+        "2026-11-17": [
+          "16:50",
+          "20:30"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-11": {
+          "16:50": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-12": {
+          "14:20": "VF",
+          "16:50": "VF"
+        },
+        "2026-11-13": {
+          "16:50": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-14": {
+          "14:20": "VF",
+          "16:50": "VF"
+        },
+        "2026-11-15": {
+          "16:50": "VF"
+        },
+        "2026-11-16": {
+          "14:20": "VF",
+          "16:50": "VF"
+        },
+        "2026-11-17": {
+          "16:50": "VF",
+          "20:30": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRBLCMC/LUZ0BUG6.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "mochy",
+      "title": "Mochy",
+      "genre": "Animation, Aventure, Comédie, Familial",
+      "duration": "1 h 24",
+      "director": "Jérémie Degruson, Yanis Belaid",
+      "press": null,
+      "audience": null,
+      "synopsis": "Mochy est un jeune chien au grand cœur… mais il n’a pas un physique facile…  Ça ne l’empêche pas d’avoir un rêve : participer au concours du plus beau chien. Défiant tous les obstacles, il va tout faire pour réaliser ce projet fou avec le secret espoir d’y trouver l’humain qui l’aimera pour la vie.",
+      "sessions": {
+        "2026-11-11": [
+          "17:00"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-11": {
+          "17:00": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRKD5Y5/11K4Q13Y.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "carlo-acutis-un-saint-pour-notre-temps",
+      "title": "Carlo Acutis, un saint pour notre temps",
+      "genre": "Documentaire",
+      "duration": "1 h 26",
+      "director": "Luca Salmaso",
+      "press": null,
+      "audience": null,
+      "synopsis": "La vie de saint Carlo Acutis, avec les témoignages inédits de ses proches.",
+      "sessions": {
+        "2026-11-12": [
+          "17:00"
+        ],
+        "2026-11-14": [
+          "17:00"
+        ],
+        "2026-11-15": [
+          "17:00"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-12": {
+          "17:00": "VF"
+        },
+        "2026-11-14": {
+          "17:00": "VF"
+        },
+        "2026-11-15": {
+          "17:00": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRPZGRL/SLGZ5W6X.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "camembert",
+      "title": "Camembert",
+      "genre": "Comédie",
+      "duration": "1 h 25",
+      "director": "Matthieu Rumani, Nicolas Slomka",
+      "press": null,
+      "audience": null,
+      "synopsis": "Lors du dîner du réveillon chez les Roussel, Stan rencontre pour la première fois la grande famille bourgeoise de sa petite amie, Cléo. Tout semble parfait… jusqu’à ce que le groupe décide de lancer une partie de Trivial Pursuit. Face à ces érudits surentraînés, Stan sait qu’il n’a aucune chance. Mais France, sa belle-mère autoritaire, ne lui laisse pas le choix. Après tout, ce n’est \"qu’un jeu \"…",
+      "sessions": {
+        "2026-11-15": [
+          "14:25"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-15": {
+          "14:25": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FR5SQOQ/F36L9J48.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "claude",
+      "title": "Claude",
+      "genre": "Comédie, Familial",
+      "duration": "1 h 30",
+      "director": "Clément Michel",
+      "press": null,
+      "audience": null,
+      "synopsis": "Claude, 76 ans, aussi charmant qu’irresponsable, est mis à la porte par sa (quatrième) femme. Il se retrouve alors en garde alternée chez ses enfants, qu'il a pourtant évité toute sa vie. Cette cohabitation explosive et improbable pourrait bien, contre toute attente, recoller les morceaux d’une famille qu’il avait laissé filer.",
+      "sessions": {
+        "2026-11-15": [
+          "16:15"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-15": {
+          "16:15": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRYZEOA/OOO25ILS.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "quand-la-mer-monte",
+      "title": "Quand la mer monte...",
+      "genre": "Comédie, Drame, Romance",
+      "duration": "1 h 30",
+      "director": "Yolande Moreau, Gilles Porte",
+      "press": null,
+      "audience": null,
+      "synopsis": "Irène est en tournée avec Sale affaire, un one woman show, dans le nord de la France. Elle rencontre Dries, un porteur de géants... C'est le début d'une histoire d'amour ! Histoire d'amour, qui a d'étranges résonances avec le spectacle qu'Irène joue sur scène...",
+      "sessions": {
+        "2026-11-19": [
+          "20:00"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-19": {
+          "20:00": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FR1SNOJ/O0EQVG6X.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "la-nuit-de-la-glisse-2026-the-call",
+      "title": "LA NUIT DE LA GLISSE 2026 THE CALL",
+      "genre": "Documentaire, Sport Event",
+      "duration": "1 h 51",
+      "director": "Olivier Sautet, Thierry Donard",
+      "press": null,
+      "audience": null,
+      "synopsis": "THE CALL suit une nouvelle génération d'athlètes extraordinaires répondant à l'appel de la nature : en quête de la ligne parfaite, du geste juste et de cet instant fugace où l'engagement, la maîtrise et les éléments ne font qu'un.",
+      "sessions": {
+        "2026-11-22": [
+          "18:00"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-22": {
+          "18:00": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRGMMJM/NL78NV7U.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "c-du-monde-australie",
+      "title": "C.DU MONDE AUSTRALIE",
+      "genre": "Documentaire",
+      "duration": "1 h 45",
+      "director": "Non renseigné",
+      "press": null,
+      "audience": null,
+      "synopsis": "",
+      "sessions": {
+        "2026-11-23": [
+          "17:00"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-23": {
+          "17:00": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": ""
+    },
+    {
+      "id": "la-maison-des-femmes",
+      "title": "La Maison des femmes",
+      "genre": "Drame",
+      "duration": "1 h 50",
+      "director": "Mélisa Godet",
+      "press": null,
+      "audience": null,
+      "synopsis": "À la Maison des femmes, entre soin, écoute et solidarité, une équipe se bat chaque jour pour accompagner les femmes victimes de violences dans leur reconstruction. Dans ce lieu unique, Diane, Manon, Inès, Awa et leurs collègues accueillent, soutiennent, redonnent confiance. Ensemble, avec leurs forces, leurs fragilités, leurs convictions et une énergie inépuisable.",
+      "sessions": {
+        "2026-11-24": [
+          "20:00"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-24": {
+          "20:00": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRVNGZA/Y6LZZ97U.webp",
+      "posterNote": "Affiche du film (billetterie)"
     }
   ]
 }
