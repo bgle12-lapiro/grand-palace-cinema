@@ -34,6 +34,27 @@
           "14:15"
         ]
       },
+      "sessionVersions": {
+        "2026-11-11": {
+          "19:45": "VF"
+        },
+        "2026-11-12": {
+          "14:15": "VF"
+        },
+        "2026-11-13": {
+          "14:15": "VF"
+        },
+        "2026-11-15": {
+          "19:45": "VF"
+        },
+        "2026-11-16": {
+          "19:45": "VF",
+          "14:15": "VF"
+        },
+        "2026-11-17": {
+          "14:15": "VF"
+        }
+      },
       "source": "https://www.ticketingcine.com/film/4QY3X.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FR4QY3X/LCP34QFH.webp",
       "posterNote": "Affiche du film (fiche vérifiée)"
@@ -73,6 +94,33 @@
           "14:15",
           "20:00"
         ]
+      },
+      "sessionVersions": {
+        "2026-11-11": {
+          "14:15": "VF"
+        },
+        "2026-11-12": {
+          "20:00": "VF",
+          "14:15": "VF"
+        },
+        "2026-11-13": {
+          "20:00": "VF",
+          "14:15": "VF"
+        },
+        "2026-11-14": {
+          "20:00": "VF",
+          "14:15": "VF"
+        },
+        "2026-11-15": {
+          "14:15": "VF"
+        },
+        "2026-11-16": {
+          "14:15": "VF"
+        },
+        "2026-11-17": {
+          "20:00": "VF",
+          "14:15": "VF"
+        }
       },
       "source": "https://www.ticketingcine.com/film/6QVJU.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FR6QVJU/4KSIK2XR.webp",
@@ -117,6 +165,36 @@
           "20:30"
         ]
       },
+      "sessionVersions": {
+        "2026-11-11": {
+          "20:30": "VF",
+          "17:00": "VF"
+        },
+        "2026-11-12": {
+          "20:30": "VF",
+          "17:00": "VF"
+        },
+        "2026-11-13": {
+          "20:30": "VF",
+          "17:00": "VF"
+        },
+        "2026-11-14": {
+          "20:30": "VF",
+          "17:00": "VF"
+        },
+        "2026-11-15": {
+          "20:30": "VF",
+          "17:00": "VF"
+        },
+        "2026-11-16": {
+          "20:30": "VF",
+          "17:00": "VF"
+        },
+        "2026-11-17": {
+          "20:30": "VF",
+          "17:00": "VF"
+        }
+      },
       "source": "https://www.ticketingcine.com/film/8X5VA.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FR8X5VA/3XKTHKO4.webp",
       "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000031925.html",
@@ -135,6 +213,11 @@
         "2026-11-11": [
           "16:15"
         ]
+      },
+      "sessionVersions": {
+        "2026-11-11": {
+          "16:15": "VF"
+        }
       },
       "source": "https://www.ticketingcine.com/film/LPWEP.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FRLPWEP/JHRFTYJT.webp",
@@ -180,6 +263,36 @@
           "20:05"
         ]
       },
+      "sessionVersions": {
+        "2026-11-11": {
+          "14:10": "VF",
+          "20:05": "VF"
+        },
+        "2026-11-12": {
+          "14:10": "VF",
+          "20:05": "VF"
+        },
+        "2026-11-13": {
+          "14:10": "VF",
+          "20:05": "VF"
+        },
+        "2026-11-14": {
+          "14:10": "VF",
+          "20:05": "VF"
+        },
+        "2026-11-15": {
+          "14:10": "VF",
+          "20:05": "VF"
+        },
+        "2026-11-16": {
+          "14:10": "VF",
+          "20:05": "VF"
+        },
+        "2026-11-17": {
+          "14:10": "VF",
+          "20:05": "VF"
+        }
+      },
       "source": "https://www.ticketingcine.com/film/LXIDH.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FRLXIDH/2G5T86XR.webp",
       "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000020311.html",
@@ -224,6 +337,36 @@
           "16:40"
         ]
       },
+      "sessionVersions": {
+        "2026-11-11": {
+          "16:40": "VF",
+          "14:05": "VF"
+        },
+        "2026-11-12": {
+          "16:40": "VF",
+          "20:20": "VOST"
+        },
+        "2026-11-13": {
+          "16:40": "VF",
+          "14:05": "VF"
+        },
+        "2026-11-14": {
+          "16:40": "VF",
+          "20:20": "VF"
+        },
+        "2026-11-15": {
+          "14:05": "VF",
+          "20:20": "VF"
+        },
+        "2026-11-16": {
+          "16:40": "VF",
+          "20:20": "VOST"
+        },
+        "2026-11-17": {
+          "16:40": "VF",
+          "14:05": "VF"
+        }
+      },
       "source": "https://www.ticketingcine.com/film/Q5S88.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FRQ5S88/JU8ZKBYJ.webp",
       "posterNote": "Affiche du film (fiche vérifiée)"
@@ -235,7 +378,7 @@
       "duration": "1 h 41",
       "director": "Basile Monnot, Samy Bouyssié",
       "press": "3,2",
-      "audience": "4,4",
+      "audience": "4,3",
       "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Séparé de sa mère à l’âge de trois ans, il a grandi placé entre familles d’accueil et foyers. Décidé à retrouver ce père qui l’a abandonné à la naissance, Nicolas récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace. Une enquête qui va le mener jusqu’au Sénégal, à la rencontre de sa famille et d’une histoire qu’il connaît à peine.",
       "sessions": {
         "2026-11-11": [
@@ -259,6 +402,29 @@
         "2026-11-17": [
           "14:10"
         ]
+      },
+      "sessionVersions": {
+        "2026-11-11": {
+          "14:10": "VF"
+        },
+        "2026-11-12": {
+          "14:10": "VF"
+        },
+        "2026-11-13": {
+          "14:10": "VF"
+        },
+        "2026-11-14": {
+          "14:10": "VF"
+        },
+        "2026-11-15": {
+          "16:15": "VF"
+        },
+        "2026-11-16": {
+          "14:10": "VF"
+        },
+        "2026-11-17": {
+          "14:10": "VF"
+        }
       },
       "source": "https://www.ticketingcine.com/film/QHR15.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FRQHR15/PEE83DZP.webp",
@@ -293,6 +459,26 @@
         "2026-11-17": [
           "14:00"
         ]
+      },
+      "sessionVersions": {
+        "2026-11-11": {
+          "14:00": "VF"
+        },
+        "2026-11-12": {
+          "14:00": "VF"
+        },
+        "2026-11-13": {
+          "14:00": "VF"
+        },
+        "2026-11-14": {
+          "14:00": "VF"
+        },
+        "2026-11-16": {
+          "14:00": "VF"
+        },
+        "2026-11-17": {
+          "14:00": "VF"
+        }
       },
       "source": "https://www.ticketingcine.com/film/41TVG.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FR41TVG/N22LGSLS.webp",
@@ -337,6 +523,36 @@
           "20:30"
         ]
       },
+      "sessionVersions": {
+        "2026-11-11": {
+          "20:30": "VF",
+          "16:25": "VF"
+        },
+        "2026-11-12": {
+          "20:30": "VF",
+          "16:25": "VF"
+        },
+        "2026-11-13": {
+          "20:30": "VF",
+          "16:25": "VF"
+        },
+        "2026-11-14": {
+          "20:30": "VF",
+          "16:25": "VF"
+        },
+        "2026-11-15": {
+          "20:30": "VF",
+          "16:25": "VF"
+        },
+        "2026-11-16": {
+          "20:30": "VF",
+          "16:25": "VF"
+        },
+        "2026-11-17": {
+          "20:30": "VF",
+          "16:25": "VF"
+        }
+      },
       "source": "https://www.ticketingcine.com/film/ITYIL.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FRITYIL/Q27C42W0.webp",
       "posterNote": "Affiche du film (fiche vérifiée)"
@@ -379,6 +595,36 @@
           "14:15",
           "20:30"
         ]
+      },
+      "sessionVersions": {
+        "2026-11-11": {
+          "20:30": "VF",
+          "14:15": "VF"
+        },
+        "2026-11-12": {
+          "20:30": "VF",
+          "14:15": "VF"
+        },
+        "2026-11-13": {
+          "20:30": "VF",
+          "14:15": "VF"
+        },
+        "2026-11-14": {
+          "20:30": "VF",
+          "14:15": "VF"
+        },
+        "2026-11-15": {
+          "20:30": "VF",
+          "14:15": "VF"
+        },
+        "2026-11-16": {
+          "20:30": "VF",
+          "14:15": "VF"
+        },
+        "2026-11-17": {
+          "20:30": "VF",
+          "14:15": "VF"
+        }
       },
       "source": "https://www.ticketingcine.com/film/AVK3D.html",
       "poster": "https://images.monnaie-services.com/movie_poster/600/FRAVK3D/K75F6O3Y.webp",
