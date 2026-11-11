@@ -1,8 +1,8 @@
 {
   "cinema": "Le Grand Palace",
   "city": "Les Sables-d’Olonne",
-  "lastChecked": "2026-11-10",
-  "weekLabel": "Programme actualisé le 10/11/2026",
+  "lastChecked": "2026-11-11",
+  "weekLabel": "Programme actualisé le 11/11/2026",
   "films": [
     {
       "id": "les-miserables",
@@ -88,9 +88,6 @@
       "audience": "2,5",
       "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l'ancestrale fabrique familiale de balances.",
       "sessions": {
-        "2026-11-10": [
-          "20:30"
-        ],
         "2026-11-11": [
           "17:00",
           "20:30"
@@ -311,9 +308,6 @@
       "audience": null,
       "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre. Au nom de toutes.",
       "sessions": {
-        "2026-11-10": [
-          "20:30"
-        ],
         "2026-11-11": [
           "16:25",
           "20:30"
