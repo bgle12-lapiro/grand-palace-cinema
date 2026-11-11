@@ -34,7 +34,7 @@ jobs:
           from bs4 import BeautifulSoup, NavigableString, Tag
 
           CINEMA_URL = 'https://www.ticketingcine.com/cine/99S05SBN.html'
-          HEADERS = {'User-Agent': 'Mozilla/5.0'}
+          HEADERS = {'User-Agent': 'Mozilla/5.0', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache'}
           session = requests.Session()
           session.headers.update(HEADERS)
 
