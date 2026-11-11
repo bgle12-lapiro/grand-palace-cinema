@@ -1,5 +1,4 @@
 <!doctype html>
-<html lang="fr"><!doctype html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
@@ -54,7 +53,7 @@ footer{max-width:1180px;margin:25px auto 40px;padding:0 18px;color:var(--muted);
 <div id="grid" class="grid"></div>
 </main>
 <footer><b>Sources et vérification</b><div class="sources" id="sources"></div>
-<p class="small">Les informations sont chargées depuis le fichier films.json publié sur Netlify. Vérifiez toujours les séances auprès du cinéma.</p>
+<p class="small">Les informations sont chargées depuis le fichier films.json publié sur GitHub Pages. Vérifiez toujours les séances auprès du cinéma.</p>
 </footer>
 <script>
 let data, onlyFavorites=false;
@@ -81,121 +80,6 @@ function render(){
  $('grid').innerHTML=arr.map(f=>{
    const fav=saved().includes(f.id);
    const sessions=Object.entries(f.sessions||{}).map(([d,t])=>`${new Date(d+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'short',day:'2-digit',month:'short'})} : ${Array.isArray(t)?t.map(h=>{const v=f.sessionVersions?.[d]?.[h];return h+(v?' <b>'+v+'</b>':' <small>(version non précisée)</small>')}).join(' · '):String(t||'')}`).join('<br>');
-   return `<article class="card"><div class="poster">${f.poster?`<img src="${f.poster}" alt="${f.posterNote||'Visuel de '+f.title}" referrerpolicy="no-referrer" loading="eager" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">`:''}<span>${f.title}</span></div>${f.posterNote?`<div class="poster-note">${f.posterNote}</div>`:''}<div class="body"><div class="tag">${f.genre}</div><h2>${f.title}</h2><div class="meta">${f.duration||'Durée non confirmée'} · Réalisation : ${f.director}</div><p class="synopsis">${f.synopsis}</p><div class="scores"><div class="score"><strong>${f.press?f.press+' / 5':'—'}</strong><small>Note presse</small></div><div class="score"><strong>${f.audience?f.audience+' / 5':'—'}</strong><small>Note spectateurs</small></div></div><div class="sessions"><b>Séances relevées</b><br>${sessions||'Horaires à vérifier'}</div><div class="actions"><a href="${f.source}" target="_blank" rel="noopener">Vérifier les séances ↗</a><button class="secondary fav" data-id="${f.id}">${fav?'★ Retirer':'☆ À voir'}</button></div></div></article>`;
- }).join('')||'<div class="empty">Aucun film ne correspond à cette recherche.</div>';
- document.querySelectorAll('.fav').forEach(b=>b.onclick=()=>{let a=saved();a=a.includes(b.dataset.id)?a.filter(x=>x!==b.dataset.id):[...a,b.dataset.id];localStorage.setItem('gp-favs',JSON.stringify(a));render();});
- $('sources').innerHTML=(data.sources||[]).map(s=>`<a href="${s.url}" target="_blank" rel="noopener">${s.label} ↗</a>`).join('');
-}
-// Les donnees viennent toujours du fichier public films.json. Ne pas masquer une erreur
-// de chargement avec une ancienne liste integree au code.
-async function loadProgramme(){
-  const status=$('loadStatus');
-  status.textContent='Chargement du programme…';
-  try {
-    const response=await fetch('./films.json?fresh='+Date.now(), {cache:'no-store'});
-    if(!response.ok) throw new Error('HTTP '+response.status);
-    const result=await response.json();
-    if(!result || !Array.isArray(result.films)) throw new Error('Format du fichier films.json incorrect');
-    data=result;
-    render();
-    status.textContent='Programme chargé : '+result.films.length+' films dans films.json.';
-  } catch(err) {
-    console.error('Grand Palace : impossible de charger films.json',err);
-    data=null;
-    $('count').textContent='0';
-    $('grid').innerHTML='<div class="empty">Le programme ne peut pas être chargé pour le moment. Réessayez avec le bouton ci-dessus.</div>';
-    status.textContent='Erreur de chargement du programme : '+err.message;
-  }
-}
-loadProgramme();
-['q','genre','sort'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',render));
-$('favorites').onclick=()=>{onlyFavorites=!onlyFavorites;$('favorites').textContent=onlyFavorites?'★ Tous les films':'★ Mes films';render()};
-$('reload').onclick=loadProgramme;
-$('reset').onclick=()=>{$('q').value='';$('genre').value='';$('sort').value='title';onlyFavorites=false;$('favorites').textContent='★ Mes films';render()};
-if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
-</script>
-</body></html>
-
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#101827">
-<title>Grand Palace – Mon cinéma</title>
-<link rel="manifest" href="manifest.webmanifest">
-<style>
-:root{--bg:#101827;--panel:#1b2940;--panel2:#253650;--line:#3c506c;--txt:#f5f7fb;--muted:#b5c1d1;--gold:#e8bd6b;--green:#92d5b0}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,#263a55 0,#101827 48%);color:var(--txt);font:15px/1.5 "Segoe UI",Arial,sans-serif}
-header{padding:30px max(18px,calc((100vw - 1180px)/2));background:#0b1220;border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border-radius:14px;background:linear-gradient(145deg,#f1ce85,#9d7130);display:grid;place-items:center;color:#1b1b1b;font-size:25px}
-h1{font-size:clamp(25px,4vw,36px);margin:0}header p{margin:4px 0 0;color:var(--muted)}
-main{max-width:1180px;margin:22px auto;padding:0 18px}
-.hero{padding:18px;border:1px solid #665637;border-radius:15px;background:linear-gradient(120deg,#3a3020,#1d2a3d);margin-bottom:16px}
-.hero b{color:#ffe1a2}.small{font-size:12px;color:var(--muted)}
-.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0}
-input,select,button{font:inherit;padding:11px 13px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--txt)}
-input{flex:1;min-width:220px}button{cursor:pointer;background:var(--gold);color:#211a0c;border:0;font-weight:700}
-button.secondary{background:var(--panel2);color:var(--txt);border:1px solid var(--line)}
-.stats{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.stat{background:var(--panel);border:1px solid var(--line);padding:9px 13px;border-radius:10px;color:var(--muted)}.stat strong{color:var(--gold);font-size:18px;margin-right:5px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:15px}
-.card{background:linear-gradient(160deg,#1d2c43,#172337);border:1px solid var(--line);border-radius:15px;overflow:hidden;display:flex;flex-direction:column;min-height:100%}
-.poster{height:330px;display:flex;align-items:center;justify-content:center;text-align:center;padding:0;background:#0b1220;border-bottom:1px solid var(--line);overflow:hidden}
-.poster img{width:100%;height:100%;object-fit:contain;display:block}
-.poster span{display:none;font-family:Georgia,serif;font-size:23px;font-weight:bold;letter-spacing:.04em;text-shadow:0 2px 8px #000;padding:14px}
-.poster-note{font-size:10px;color:var(--muted);padding:3px 12px 0;text-align:center;background:#0b1220}
-.body{padding:15px;display:flex;flex-direction:column;gap:8px;flex:1}.tag{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);font-weight:700}
-h2{font-size:20px;line-height:1.25;margin:0}.meta{color:var(--muted);font-size:13px}.synopsis{margin:0;color:#dce4ef}
-.scores{display:grid;grid-template-columns:1fr 1fr;gap:8px}.score{background:var(--panel2);padding:8px 10px;border-radius:9px}.score strong{font-size:18px;color:var(--green);display:block}.score small{color:var(--muted)}
-.sessions{font-size:13px;background:#111c2d;padding:9px 10px;border-radius:9px}.sessions b{color:var(--gold)}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:auto;padding-top:7px}.actions a,.sources a{font-size:13px;color:var(--gold);text-decoration:none;border-bottom:1px solid #8a7044}
-.empty{background:var(--panel);border-radius:12px;padding:24px;text-align:center;color:var(--muted)}
-footer{max-width:1180px;margin:25px auto 40px;padding:0 18px;color:var(--muted);font-size:13px}.sources{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px}
-@media(max-width:600px){header{padding:20px 15px}main{padding:0 12px}.toolbar>*{width:100%}.poster{height:270px}}
-</style>
-</head>
-<body>
-<header><div class="brand"><div class="logo">🎬</div><div><h1>Grand Palace – Mon cinéma</h1><p>Les Sables-d’Olonne · Films, séances et regards critiques</p></div></div></header>
-<main>
-<div class="hero"><b id="weekLabel">Programme de la semaine</b><div>Une sélection des films actuellement annoncés au Grand Palace.</div><div class="small">Les séances affichées ici sont un relevé daté. Vérifie toujours la billetterie avant de te déplacer.</div></div>
-<div class="toolbar">
-<input id="q" placeholder="Rechercher un titre, un genre, un réalisateur…">
-<select id="genre"><option value="">Tous les genres</option></select>
-<select id="sort"><option value="title">Trier par titre</option><option value="press">Meilleure note presse</option><option value="audience">Meilleure note spectateurs</option></select>
-<button class="secondary" id="favorites">★ Mes films</button>
-<button class="secondary" id="reset">Tout afficher</button>
-<button class="secondary" id="reload">↻ Actualiser les films</button>
-</div>
-<div class="stats"><div class="stat"><strong id="count">0</strong>films affichés</div><div class="stat"><strong id="date">—</strong>date du relevé</div><div class="stat"><strong>2</strong>sources de notes</div></div>
-<div id="loadStatus" class="small" role="status" aria-live="polite">Chargement du programme…</div>
-<div id="grid" class="grid"></div>
-</main>
-<footer><b>Sources et vérification</b><div class="sources" id="sources"></div>
-<p class="small">Les informations sont chargées depuis le fichier films.json publié sur Netlify. Vérifiez toujours les séances auprès du cinéma.</p>
-</footer>
-<script>
-let data, onlyFavorites=false;
-const saved=()=>JSON.parse(localStorage.getItem('gp-favs')||'[]');
-const $=id=>document.getElementById(id);
-const norm=s=>(s||'').toLocaleLowerCase('fr');
-function render(){
- if(!data)return;
- $('weekLabel').textContent=data.weekLabel || 'Programme du Grand Palace';
- $('date').textContent=data.lastChecked ? new Date(data.lastChecked+'T12:00:00').toLocaleDateString('fr-FR',{day:'2-digit',month:'short',year:'numeric'}) : '—';
- const genres=[...new Set(data.films.map(f=>f.genre).filter(Boolean))].sort();
- const current=$('genre').value;
- $('genre').innerHTML='<option value="">Tous les genres</option>'+genres.map(g=>`<option value="${g}">${g}</option>`).join('');
- $('genre').value=current;
- let arr=data.films.filter(f=>{
-   const hay=norm([f.title,f.genre,f.director,f.synopsis].join(' '));
-   return hay.includes(norm($('q').value)) && (!current||f.genre===current) && (!onlyFavorites||saved().includes(f.id));
- });
- const sort=$('sort').value;
- if(sort==='press')arr.sort((a,b)=>(Number(b.press)||0)-(Number(a.press)||0));
- else if(sort==='audience')arr.sort((a,b)=>(Number(b.audience)||0)-(Number(a.audience)||0));
- else arr.sort((a,b)=>a.title.localeCompare(b.title,'fr'));
- $('count').textContent=arr.length;
- $('grid').innerHTML=arr.map(f=>{
-   const fav=saved().includes(f.id);
-   const sessions=Object.entries(f.sessions||{}).map(([d,t])=>`${new Date(d+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'short',day:'2-digit',month:'short'})} : ${Array.isArray(t)?t.join(' · '):String(t||'')}`).join('<br>');
    return `<article class="card"><div class="poster">${f.poster?`<img src="${f.poster}" alt="${f.posterNote||'Visuel de '+f.title}" referrerpolicy="no-referrer" loading="eager" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">`:''}<span>${f.title}</span></div>${f.posterNote?`<div class="poster-note">${f.posterNote}</div>`:''}<div class="body"><div class="tag">${f.genre}</div><h2>${f.title}</h2><div class="meta">${f.duration||'Durée non confirmée'} · Réalisation : ${f.director}</div><p class="synopsis">${f.synopsis}</p><div class="scores"><div class="score"><strong>${f.press?f.press+' / 5':'—'}</strong><small>Note presse</small></div><div class="score"><strong>${f.audience?f.audience+' / 5':'—'}</strong><small>Note spectateurs</small></div></div><div class="sessions"><b>Séances relevées</b><br>${sessions||'Horaires à vérifier'}</div><div class="actions"><a href="${f.source}" target="_blank" rel="noopener">Vérifier les séances ↗</a><button class="secondary fav" data-id="${f.id}">${fav?'★ Retirer':'☆ À voir'}</button></div></div></article>`;
  }).join('')||'<div class="empty">Aucun film ne correspond à cette recherche.</div>';
  document.querySelectorAll('.fav').forEach(b=>b.onclick=()=>{let a=saved();a=a.includes(b.dataset.id)?a.filter(x=>x!==b.dataset.id):[...a,b.dataset.id];localStorage.setItem('gp-favs',JSON.stringify(a));render();});
