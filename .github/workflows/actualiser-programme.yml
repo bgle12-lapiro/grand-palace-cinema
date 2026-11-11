@@ -248,6 +248,43 @@ jobs:
               old_data = json.load(f)
           old_by_title = {normalize(f.get('title', '')): f for f in old_data.get('films', [])}
           soup = get_page(CINEMA_URL)
+          # Les versions sont fournies par les données structurées gProg de TicketingCiné.
+          # On ne déduit jamais une version d'un autre horaire.
+          versions_by_title = {}
+          for script in soup.find_all('script'):
+              content = script.string or script.get_text()
+              match = re.search(r'\bvar\s+gProg\s*=\s*(\{.*?\})\s*;', content, re.S)
+              if not match:
+                  continue
+              try:
+                  programme = json.loads(match.group(1))
+              except (ValueError, TypeError):
+                  continue
+              if programme.get('ticketing_web_id') != '99S05SBN':
+                  continue
+              for event in programme.get('events', []):
+                  key = normalize(event.get('title', ''))
+                  if not key:
+                      continue
+                  for show in event.get('sessions', []):
+                      stamp = str(show.get('date', ''))
+                      if not re.fullmatch(r'\d{12}', stamp):
+                          continue
+                      day = f'{stamp[:4]}-{stamp[4:6]}-{stamp[6:8]}'
+                      hour = f'{stamp[8:10]}:{stamp[10:12]}'
+                      features = [str(v).lower() for v in show.get('display_features', [])]
+                      raw_features = [str(v).lower() for v in show.get('features', [])]
+                      version = None
+                      if 'vost' in features or ('vo' in raw_features and 'subtitle' in raw_features):
+                          version = 'VOST'
+                      elif 'vf' in features or 'vf' in raw_features:
+                          version = 'VF'
+                      elif 'vo' in features or 'vo' in raw_features:
+                          version = 'VO'
+                      if version:
+                          versions_by_title.setdefault(key, {}).setdefault(day, {})[hour] = version
+              break
+          print(f'Versions de séances disponibles pour {len(versions_by_title)} films.')
           heading_tags = {'h1', 'h2', 'h3', 'h4', 'h5', 'h6'}
           film_headings = []
           for tag in soup.find_all(list(heading_tags)):
@@ -308,6 +345,7 @@ jobs:
                   'audience': allocine.get('audience') or old.get('audience'),
                   'synopsis': metadata.get('synopsis') or '',
                   'sessions': {day: sorted(set(times)) for day, times in sessions.items()},
+                  'sessionVersions': {day: {hour: versions_by_title.get(normalize(title), {}).get(day, {}).get(hour) for hour in set(times) if versions_by_title.get(normalize(title), {}).get(day, {}).get(hour)} for day, times in sessions.items()},
                   'source': detail_url if metadata else CINEMA_URL,
                   'poster': metadata.get('poster') or '',
               }
