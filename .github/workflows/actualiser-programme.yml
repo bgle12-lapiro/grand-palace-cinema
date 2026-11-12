@@ -329,12 +329,7 @@ jobs:
                   'source': CINEMA_URL,
                   'poster': poster or old.get('poster') or '',
               }
-              if old.get('allocineUrl'):
-                  film['allocineUrl'] = old['allocineUrl']
-              if film['poster']:
-                  film['posterNote'] = 'Affiche du film (billetterie)'
-              # Chercher les notes manquantes sur une fiche AlloCiné dont le titre est confirmé.
-              # Ne jamais remplacer une note déjà enregistrée.
+              # Chercher les notes manquantes uniquement, sans écraser les valeurs existantes.
               if not film['press'] or not film['audience']:
                   try:
                       allocine = allocine_metadata(title)
@@ -343,10 +338,13 @@ jobs:
                               film[field] = allocine[field]
                       if allocine.get('allocineUrl'):
                           film['allocineUrl'] = allocine['allocineUrl']
-                      print(f'Notes pour {title}: presse={film["press"]}, spectateurs={film["audience"]}')
+                      print(f"Notes pour {title}: presse={film['press']}, spectateurs={film['audience']}")
                   except Exception as exc:
-                      # Une recherche externe en échec ne doit pas bloquer le programme.
-                      print(f'Recherche AlloCiné impossible pour {title}: {exc}')
+                      print(f'Recherche AlloCiné échouée pour {title}: {exc}')
+              if old.get('allocineUrl') and not film.get('allocineUrl'):
+                  film['allocineUrl'] = old['allocineUrl']
+              if film['poster']:
+                  film['posterNote'] = 'Affiche du film (billetterie)'
               films.append(film)
           print(f'Données structurées : {len(programme["events"])} événements, {len(films)} films avec séances dans la période.')
           if len(films) < 3:
