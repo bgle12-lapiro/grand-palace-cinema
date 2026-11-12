@@ -43,8 +43,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FR41TVG/L3FOCG6X.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000019622.html"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000019622.html",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "papa-ou-t-es",
@@ -219,8 +219,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRAVK3D/73YO02XR.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000039483.html"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000039483.html",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "karma",
