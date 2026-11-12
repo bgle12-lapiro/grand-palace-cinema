@@ -165,7 +165,7 @@
       "duration": "1 h 22",
       "director": "Albert Dupontel",
       "press": "3,0",
-      "audience": "3,5",
+      "audience": "3,4",
       "synopsis": "Dans une famille de croque-morts, deux sœurs et un frère se retrouvent pour les funérailles de leur mère. Le personnel étant en grève, ils doivent accomplir le protocole funéraire par eux-mêmes.  Comment s’accorder pour brûler maman ?",
       "sessions": {
         "2026-11-12": [
@@ -392,8 +392,8 @@
       "genre": "Fantastique, Drame, Comédie, Aventure",
       "duration": "1 h 55",
       "director": "Ti West",
-      "press": null,
-      "audience": null,
+      "press": "2,4",
+      "audience": "3,9",
       "synopsis": "Ebenezer Scrooge est un vieil homme avare, pingre et solitaire. Bien évidemment, il déteste et méprise Noël et tout ce qui engendre le bonheur. C'est alors qu'il reçoit la visite du fantôme d'un ancien associé ainsi que par les esprits de Noëls du passé, du présent et du futur.",
       "sessions": {
         "2026-11-12": [
@@ -447,6 +447,7 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRCTAY1/XK4A3AMM.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000034007.html",
       "posterNote": "Affiche du film (billetterie)"
     },
     {
@@ -460,7 +461,6 @@
       "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre. Au nom de toutes.",
       "sessions": {
         "2026-11-12": [
-          "16:25",
           "20:30"
         ],
         "2026-11-13": [
@@ -486,7 +486,6 @@
       },
       "sessionVersions": {
         "2026-11-12": {
-          "16:25": "VF",
           "20:30": "VF"
         },
         "2026-11-13": {
@@ -621,7 +620,7 @@
       "duration": "1 h 27",
       "director": "Philippe de Chauveron",
       "press": "2,7",
-      "audience": "2,5",
+      "audience": "2,6",
       "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l'ancestrale fabrique familiale de balances.",
       "sessions": {
         "2026-11-12": [
