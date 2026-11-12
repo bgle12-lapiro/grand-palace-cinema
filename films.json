@@ -331,13 +331,10 @@
       "genre": "Drame",
       "duration": "1 h 36",
       "director": "Khalil Cherti",
-      "press": null,
-      "audience": null,
+      "press": "3,8",
+      "audience": "4,1",
       "synopsis": "Charlie et Hicham, la trentaine, s’aiment follement mais ne parviennent pas à avoir d’enfant : leur couple est infertile. Ils entament alors un parcours d’Aide Médicale à la Procréation. Pendant trois ans, entre espoirs et déceptions, ils vont mettre leur amour et leurs corps à l’épreuve, vivre une odyssée qui va les bouleverser…",
       "sessions": {
-        "2026-11-12": [
-          "16:50"
-        ],
         "2026-11-13": [
           "16:50",
           "20:30"
@@ -359,9 +356,6 @@
         ]
       },
       "sessionVersions": {
-        "2026-11-12": {
-          "16:50": "VF"
-        },
         "2026-11-13": {
           "16:50": "VF",
           "20:30": "VF"
@@ -384,6 +378,7 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRBLCMC/LUZ0BUG6.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000037363.html",
       "posterNote": "Affiche du film (billetterie)"
     },
     {
@@ -586,9 +581,6 @@
       "audience": null,
       "synopsis": "La vie de saint Carlo Acutis, avec les témoignages inédits de ses proches.",
       "sessions": {
-        "2026-11-12": [
-          "17:00"
-        ],
         "2026-11-14": [
           "17:00"
         ],
@@ -597,9 +589,6 @@
         ]
       },
       "sessionVersions": {
-        "2026-11-12": {
-          "17:00": "VF"
-        },
         "2026-11-14": {
           "17:00": "VF"
         },
@@ -622,7 +611,6 @@
       "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l'ancestrale fabrique familiale de balances.",
       "sessions": {
         "2026-11-12": [
-          "17:00",
           "20:30"
         ],
         "2026-11-13": [
@@ -648,7 +636,6 @@
       },
       "sessionVersions": {
         "2026-11-12": {
-          "17:00": "VF",
           "20:30": "VF"
         },
         "2026-11-13": {
