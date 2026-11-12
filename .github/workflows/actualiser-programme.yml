@@ -371,5 +371,6 @@ jobs:
             echo "Aucun changement du programme à publier."
           else
             git commit -m "Actualisation hebdomadaire du programme cinéma"
+             git pull --rebase
             git push
           fi
