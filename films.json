@@ -288,7 +288,7 @@
       "duration": "2 h 59",
       "director": "Fred Cavayé",
       "press": "3,1",
-      "audience": "4,0",
+      "audience": "4,1",
       "synopsis": "Libéré après 19 ans de bagne pour le vol d'un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
       "sessions": {
         "2026-11-13": [
@@ -322,6 +322,7 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FR4QY3X/KLWVDBN5.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=326160.html",
       "posterNote": "Affiche du film (billetterie)"
     },
     {
@@ -396,7 +397,6 @@
       "synopsis": "Ebenezer Scrooge est un vieil homme avare, pingre et solitaire. Bien évidemment, il déteste et méprise Noël et tout ce qui engendre le bonheur. C'est alors qu'il reçoit la visite du fantôme d'un ancien associé ainsi que par les esprits de Noëls du passé, du présent et du futur.",
       "sessions": {
         "2026-11-12": [
-          "16:05",
           "20:25"
         ],
         "2026-11-13": [
@@ -422,7 +422,6 @@
       },
       "sessionVersions": {
         "2026-11-12": {
-          "16:05": "VF",
           "20:25": "VOST"
         },
         "2026-11-13": {
