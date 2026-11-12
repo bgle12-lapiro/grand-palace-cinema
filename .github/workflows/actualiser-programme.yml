@@ -187,9 +187,14 @@ jobs:
                           if film_id not in candidate_ids:
                               candidate_ids.append(film_id)
               add_candidates(old.get('allocineUrl', ''))
-              # Fiche directe déjà vérifiée pour La Maison des femmes.
-              if normalize(title) == normalize('La Maison des femmes'):
-                  add_candidates('fichefilm_gen_cfilm=1000012019')
+              # Liens de fiches contrôlés manuellement pour éviter les homonymes.
+              verified_ids = {
+                  normalize('Scrooge'): '1000034007',
+              }
+              if normalize(title) in verified_ids:
+                  add_candidates('fichefilm_gen_cfilm=' + verified_ids[normalize(title)])
+              if normalize(title) == normalize('La Maison de nos rêves'):
+                  add_candidates('fichefilm_gen_cfilm=1000031247')
               queries = [
                   ('AlloCiné', 'https://www.allocine.fr/rechercher/?q=' + quote(title)),
                   ('Bing', 'https://www.bing.com/search?q=' + quote('"' + title + '" film allocine')),
@@ -315,6 +320,13 @@ jobs:
               if duration_raw.isdigit() and int(duration_raw) > 0:
                   minutes = int(duration_raw)
                   duration = f'{minutes // 60} h {minutes % 60:02d}' if minutes >= 60 else f'{minutes} min'
+              # Chercher des notes sur une fiche AlloCiné dont le titre est vérifié.
+              try:
+                  allocine = allocine_metadata(title)
+              except Exception as exc:
+                  print(f'AlloCiné indisponible pour {title}: {exc}')
+                  allocine = {}
+              print(f"Notes pour {title}: presse={allocine.get('press')}, spectateurs={allocine.get('audience')}")
               # Conserver les notes déjà vérifiées, sans en inventer.
               film = {
                   'id': old.get('id') or slug(title),
@@ -322,28 +334,16 @@ jobs:
                   'genre': genre or old.get('genre') or 'Non renseigné',
                   'duration': duration or old.get('duration') or 'Non renseignée',
                   'director': director or old.get('director') or 'Non renseigné',
-                  'press': old.get('press'),
-                  'audience': old.get('audience'),
+                  'press': allocine.get('press') or old.get('press'),
+                  'audience': allocine.get('audience') or old.get('audience'),
                   'synopsis': synopsis or old.get('synopsis') or '',
                   'sessions': {day: sorted(set(times)) for day, times in sessions.items()},
                   'sessionVersions': session_versions,
                   'source': CINEMA_URL,
                   'poster': poster or old.get('poster') or '',
               }
-              if old.get('allocineUrl'):
-                  film['allocineUrl'] = old['allocineUrl']
-              # Chercher les notes manquantes de chaque film ; conserver les notes existantes.
-              if not (film.get('press') and film.get('audience') and film.get('allocineUrl')):
-                  try:
-                      allocine = allocine_metadata(title)
-                      for field in ('press', 'audience'):
-                          if allocine.get(field):
-                              film[field] = allocine[field]
-                      if allocine.get('allocineUrl'):
-                          film['allocineUrl'] = allocine['allocineUrl']
-                      print(f"Notes pour {title}: presse={film['press']}, spectateurs={film['audience']}")
-                  except Exception as exc:
-                      print(f'Recherche AlloCiné non aboutie pour {title}: {exc}')
+              if allocine.get('allocineUrl') or old.get('allocineUrl'):
+                  film['allocineUrl'] = allocine.get('allocineUrl') or old['allocineUrl']
               if film['poster']:
                   film['posterNote'] = 'Affiche du film (billetterie)'
               films.append(film)
@@ -373,4 +373,3 @@ jobs:
             git commit -m "Actualisation hebdomadaire du programme cinéma"
             git push
           fi
-
