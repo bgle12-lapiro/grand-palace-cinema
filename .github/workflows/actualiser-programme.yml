@@ -187,8 +187,9 @@ jobs:
                           if film_id not in candidate_ids:
                               candidate_ids.append(film_id)
               add_candidates(old.get('allocineUrl', ''))
-              if normalize(title) == normalize('La Maison de nos rêves'):
-                  add_candidates('fichefilm_gen_cfilm=1000031247')
+              # Test cible : fiche directe identifiée pour La Maison des femmes.
+              if normalize(title) == normalize('La Maison des femmes'):
+                  add_candidates('fichefilm_gen_cfilm=1000012019')
               queries = [
                   ('AlloCiné', 'https://www.allocine.fr/rechercher/?q=' + quote(title)),
                   ('Bing', 'https://www.bing.com/search?q=' + quote('"' + title + '" film allocine')),
@@ -329,20 +330,20 @@ jobs:
                   'source': CINEMA_URL,
                   'poster': poster or old.get('poster') or '',
               }
-              # Chercher les notes manquantes uniquement, sans écraser les valeurs existantes.
-              if not film['press'] or not film['audience']:
+              if old.get('allocineUrl'):
+                  film['allocineUrl'] = old['allocineUrl']
+              # Test sur un film seulement : ne pas modifier les autres fiches.
+              if normalize(title) == normalize('La Maison des femmes'):
                   try:
                       allocine = allocine_metadata(title)
                       for field in ('press', 'audience'):
-                          if not film[field] and allocine.get(field):
+                          if allocine.get(field):
                               film[field] = allocine[field]
                       if allocine.get('allocineUrl'):
                           film['allocineUrl'] = allocine['allocineUrl']
                       print(f"Notes pour {title}: presse={film['press']}, spectateurs={film['audience']}")
                   except Exception as exc:
-                      print(f'Recherche AlloCiné échouée pour {title}: {exc}')
-              if old.get('allocineUrl') and not film.get('allocineUrl'):
-                  film['allocineUrl'] = old['allocineUrl']
+                      print(f'Recherche AlloCiné non aboutie pour {title}: {exc}')
               if film['poster']:
                   film['posterNote'] = 'Affiche du film (billetterie)'
               films.append(film)
