@@ -187,6 +187,14 @@ jobs:
                           if film_id not in candidate_ids:
                               candidate_ids.append(film_id)
               add_candidates(old.get('allocineUrl', ''))
+              # Identifiants vérifiés sur les fiches officielles AlloCiné (nov. 2026).
+              # Les titres restent vérifiés sur la fiche avant toute attribution de note.
+              verified_ids = {
+                  normalize("Le Fantôme de l'Opéra"): '1000019622',
+                  normalize('Il faut brûler Maman'): '1000039483',
+              }
+              if normalize(title) in verified_ids:
+                  add_candidates('fichefilm_gen_cfilm=' + verified_ids[normalize(title)])
               if normalize(title) == normalize('La Maison de nos rêves'):
                   add_candidates('fichefilm_gen_cfilm=1000031247')
               queries = [
@@ -336,6 +344,8 @@ jobs:
           # Limiter le nombre de recherches pour éviter une exécution trop longue.
           missing = [f for f in films if not f.get('press') or not f.get('audience')]
           print(f'Notes AlloCiné : {len(missing)} film(s) à compléter.')
+          priority_titles = {normalize("Le Fantôme de l'Opéra"), normalize('Il faut brûler Maman')}
+          missing.sort(key=lambda film: (normalize(film['title']) not in priority_titles, film['title']))
           for film in missing[:8]:
               try:
                   info = allocine_metadata(film['title'])
