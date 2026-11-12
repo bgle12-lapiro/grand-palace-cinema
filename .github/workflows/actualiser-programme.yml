@@ -187,7 +187,7 @@ jobs:
                           if film_id not in candidate_ids:
                               candidate_ids.append(film_id)
               add_candidates(old.get('allocineUrl', ''))
-              # Test cible : fiche directe identifiée pour La Maison des femmes.
+              # Fiche directe déjà vérifiée pour La Maison des femmes.
               if normalize(title) == normalize('La Maison des femmes'):
                   add_candidates('fichefilm_gen_cfilm=1000012019')
               queries = [
@@ -332,8 +332,8 @@ jobs:
               }
               if old.get('allocineUrl'):
                   film['allocineUrl'] = old['allocineUrl']
-              # Test sur un film seulement : ne pas modifier les autres fiches.
-              if normalize(title) == normalize('La Maison des femmes'):
+              # Chercher les notes manquantes de chaque film ; conserver les notes existantes.
+              if not (film.get('press') and film.get('audience') and film.get('allocineUrl')):
                   try:
                       allocine = allocine_metadata(title)
                       for field in ('press', 'audience'):
@@ -373,3 +373,4 @@ jobs:
             git commit -m "Actualisation hebdomadaire du programme cinéma"
             git push
           fi
+
