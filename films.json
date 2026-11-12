@@ -830,8 +830,8 @@
       "genre": "Drame",
       "duration": "1 h 50",
       "director": "Mélisa Godet",
-      "press": null,
-      "audience": null,
+      "press": "3,6",
+      "audience": "4,2",
       "synopsis": "À la Maison des femmes, entre soin, écoute et solidarité, une équipe se bat chaque jour pour accompagner les femmes victimes de violences dans leur reconstruction. Dans ce lieu unique, Diane, Manon, Inès, Awa et leurs collègues accueillent, soutiennent, redonnent confiance. Ensemble, avec leurs forces, leurs fragilités, leurs convictions et une énergie inépuisable.",
       "sessions": {
         "2026-11-24": [
@@ -845,6 +845,7 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRVNGZA/Y6LZZ97U.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000012019.html",
       "posterNote": "Affiche du film (billetterie)"
     }
   ]
