@@ -194,7 +194,8 @@ jobs:
               if normalize(title) in verified_ids:
                   add_candidates('fichefilm_gen_cfilm=' + verified_ids[normalize(title)])
               if normalize(title) == normalize('La Maison de nos rêves'):
-                   add_candidates('fichefilm_gen_cfilm=1000031247') if normalize(title) == normalize('Ce qui nous mène à toi'):
+                   add_candidates('fichefilm_gen_cfilm=1000031247') 
+              if normalize(title) == normalize('Ce qui nous mène à toi'):
                   add_candidates('fichefilm_gen_cfilm=1000037363')
               queries = [
                   ('AlloCiné', 'https://www.allocine.fr/rechercher/?q=' + quote(title)),
