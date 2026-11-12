@@ -1,227 +1,96 @@
 {
   "cinema": "Le Grand Palace",
   "city": "Les Sables-d’Olonne",
-  "lastChecked": "2026-11-11",
-  "weekLabel": "Programme actualisé le 11/11/2026",
+  "lastChecked": "2026-11-12",
+  "weekLabel": "Programme actualisé le 12/11/2026",
   "films": [
     {
-      "id": "les-miserables",
-      "title": "Les Misérables",
-      "genre": "Drame, Histoire, Romance, Aventure",
-      "duration": "2 h 59",
-      "director": "Fred Cavayé",
-      "press": "3,1",
-      "audience": "4,0",
-      "synopsis": "Libéré après 19 ans de bagne pour le vol d'un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
+      "id": "le-fantome-de-l-opera",
+      "title": "Le Fantôme de l'Opéra",
+      "genre": "Fantastique, Romance, Drame, Thriller, Mystère",
+      "duration": "2 h 14",
+      "director": "Alexandre Castagnetti",
+      "press": null,
+      "audience": null,
+      "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste. A l’approche de la première représentation, entre accidents inexpliqués et révélations troublantes, Anastasia se trouve plongée dans une histoire d'amour impossible, à la frontière du réel et du fantastique.",
       "sessions": {
-        "2026-11-11": [
-          "19:45"
-        ],
-        "2026-11-12": [
-          "14:15"
-        ],
         "2026-11-13": [
-          "14:15"
-        ],
-        "2026-11-15": [
-          "19:45"
-        ],
-        "2026-11-16": [
-          "14:15",
-          "19:45"
-        ],
-        "2026-11-17": [
-          "14:15"
-        ]
-      },
-      "sessionVersions": {
-        "2026-11-11": {
-          "19:45": "VF"
-        },
-        "2026-11-12": {
-          "14:15": "VF"
-        },
-        "2026-11-13": {
-          "14:15": "VF"
-        },
-        "2026-11-15": {
-          "19:45": "VF"
-        },
-        "2026-11-16": {
-          "14:15": "VF",
-          "19:45": "VF"
-        },
-        "2026-11-17": {
-          "14:15": "VF"
-        }
-      },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FR4QY3X/KLWVDBN5.webp",
-      "posterNote": "Affiche du film (billetterie)"
-    },
-    {
-      "id": "karma",
-      "title": "Karma",
-      "genre": "Thriller, Drame, Suspense",
-      "duration": "2 h 20",
-      "director": "Guillaume Canet",
-      "press": "3,0",
-      "audience": "4,0",
-      "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans une communauté religieuse dans laquelle elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
-      "sessions": {
-        "2026-11-11": [
-          "14:15"
-        ],
-        "2026-11-12": [
-          "14:15",
-          "20:00"
-        ],
-        "2026-11-13": [
-          "14:15",
-          "20:00"
+          "14:00"
         ],
         "2026-11-14": [
-          "14:15",
-          "20:00"
-        ],
-        "2026-11-15": [
-          "14:15"
+          "14:00"
         ],
         "2026-11-16": [
-          "14:15"
+          "14:00"
         ],
         "2026-11-17": [
-          "14:15",
-          "20:00"
+          "14:00"
         ]
       },
       "sessionVersions": {
-        "2026-11-11": {
-          "14:15": "VF"
-        },
-        "2026-11-12": {
-          "14:15": "VF",
-          "20:00": "VF"
-        },
         "2026-11-13": {
-          "14:15": "VF",
-          "20:00": "VF"
+          "14:00": "VF"
         },
         "2026-11-14": {
-          "14:15": "VF",
-          "20:00": "VF"
-        },
-        "2026-11-15": {
-          "14:15": "VF"
+          "14:00": "VF"
         },
         "2026-11-16": {
-          "14:15": "VF"
+          "14:00": "VF"
         },
         "2026-11-17": {
-          "14:15": "VF",
-          "20:00": "VF"
+          "14:00": "VF"
         }
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FR6QVJU/EKMGQLKO.webp",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FR41TVG/L3FOCG6X.webp",
       "posterNote": "Affiche du film (billetterie)"
     },
     {
-      "id": "un-bon-patron",
-      "title": "Un bon patron",
-      "genre": "Comédie",
-      "duration": "1 h 27",
-      "director": "Philippe de Chauveron",
-      "press": "2,7",
-      "audience": "2,5",
-      "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l'ancestrale fabrique familiale de balances.",
+      "id": "papa-ou-t-es",
+      "title": "Papa où t'es ?",
+      "genre": "Documentaire",
+      "duration": "1 h 40",
+      "director": "Basile Monnot, Samy Bouyssié",
+      "press": "3,2",
+      "audience": "4,3",
+      "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Séparé de sa mère à l’âge de trois ans, il a grandi placé entre familles d’accueil et foyers. Décidé à retrouver ce père qui l’a abandonné à la naissance, Nicolas récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace. Une enquête qui va le mener jusqu’au Sénégal, à la rencontre de sa famille et d’une histoire qu’il connaît à peine.",
       "sessions": {
-        "2026-11-11": [
-          "17:00",
-          "20:30"
-        ],
-        "2026-11-12": [
-          "17:00",
-          "20:30"
-        ],
         "2026-11-13": [
-          "17:00",
-          "20:30"
+          "14:10"
         ],
         "2026-11-14": [
-          "17:00",
-          "20:30"
+          "14:10"
         ],
         "2026-11-15": [
-          "17:00",
-          "20:30"
-        ],
-        "2026-11-16": [
-          "17:00",
-          "20:30"
-        ],
-        "2026-11-17": [
-          "17:00",
-          "20:30"
-        ]
-      },
-      "sessionVersions": {
-        "2026-11-11": {
-          "17:00": "VF",
-          "20:30": "VF"
-        },
-        "2026-11-12": {
-          "17:00": "VF",
-          "20:30": "VF"
-        },
-        "2026-11-13": {
-          "17:00": "VF",
-          "20:30": "VF"
-        },
-        "2026-11-14": {
-          "17:00": "VF",
-          "20:30": "VF"
-        },
-        "2026-11-15": {
-          "17:00": "VF",
-          "20:30": "VF"
-        },
-        "2026-11-16": {
-          "17:00": "VF",
-          "20:30": "VF"
-        },
-        "2026-11-17": {
-          "17:00": "VF",
-          "20:30": "VF"
-        }
-      },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FR8X5VA/O9G0SECQ.webp",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000031925.html",
-      "posterNote": "Affiche du film (billetterie)"
-    },
-    {
-      "id": "lucy-lost",
-      "title": "Le Mystère Lucy Lost",
-      "genre": "Animation, Aventure, Familial, Fantastique, Guerre",
-      "duration": "1 h 29",
-      "director": "Olivier Clert",
-      "press": "3,9",
-      "audience": "4,5",
-      "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre Milly - une petite fille qu'elle seule peut voir - Lucy embarque dans une grande aventure pour percer le secret de ses mystérieux pouvoirs.",
-      "sessions": {
-        "2026-11-11": [
           "16:15"
+        ],
+        "2026-11-16": [
+          "14:10"
+        ],
+        "2026-11-17": [
+          "14:10"
         ]
       },
       "sessionVersions": {
-        "2026-11-11": {
+        "2026-11-13": {
+          "14:10": "VF"
+        },
+        "2026-11-14": {
+          "14:10": "VF"
+        },
+        "2026-11-15": {
           "16:15": "VF"
+        },
+        "2026-11-16": {
+          "14:10": "VF"
+        },
+        "2026-11-17": {
+          "14:10": "VF"
         }
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FRLPWEP/IVTL8N5C.webp",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000012316.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRQHR15/WPXFJ2W0.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000051934.html",
       "posterNote": "Affiche du film (billetterie)"
     },
     {
@@ -234,12 +103,7 @@
       "audience": "3,5",
       "synopsis": "Jean Moulin est parachuté en France occupée pour unifier les réseaux de la Résistance, sous l’égide du général de Gaulle. Malgré ses efforts pour rester dans l’ombre, Moulin est trahi puis livré à la Gestapo à Lyon, dirigée par l’impitoyable Klaus Barbie. Torturé sans relâche, il ne cède jamais. Sa détermination silencieuse contribuera à galvaniser les forces de la Résistance et à faire naître un nouvel esprit de combat et de liberté en France…",
       "sessions": {
-        "2026-11-11": [
-          "14:10",
-          "20:05"
-        ],
         "2026-11-12": [
-          "14:10",
           "20:05"
         ],
         "2026-11-13": [
@@ -264,12 +128,7 @@
         ]
       },
       "sessionVersions": {
-        "2026-11-11": {
-          "14:10": "VF",
-          "20:05": "VF"
-        },
         "2026-11-12": {
-          "14:10": "VF",
           "20:05": "VF"
         },
         "2026-11-13": {
@@ -299,265 +158,6 @@
       "posterNote": "Affiche du film (billetterie)"
     },
     {
-      "id": "wild-horse-nine",
-      "title": "Wild Horse Nine",
-      "genre": "Thriller, Comédie, Drame, Crime, Policier",
-      "duration": "1 h 57",
-      "director": "Martin McDonagh",
-      "press": "3,8",
-      "audience": "3,9",
-      "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
-      "sessions": {
-        "2026-11-11": [
-          "14:05",
-          "16:40"
-        ],
-        "2026-11-12": [
-          "16:40",
-          "20:20"
-        ],
-        "2026-11-13": [
-          "14:05",
-          "16:40"
-        ],
-        "2026-11-14": [
-          "16:40",
-          "20:20"
-        ],
-        "2026-11-15": [
-          "14:05",
-          "20:20"
-        ],
-        "2026-11-16": [
-          "16:40",
-          "20:20"
-        ],
-        "2026-11-17": [
-          "14:05",
-          "16:40"
-        ]
-      },
-      "sessionVersions": {
-        "2026-11-11": {
-          "14:05": "VF",
-          "16:40": "VF"
-        },
-        "2026-11-12": {
-          "16:40": "VF",
-          "20:20": "VOST"
-        },
-        "2026-11-13": {
-          "14:05": "VF",
-          "16:40": "VF"
-        },
-        "2026-11-14": {
-          "16:40": "VF",
-          "20:20": "VF"
-        },
-        "2026-11-15": {
-          "14:05": "VF",
-          "20:20": "VF"
-        },
-        "2026-11-16": {
-          "16:40": "VF",
-          "20:20": "VOST"
-        },
-        "2026-11-17": {
-          "14:05": "VF",
-          "16:40": "VF"
-        }
-      },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FRQ5S88/FWDY5ZH2.webp",
-      "posterNote": "Affiche du film (billetterie)"
-    },
-    {
-      "id": "papa-ou-t-es",
-      "title": "Papa où t'es ?",
-      "genre": "Documentaire",
-      "duration": "1 h 40",
-      "director": "Basile Monnot, Samy Bouyssié",
-      "press": "3,2",
-      "audience": "4,3",
-      "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Séparé de sa mère à l’âge de trois ans, il a grandi placé entre familles d’accueil et foyers. Décidé à retrouver ce père qui l’a abandonné à la naissance, Nicolas récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace. Une enquête qui va le mener jusqu’au Sénégal, à la rencontre de sa famille et d’une histoire qu’il connaît à peine.",
-      "sessions": {
-        "2026-11-11": [
-          "14:10"
-        ],
-        "2026-11-12": [
-          "14:10"
-        ],
-        "2026-11-13": [
-          "14:10"
-        ],
-        "2026-11-14": [
-          "14:10"
-        ],
-        "2026-11-15": [
-          "16:15"
-        ],
-        "2026-11-16": [
-          "14:10"
-        ],
-        "2026-11-17": [
-          "14:10"
-        ]
-      },
-      "sessionVersions": {
-        "2026-11-11": {
-          "14:10": "VF"
-        },
-        "2026-11-12": {
-          "14:10": "VF"
-        },
-        "2026-11-13": {
-          "14:10": "VF"
-        },
-        "2026-11-14": {
-          "14:10": "VF"
-        },
-        "2026-11-15": {
-          "16:15": "VF"
-        },
-        "2026-11-16": {
-          "14:10": "VF"
-        },
-        "2026-11-17": {
-          "14:10": "VF"
-        }
-      },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FRQHR15/WPXFJ2W0.webp",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000051934.html",
-      "posterNote": "Affiche du film (billetterie)"
-    },
-    {
-      "id": "le-fantome-de-l-opera",
-      "title": "Le Fantôme de l'Opéra",
-      "genre": "Fantastique, Romance, Drame, Thriller, Mystère",
-      "duration": "2 h 14",
-      "director": "Alexandre Castagnetti",
-      "press": null,
-      "audience": null,
-      "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste. A l’approche de la première représentation, entre accidents inexpliqués et révélations troublantes, Anastasia se trouve plongée dans une histoire d'amour impossible, à la frontière du réel et du fantastique.",
-      "sessions": {
-        "2026-11-11": [
-          "14:00"
-        ],
-        "2026-11-12": [
-          "14:00"
-        ],
-        "2026-11-13": [
-          "14:00"
-        ],
-        "2026-11-14": [
-          "14:00"
-        ],
-        "2026-11-16": [
-          "14:00"
-        ],
-        "2026-11-17": [
-          "14:00"
-        ]
-      },
-      "sessionVersions": {
-        "2026-11-11": {
-          "14:00": "VF"
-        },
-        "2026-11-12": {
-          "14:00": "VF"
-        },
-        "2026-11-13": {
-          "14:00": "VF"
-        },
-        "2026-11-14": {
-          "14:00": "VF"
-        },
-        "2026-11-16": {
-          "14:00": "VF"
-        },
-        "2026-11-17": {
-          "14:00": "VF"
-        }
-      },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FR41TVG/L3FOCG6X.webp",
-      "posterNote": "Affiche du film (billetterie)"
-    },
-    {
-      "id": "l-affaire-marie-claire",
-      "title": "L'Affaire Marie-Claire",
-      "genre": "Histoire, Drame, Thriller, Judiciaire, Biographie, Biopic",
-      "duration": "1 h 42",
-      "director": "Lauriane Escaffre, Yvo Muller",
-      "press": null,
-      "audience": null,
-      "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre. Au nom de toutes.",
-      "sessions": {
-        "2026-11-11": [
-          "16:25",
-          "20:30"
-        ],
-        "2026-11-12": [
-          "16:25",
-          "20:30"
-        ],
-        "2026-11-13": [
-          "16:25",
-          "20:30"
-        ],
-        "2026-11-14": [
-          "16:25",
-          "20:30"
-        ],
-        "2026-11-15": [
-          "16:25",
-          "20:30"
-        ],
-        "2026-11-16": [
-          "16:25",
-          "20:30"
-        ],
-        "2026-11-17": [
-          "16:25",
-          "20:30"
-        ]
-      },
-      "sessionVersions": {
-        "2026-11-11": {
-          "16:25": "VF",
-          "20:30": "VF"
-        },
-        "2026-11-12": {
-          "16:25": "VF",
-          "20:30": "VF"
-        },
-        "2026-11-13": {
-          "16:25": "VF",
-          "20:30": "VF"
-        },
-        "2026-11-14": {
-          "16:25": "VF",
-          "20:30": "VF"
-        },
-        "2026-11-15": {
-          "16:25": "VF",
-          "20:30": "VF"
-        },
-        "2026-11-16": {
-          "16:25": "VF",
-          "20:30": "VF"
-        },
-        "2026-11-17": {
-          "16:25": "VF",
-          "20:30": "VF"
-        }
-      },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FRITYIL/361FTO48.webp",
-      "posterNote": "Affiche du film (billetterie)"
-    },
-    {
       "id": "il-faut-bruler-maman",
       "title": "Il faut brûler Maman",
       "genre": "Comédie, Drame",
@@ -567,12 +167,7 @@
       "audience": null,
       "synopsis": "Dans une famille de croque-morts, deux sœurs et un frère se retrouvent pour les funérailles de leur mère. Le personnel étant en grève, ils doivent accomplir le protocole funéraire par eux-mêmes.  Comment s’accorder pour brûler maman ?",
       "sessions": {
-        "2026-11-11": [
-          "14:15",
-          "20:30"
-        ],
         "2026-11-12": [
-          "14:15",
           "20:30"
         ],
         "2026-11-13": [
@@ -597,12 +192,7 @@
         ]
       },
       "sessionVersions": {
-        "2026-11-11": {
-          "14:15": "VF",
-          "20:30": "VF"
-        },
         "2026-11-12": {
-          "14:15": "VF",
           "20:30": "VF"
         },
         "2026-11-13": {
@@ -631,38 +221,166 @@
       "posterNote": "Affiche du film (billetterie)"
     },
     {
-      "id": "l-ile-des-souvenirs",
-      "title": "L'île des souvenirs",
-      "genre": "Animation, Aventure, Comédie, Familial, Fantastique",
-      "duration": "1 h 49",
-      "director": "Januel Mercado, Joel Crawford",
-      "press": null,
-      "audience": null,
-      "synopsis": "Pendant qu'elles passent une dernière soirée ensemble avant de s'engager sur des voies différentes, Jo et Raissa, amies depuis toujours, trouvent un portail mystérieux qui les transporte sur Nakali, une île mythique peuplée de créatures magiques dont leurs familles philippines leur ont parlé. Alors qu'elles cherchent à rentrer chez elles, Jo et Raissa découvrent que leurs souvenirs sont en péril. Réussiront-elles à quitter l'île avant de s'oublier l'une l'autre ?",
+      "id": "karma",
+      "title": "Karma",
+      "genre": "Thriller, Drame, Suspense",
+      "duration": "2 h 20",
+      "director": "Guillaume Canet",
+      "press": "3,0",
+      "audience": "4,0",
+      "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans une communauté religieuse dans laquelle elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
       "sessions": {
-        "2026-11-11": [
-          "14:50"
+        "2026-11-12": [
+          "20:00"
+        ],
+        "2026-11-13": [
+          "14:15",
+          "20:00"
         ],
         "2026-11-14": [
-          "14:50"
+          "14:20",
+          "20:00"
         ],
         "2026-11-15": [
-          "14:50"
+          "14:20"
+        ],
+        "2026-11-16": [
+          "14:15"
+        ],
+        "2026-11-17": [
+          "14:15",
+          "20:00"
         ]
       },
       "sessionVersions": {
-        "2026-11-11": {
-          "14:50": "VF"
+        "2026-11-12": {
+          "20:00": "VF"
+        },
+        "2026-11-13": {
+          "14:15": "VF",
+          "20:00": "VF"
         },
         "2026-11-14": {
-          "14:50": "VF"
+          "14:20": "VF",
+          "20:00": "VF"
         },
         "2026-11-15": {
-          "14:50": "VF"
+          "14:20": "VF"
+        },
+        "2026-11-16": {
+          "14:15": "VF"
+        },
+        "2026-11-17": {
+          "14:15": "VF",
+          "20:00": "VF"
         }
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FRXGT5X/TIKWQMMM.webp",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FR6QVJU/EKMGQLKO.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "les-miserables",
+      "title": "Les Misérables",
+      "genre": "Drame, Histoire, Romance, Aventure",
+      "duration": "2 h 59",
+      "director": "Fred Cavayé",
+      "press": "3,1",
+      "audience": "4,0",
+      "synopsis": "Libéré après 19 ans de bagne pour le vol d'un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
+      "sessions": {
+        "2026-11-13": [
+          "14:15"
+        ],
+        "2026-11-15": [
+          "19:45"
+        ],
+        "2026-11-16": [
+          "14:15",
+          "19:45"
+        ],
+        "2026-11-17": [
+          "14:15"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-13": {
+          "14:15": "VF"
+        },
+        "2026-11-15": {
+          "19:45": "VF"
+        },
+        "2026-11-16": {
+          "14:15": "VF",
+          "19:45": "VF"
+        },
+        "2026-11-17": {
+          "14:15": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FR4QY3X/KLWVDBN5.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "ce-qui-nous-mene-a-toi",
+      "title": "Ce qui nous mène à toi",
+      "genre": "Drame",
+      "duration": "1 h 36",
+      "director": "Khalil Cherti",
+      "press": null,
+      "audience": null,
+      "synopsis": "Charlie et Hicham, la trentaine, s’aiment follement mais ne parviennent pas à avoir d’enfant : leur couple est infertile. Ils entament alors un parcours d’Aide Médicale à la Procréation. Pendant trois ans, entre espoirs et déceptions, ils vont mettre leur amour et leurs corps à l’épreuve, vivre une odyssée qui va les bouleverser…",
+      "sessions": {
+        "2026-11-12": [
+          "16:50"
+        ],
+        "2026-11-13": [
+          "16:50",
+          "20:30"
+        ],
+        "2026-11-14": [
+          "14:20",
+          "16:50"
+        ],
+        "2026-11-15": [
+          "16:50"
+        ],
+        "2026-11-16": [
+          "14:20",
+          "16:50"
+        ],
+        "2026-11-17": [
+          "16:50",
+          "20:30"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-12": {
+          "16:50": "VF"
+        },
+        "2026-11-13": {
+          "16:50": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-14": {
+          "14:20": "VF",
+          "16:50": "VF"
+        },
+        "2026-11-15": {
+          "16:50": "VF"
+        },
+        "2026-11-16": {
+          "14:20": "VF",
+          "16:50": "VF"
+        },
+        "2026-11-17": {
+          "16:50": "VF",
+          "20:30": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRBLCMC/LUZ0BUG6.webp",
       "posterNote": "Affiche du film (billetterie)"
     },
     {
@@ -675,10 +393,6 @@
       "audience": null,
       "synopsis": "Ebenezer Scrooge est un vieil homme avare, pingre et solitaire. Bien évidemment, il déteste et méprise Noël et tout ce qui engendre le bonheur. C'est alors qu'il reçoit la visite du fantôme d'un ancien associé ainsi que par les esprits de Noëls du passé, du présent et du futur.",
       "sessions": {
-        "2026-11-11": [
-          "16:05",
-          "20:25"
-        ],
         "2026-11-12": [
           "16:05",
           "20:25"
@@ -705,10 +419,6 @@
         ]
       },
       "sessionVersions": {
-        "2026-11-11": {
-          "16:05": "VF",
-          "20:25": "VF"
-        },
         "2026-11-12": {
           "16:05": "VF",
           "20:25": "VOST"
@@ -739,97 +449,133 @@
       "posterNote": "Affiche du film (billetterie)"
     },
     {
-      "id": "ce-qui-nous-mene-a-toi",
-      "title": "Ce qui nous mène à toi",
-      "genre": "Drame",
-      "duration": "1 h 36",
-      "director": "Khalil Cherti",
+      "id": "l-affaire-marie-claire",
+      "title": "L'Affaire Marie-Claire",
+      "genre": "Histoire, Drame, Thriller, Judiciaire, Biographie, Biopic",
+      "duration": "1 h 42",
+      "director": "Lauriane Escaffre, Yvo Muller",
       "press": null,
       "audience": null,
-      "synopsis": "Charlie et Hicham, la trentaine, s’aiment follement mais ne parviennent pas à avoir d’enfant : leur couple est infertile. Ils entament alors un parcours d’Aide Médicale à la Procréation. Pendant trois ans, entre espoirs et déceptions, ils vont mettre leur amour et leurs corps à l’épreuve, vivre une odyssée qui va les bouleverser…",
+      "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre. Au nom de toutes.",
       "sessions": {
-        "2026-11-11": [
-          "16:50",
+        "2026-11-12": [
+          "16:25",
           "20:30"
         ],
-        "2026-11-12": [
-          "14:20",
-          "16:50"
-        ],
         "2026-11-13": [
-          "16:50",
+          "16:25",
           "20:30"
         ],
         "2026-11-14": [
-          "14:20",
-          "16:50"
+          "16:25",
+          "20:30"
         ],
         "2026-11-15": [
-          "16:50"
+          "16:25",
+          "20:30"
         ],
         "2026-11-16": [
-          "14:20",
-          "16:50"
+          "16:25",
+          "20:30"
         ],
         "2026-11-17": [
-          "16:50",
+          "16:25",
           "20:30"
         ]
       },
       "sessionVersions": {
-        "2026-11-11": {
-          "16:50": "VF",
+        "2026-11-12": {
+          "16:25": "VF",
           "20:30": "VF"
         },
-        "2026-11-12": {
-          "14:20": "VF",
-          "16:50": "VF"
-        },
         "2026-11-13": {
-          "16:50": "VF",
+          "16:25": "VF",
           "20:30": "VF"
         },
         "2026-11-14": {
-          "14:20": "VF",
-          "16:50": "VF"
+          "16:25": "VF",
+          "20:30": "VF"
         },
         "2026-11-15": {
-          "16:50": "VF"
+          "16:25": "VF",
+          "20:30": "VF"
         },
         "2026-11-16": {
-          "14:20": "VF",
-          "16:50": "VF"
+          "16:25": "VF",
+          "20:30": "VF"
         },
         "2026-11-17": {
-          "16:50": "VF",
+          "16:25": "VF",
           "20:30": "VF"
         }
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FRBLCMC/LUZ0BUG6.webp",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRITYIL/361FTO48.webp",
       "posterNote": "Affiche du film (billetterie)"
     },
     {
-      "id": "mochy",
-      "title": "Mochy",
-      "genre": "Animation, Aventure, Comédie, Familial",
-      "duration": "1 h 24",
-      "director": "Jérémie Degruson, Yanis Belaid",
-      "press": null,
-      "audience": null,
-      "synopsis": "Mochy est un jeune chien au grand cœur… mais il n’a pas un physique facile…  Ça ne l’empêche pas d’avoir un rêve : participer au concours du plus beau chien. Défiant tous les obstacles, il va tout faire pour réaliser ce projet fou avec le secret espoir d’y trouver l’humain qui l’aimera pour la vie.",
+      "id": "wild-horse-nine",
+      "title": "Wild Horse Nine",
+      "genre": "Thriller, Comédie, Drame, Crime, Policier",
+      "duration": "1 h 57",
+      "director": "Martin McDonagh",
+      "press": "3,8",
+      "audience": "3,9",
+      "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
       "sessions": {
-        "2026-11-11": [
-          "17:00"
+        "2026-11-12": [
+          "16:40",
+          "20:20"
+        ],
+        "2026-11-13": [
+          "14:05",
+          "16:40"
+        ],
+        "2026-11-14": [
+          "16:40",
+          "20:20"
+        ],
+        "2026-11-15": [
+          "14:05",
+          "20:20"
+        ],
+        "2026-11-16": [
+          "16:40",
+          "20:20"
+        ],
+        "2026-11-17": [
+          "14:05",
+          "16:40"
         ]
       },
       "sessionVersions": {
-        "2026-11-11": {
-          "17:00": "VF"
+        "2026-11-12": {
+          "16:40": "VF",
+          "20:20": "VOST"
+        },
+        "2026-11-13": {
+          "14:05": "VF",
+          "16:40": "VF"
+        },
+        "2026-11-14": {
+          "16:40": "VF",
+          "20:20": "VF"
+        },
+        "2026-11-15": {
+          "14:05": "VF",
+          "20:20": "VF"
+        },
+        "2026-11-16": {
+          "16:40": "VF",
+          "20:20": "VOST"
+        },
+        "2026-11-17": {
+          "14:05": "VF",
+          "16:40": "VF"
         }
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FRKD5Y5/11K4Q13Y.webp",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRQ5S88/FWDY5ZH2.webp",
       "posterNote": "Affiche du film (billetterie)"
     },
     {
@@ -865,6 +611,101 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRPZGRL/SLGZ5W6X.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "un-bon-patron",
+      "title": "Un bon patron",
+      "genre": "Comédie",
+      "duration": "1 h 27",
+      "director": "Philippe de Chauveron",
+      "press": "2,7",
+      "audience": "2,5",
+      "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l'ancestrale fabrique familiale de balances.",
+      "sessions": {
+        "2026-11-12": [
+          "17:00",
+          "20:30"
+        ],
+        "2026-11-13": [
+          "17:00",
+          "20:30"
+        ],
+        "2026-11-14": [
+          "17:00",
+          "20:30"
+        ],
+        "2026-11-15": [
+          "17:00",
+          "20:30"
+        ],
+        "2026-11-16": [
+          "17:00",
+          "20:30"
+        ],
+        "2026-11-17": [
+          "17:00",
+          "20:30"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-12": {
+          "17:00": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-13": {
+          "17:00": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-14": {
+          "17:00": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-15": {
+          "17:00": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-16": {
+          "17:00": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-17": {
+          "17:00": "VF",
+          "20:30": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FR8X5VA/O9G0SECQ.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000031925.html",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "l-ile-des-souvenirs",
+      "title": "L'île des souvenirs",
+      "genre": "Animation, Aventure, Comédie, Familial, Fantastique",
+      "duration": "1 h 49",
+      "director": "Januel Mercado, Joel Crawford",
+      "press": null,
+      "audience": null,
+      "synopsis": "Pendant qu'elles passent une dernière soirée ensemble avant de s'engager sur des voies différentes, Jo et Raissa, amies depuis toujours, trouvent un portail mystérieux qui les transporte sur Nakali, une île mythique peuplée de créatures magiques dont leurs familles philippines leur ont parlé. Alors qu'elles cherchent à rentrer chez elles, Jo et Raissa découvrent que leurs souvenirs sont en péril. Réussiront-elles à quitter l'île avant de s'oublier l'une l'autre ?",
+      "sessions": {
+        "2026-11-14": [
+          "14:50"
+        ],
+        "2026-11-15": [
+          "14:50"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-14": {
+          "14:50": "VF"
+        },
+        "2026-11-15": {
+          "14:50": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRXGT5X/TIKWQMMM.webp",
       "posterNote": "Affiche du film (billetterie)"
     },
     {
@@ -941,7 +782,7 @@
       "title": "LA NUIT DE LA GLISSE 2026 THE CALL",
       "genre": "Documentaire, Sport Event",
       "duration": "1 h 51",
-      "director": "Olivier Sautet, Thierry Donard",
+      "director": "Thierry Donard, Olivier Sautet",
       "press": null,
       "audience": null,
       "synopsis": "THE CALL suit une nouvelle génération d'athlètes extraordinaires répondant à l'appel de la nature : en quête de la ligne parfaite, du geste juste et de cet instant fugace où l'engagement, la maîtrise et les éléments ne font qu'un.",
