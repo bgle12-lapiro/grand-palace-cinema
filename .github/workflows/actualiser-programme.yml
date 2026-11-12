@@ -187,23 +187,17 @@ jobs:
                           if film_id not in candidate_ids:
                               candidate_ids.append(film_id)
               add_candidates(old.get('allocineUrl', ''))
-              # Identifiants vérifiés sur les fiches officielles AlloCiné (nov. 2026).
-              # Les titres restent vérifiés sur la fiche avant toute attribution de note.
-              verified_ids = {
-                  normalize("Le Fantôme de l'Opéra"): '1000019622',
-                  normalize('Il faut brûler Maman'): '1000039483',
-              }
-              if normalize(title) in verified_ids:
-                  add_candidates('fichefilm_gen_cfilm=' + verified_ids[normalize(title)])
               if normalize(title) == normalize('La Maison de nos rêves'):
                   add_candidates('fichefilm_gen_cfilm=1000031247')
               queries = [
                   ('AlloCiné', 'https://www.allocine.fr/rechercher/?q=' + quote(title)),
+                  ('Bing', 'https://www.bing.com/search?q=' + quote('"' + title + '" film allocine')),
                   ('Bing RSS', 'https://www.bing.com/search?format=rss&q=' + quote('"' + title + '" site:allocine.fr/film/')),
+                  ('Google', 'https://www.google.com/search?q=' + quote('"' + title + '" site:allocine.fr/film/')),
               ]
               for source, url in queries:
                   try:
-                      response = session.get(url, timeout=12)
+                      response = session.get(url, timeout=25)
                       response.raise_for_status()
                       before = len(candidate_ids)
                       add_candidates(response.text)
@@ -213,7 +207,7 @@ jobs:
                   except requests.RequestException as exc:
                       print(f'Recherche {source} indisponible pour {title}: {exc}')
               print(f'AlloCiné {title}: {len(candidate_ids)} fiche(s) candidate(s)')
-              for film_id in candidate_ids[:5]:
+              for film_id in candidate_ids[:25]:
                   url = f'https://www.allocine.fr/film/fichefilm_gen_cfilm={film_id}.html'
                   try:
                       page = get_page(url)
@@ -223,7 +217,7 @@ jobs:
                   names = []
                   for tag in page.select('h1, meta[property="og:title"], meta[name="twitter:title"]'):
                       names.append(tag.get('content', '') if tag.name == 'meta' else tag.get_text(' ', strip=True))
-                  verified = any(normalize(re.split(r'\s+[-|]\s+AlloCin[eé]', name, flags=re.I)[0]) == normalize(title) for name in names)
+                  verified = any(normalize(re.split(r'\s+-\s+AlloCin[eé]', name, flags=re.I)[0]) == normalize(title) for name in names)
                   if not verified:
                       print(f'Fiche écartée pour {title}: {film_id}; titres={names[:2]}')
                       continue
@@ -339,29 +333,21 @@ jobs:
                   film['allocineUrl'] = old['allocineUrl']
               if film['poster']:
                   film['posterNote'] = 'Affiche du film (billetterie)'
+              # Chercher les notes manquantes sur une fiche AlloCiné dont le titre est confirmé.
+              # Ne jamais remplacer une note déjà enregistrée.
+              if not film['press'] or not film['audience']:
+                  try:
+                      allocine = allocine_metadata(title)
+                      for field in ('press', 'audience'):
+                          if not film[field] and allocine.get(field):
+                              film[field] = allocine[field]
+                      if allocine.get('allocineUrl'):
+                          film['allocineUrl'] = allocine['allocineUrl']
+                      print(f'Notes pour {title}: presse={film["press"]}, spectateurs={film["audience"]}')
+                  except Exception as exc:
+                      # Une recherche externe en échec ne doit pas bloquer le programme.
+                      print(f'Recherche AlloCiné impossible pour {title}: {exc}')
               films.append(film)
-          # Compléter les notes manquantes, sans écraser les notes existantes.
-          # Limiter le nombre de recherches pour éviter une exécution trop longue.
-          missing = [f for f in films if not f.get('press') or not f.get('audience')]
-          print(f'Notes AlloCiné : {len(missing)} film(s) à compléter.')
-          priority_titles = {normalize("Le Fantôme de l'Opéra"), normalize('Il faut brûler Maman')}
-          missing.sort(key=lambda film: (normalize(film['title']) not in priority_titles, film['title']))
-          for film in missing[:8]:
-              try:
-                  info = allocine_metadata(film['title'])
-              except Exception as exc:
-                  # Une recherche AlloCiné défaillante ne doit jamais empêcher
-                  # l'actualisation des séances du cinéma.
-                  print(f'Recherche AlloCiné impossible pour {film["title"]}: {exc}')
-                  continue
-              if not info:
-                  continue
-              for field in ('press', 'audience'):
-                  if not film.get(field) and info.get(field):
-                      film[field] = info[field]
-              if info.get('allocineUrl'):
-                  film['allocineUrl'] = info['allocineUrl']
-              print(f'Notes conservées pour {film["title"]}: presse={film.get("press")}, spectateurs={film.get("audience")}')
           print(f'Données structurées : {len(programme["events"])} événements, {len(films)} films avec séances dans la période.')
           if len(films) < 3:
               raise SystemExit(f'Arrêt de sécurité : seulement {len(films)} films trouvés. films.json inchangé.')
