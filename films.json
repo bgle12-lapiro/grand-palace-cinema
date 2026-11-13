@@ -1,8 +1,8 @@
 {
   "cinema": "Le Grand Palace",
   "city": "Les Sables-d’Olonne",
-  "lastChecked": "2026-11-12",
-  "weekLabel": "Programme actualisé le 12/11/2026",
+  "lastChecked": "2026-11-13",
+  "weekLabel": "Programme actualisé le 13/11/2026",
   "films": [
     {
       "id": "le-fantome-de-l-opera",
@@ -104,9 +104,6 @@
       "audience": "3,5",
       "synopsis": "Jean Moulin est parachuté en France occupée pour unifier les réseaux de la Résistance, sous l’égide du général de Gaulle. Malgré ses efforts pour rester dans l’ombre, Moulin est trahi puis livré à la Gestapo à Lyon, dirigée par l’impitoyable Klaus Barbie. Torturé sans relâche, il ne cède jamais. Sa détermination silencieuse contribuera à galvaniser les forces de la Résistance et à faire naître un nouvel esprit de combat et de liberté en France…",
       "sessions": {
-        "2026-11-12": [
-          "20:05"
-        ],
         "2026-11-13": [
           "14:10",
           "20:05"
@@ -129,9 +126,6 @@
         ]
       },
       "sessionVersions": {
-        "2026-11-12": {
-          "20:05": "VF"
-        },
         "2026-11-13": {
           "14:10": "VF",
           "20:05": "VF"
@@ -165,12 +159,9 @@
       "duration": "1 h 22",
       "director": "Albert Dupontel",
       "press": "3,0",
-      "audience": "3,4",
+      "audience": "3,3",
       "synopsis": "Dans une famille de croque-morts, deux sœurs et un frère se retrouvent pour les funérailles de leur mère. Le personnel étant en grève, ils doivent accomplir le protocole funéraire par eux-mêmes.  Comment s’accorder pour brûler maman ?",
       "sessions": {
-        "2026-11-12": [
-          "20:30"
-        ],
         "2026-11-13": [
           "14:15",
           "20:30"
@@ -193,9 +184,6 @@
         ]
       },
       "sessionVersions": {
-        "2026-11-12": {
-          "20:30": "VF"
-        },
         "2026-11-13": {
           "14:15": "VF",
           "20:30": "VF"
@@ -232,9 +220,6 @@
       "audience": "4,0",
       "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans une communauté religieuse dans laquelle elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
       "sessions": {
-        "2026-11-12": [
-          "20:00"
-        ],
         "2026-11-13": [
           "14:15",
           "20:00"
@@ -255,9 +240,6 @@
         ]
       },
       "sessionVersions": {
-        "2026-11-12": {
-          "20:00": "VF"
-        },
         "2026-11-13": {
           "14:15": "VF",
           "20:00": "VF"
@@ -332,7 +314,7 @@
       "duration": "1 h 36",
       "director": "Khalil Cherti",
       "press": "3,8",
-      "audience": "4,1",
+      "audience": "4,0",
       "synopsis": "Charlie et Hicham, la trentaine, s’aiment follement mais ne parviennent pas à avoir d’enfant : leur couple est infertile. Ils entament alors un parcours d’Aide Médicale à la Procréation. Pendant trois ans, entre espoirs et déceptions, ils vont mettre leur amour et leurs corps à l’épreuve, vivre une odyssée qui va les bouleverser…",
       "sessions": {
         "2026-11-13": [
@@ -391,9 +373,6 @@
       "audience": "3,9",
       "synopsis": "Ebenezer Scrooge est un vieil homme avare, pingre et solitaire. Bien évidemment, il déteste et méprise Noël et tout ce qui engendre le bonheur. C'est alors qu'il reçoit la visite du fantôme d'un ancien associé ainsi que par les esprits de Noëls du passé, du présent et du futur.",
       "sessions": {
-        "2026-11-12": [
-          "20:25"
-        ],
         "2026-11-13": [
           "16:05",
           "20:25"
@@ -416,9 +395,6 @@
         ]
       },
       "sessionVersions": {
-        "2026-11-12": {
-          "20:25": "VOST"
-        },
         "2026-11-13": {
           "16:05": "VF",
           "20:25": "VF"
@@ -455,9 +431,6 @@
       "audience": null,
       "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre. Au nom de toutes.",
       "sessions": {
-        "2026-11-12": [
-          "20:30"
-        ],
         "2026-11-13": [
           "16:25",
           "20:30"
@@ -480,9 +453,6 @@
         ]
       },
       "sessionVersions": {
-        "2026-11-12": {
-          "20:30": "VF"
-        },
         "2026-11-13": {
           "16:25": "VF",
           "20:30": "VF"
@@ -518,9 +488,6 @@
       "audience": "3,9",
       "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
       "sessions": {
-        "2026-11-12": [
-          "20:20"
-        ],
         "2026-11-13": [
           "14:05",
           "16:40"
@@ -543,9 +510,6 @@
         ]
       },
       "sessionVersions": {
-        "2026-11-12": {
-          "20:20": "VOST"
-        },
         "2026-11-13": {
           "14:05": "VF",
           "16:40": "VF"
@@ -610,9 +574,6 @@
       "audience": "2,6",
       "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l'ancestrale fabrique familiale de balances.",
       "sessions": {
-        "2026-11-12": [
-          "20:30"
-        ],
         "2026-11-13": [
           "17:00",
           "20:30"
@@ -635,9 +596,6 @@
         ]
       },
       "sessionVersions": {
-        "2026-11-12": {
-          "20:30": "VF"
-        },
         "2026-11-13": {
           "17:00": "VF",
           "20:30": "VF"
@@ -829,6 +787,29 @@
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRVNGZA/Y6LZZ97U.webp",
       "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000012019.html",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "changer-l-eau-des-fleurs",
+      "title": "Changer l'eau des fleurs",
+      "genre": "Drame",
+      "duration": "2 h 12",
+      "director": "Jean-Pierre Jeunet",
+      "press": null,
+      "audience": null,
+      "synopsis": "Violette, la quarantaine, est garde-cimetière dans une petite ville de Bourgogne. Un métier qui lui permet d'être auprès de la tombe de sa fille décédée des années plus tôt. Son quotidien est rythmé par les confidences des personnes de passage ou habitués du lieu, qui viennent trouver un peu de réconfort dans sa  loge. Un jour, elle reçoit la visite d'un policier, Julien Seul, venu déposer les cendres de sa mère sur la tombe de l'homme qu'elle aimait. Intrigué par l’histoire de Violette, dont le mari a disparu mystérieusement, peu de temps après leur arrivée au cimetière, il décide d’enquêter, faisant sans le vouloir remonter à la surface de douloureux souvenirs ainsi que des vérités salvatrices pour Violette.",
+      "sessions": {
+        "2026-11-27": [
+          "20:00"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-27": {
+          "20:00": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRSR6ZF/2IUZ05CQ.webp",
       "posterNote": "Affiche du film (billetterie)"
     }
   ]
