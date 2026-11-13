@@ -238,7 +238,7 @@ jobs:
               searches = [
                   ('Bing RSS', 'https://www.bing.com/search?format=rss&q=' + quote(search_text)),
                   ('AlloCiné', 'https://www.allocine.fr/rechercher/?q=' + quote(title)),
-                  ('DuckDuckGo', 'https://www.google.com/search?q=' + quote(search_text + ' site:allocine.fr/film/')),
+                  ('DuckDuckGo', 'https://html.duckduckgo.com/html/?q=' + quote(search_text + ' site:allocine.fr/film/')),
               ]
               for source, url in searches:
                   try:
