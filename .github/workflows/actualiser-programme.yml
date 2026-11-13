@@ -177,8 +177,8 @@ jobs:
               def add_candidates(raw):
                   from html import unescape
               raw = str(raw or '')
-             for _ in range(3):
-              raw = unescape(requests.utils.unquote(raw))
+              for _ in range(3):
+                raw = unescape(requests.utils.unquote(raw))
              raw = raw.replace('\\/', '/')
              patterns = [
               r'fichefilm_gen_cfilm(?:=|%3[dD])(\d+)',
