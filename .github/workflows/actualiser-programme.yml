@@ -176,12 +176,19 @@ jobs:
 
               def add_candidates(raw):
                   from html import unescape
-                  raw = str(raw or '')
-                  for _ in range(3):
-                      raw = unescape(requests.utils.unquote(raw)).replace('\\/', '/')
-                  for film_id in re.findall(r'fichefilm_gen_cfilm(?:=|%3[dD]|\\u003[dD])(\d+)', raw, re.I):
-                      if film_id not in ids:
-                          ids.append(film_id)
+              raw = str(raw or '')
+             for _ in range(3):
+              raw = unescape(requests.utils.unquote(raw))
+             raw = raw.replace('\\/', '/')
+             patterns = [
+              r'fichefilm_gen_cfilm(?:=|%3[dD])(\d+)',
+              r'/film/fichefilm_gen_cfilm=(\d+)',
+              r'/film/(\d+)(?:/|\.html)',
+              ]
+              for pattern in patterns:
+             for film_id in re.findall(pattern, raw, re.I):
+                if film_id not in ids:
+                ids.append(film_id) 
 
               add_candidates(old.get('allocineUrl', ''))
               known = {
@@ -236,9 +243,10 @@ jobs:
               # Recherche limitée aux films non identifiés, pour éviter les longs traitements.
               search_text = '"' + title + '" ' + (director.split(',')[0] if director and director != 'Non renseigné' else 'film') + ' allocine'
               searches = [
-                  ('Bing RSS', 'https://www.bing.com/search?format=rss&q=' + quote(search_text)),
-                  ('AlloCiné', 'https://www.allocine.fr/rechercher/?q=' + quote(title)),
-                  ('DuckDuckGo', 'https://html.duckduckgo.com/html/?q=' + quote(search_text + ' site:allocine.fr/film/')),
+              ('Bing RSS', 'https://www.bing.com/search?format=rss&q=' + quote(search_text)),
+              ('AlloCiné', 'https://www.allocine.fr/rechercher/?q=' + quote(title)),
+              ('DuckDuckGo', 'https://html.duckduckgo.com/html/?q=' + quote(search_text)),
+              ('Google', 'https://www.google.com/search?q=' + quote(search_text + ' site:allocine.fr/film/')),
               ]
               for source, url in searches:
                   try:
