@@ -94,3 +94,278 @@ jobs:
               return ''
 
           def extract_metadata(soup, title):
+              movie = movie_jsonld(soup, title)
+              result = {}
+              if movie:
+                  for field in ('genre', 'director'):
+                      value = text_value(movie.get(field))
+                      if value:
+                          result[field] = value
+                  duration = duration_label(movie.get('duration'))
+                  if duration:
+                      result['duration'] = duration
+                  description = text_value(movie.get('description'))
+                  if description and not description.endswith(('…', '...')):
+                      result['synopsis'] = description
+              # La fiche de billetterie est prioritaire pour les données éditoriales.
+              # Éviter les descriptions génériques de la plateforme.
+              description_tag = soup.find('meta', attrs={'property': 'og:description'})
+              image_tag = soup.find('meta', attrs={'property': 'og:image'})
+              if description_tag and 'synopsis' not in result:
+                  description = description_tag.get('content', '').strip()
+                  if description and not description.endswith(('…', '...')):
+                      result['synopsis'] = description
+              # Le synopsis visible sur la fiche peut ne pas figurer dans les
+              # metadonnees JSON-LD / Open Graph. Chercher uniquement dans
+              # la zone de presentation du film, avant les autres films.
+              heading = soup.find('h1')
+              if heading:
+                  visible_candidates = []
+                  for element in heading.next_elements:
+                      if isinstance(element, Tag) and element.name in ('h1', 'h2'):
+                          break
+                      if isinstance(element, Tag) and element.name in ('p', 'div'):
+                          # Ne pas prendre le texte des grands conteneurs,
+                          # qui melangent synopsis et recommandations.
+                          if element.find(['p', 'div', 'h1', 'h2']):
+                              continue
+                          value = element.get_text(' ', strip=True)
+                          if len(value) >= 110:
+                              visible_candidates.append(value)
+                              
+                          
+                     
+                      elif isinstance(element, NavigableString):
+                          value = str(element).strip()
+                          if len(value) >= 110:
+                              visible_candidates.append(value)
+                  if visible_candidates:
+                      visible = max(visible_candidates, key=len)
+                      # Preferer le texte complet au resume des balises meta.
+                      if len(visible) > len(result.get('synopsis', '')):
+                          result['synopsis'] = visible
+              if image_tag:
+                  image_url = image_tag.get('content', '').strip()
+                  if image_url and not image_url.startswith('data:'):
+                      result['poster'] = urljoin(CINEMA_URL, image_url)
+              return result
+
+          def verified_ticketing_metadata(url, title):
+              # Ne jamais attribuer une fiche de billetterie sans titre confirmé.
+              page = get_page(url)
+              names = []
+              for selector in ('h1', 'meta[property="og:title"]', 'meta[name="twitter:title"]'):
+                  for tag in page.select(selector):
+                      name = tag.get('content', '') if tag.name == 'meta' else tag.get_text(' ', strip=True)
+                      if name:
+                          names.append(name)
+              movie = movie_jsonld(page, title)
+              if movie:
+                  names.append(str(movie.get('name', '')))
+              verified = any(normalize(name) == normalize(title) for name in names)
+              if not verified:
+                  print(f'Fiche billetterie rejetée pour {title}: {url}; titres={names[:3]}')
+                  return {}
+              print(f'Fiche billetterie vérifiée pour {title}: {url}')
+              return extract_metadata(page, title)
+
+          def allocine_metadata(title):
+              # Réutiliser d'abord une fiche déjà vérifiée, si elle existe.
+              old = old_by_title.get(normalize(title), {})
+              candidate_ids = []
+              def add_candidates(raw):
+                  # Plusieurs couches de décodage pour les liens de moteurs.
+                  from html import unescape
+                  for _ in range(3):
+                      raw = unescape(requests.utils.unquote(raw)).replace('\\/', '/')
+                  for pattern in (
+                      r'fichefilm_gen_cfilm\s*=\s*(\d+)',
+                      r'fichefilm_gen_cfilm%3[dD](\d+)',
+                      r'fichefilm_gen_cfilm\\u003[dD](\d+)',
+                      r'allocine\.fr/film/(?:fichefilm_gen_cfilm=)?(\d+)(?:[./?&#]|$)',
+                      r'/film/(\d+)(?:/|\.html)',
+                  ):
+                      for film_id in re.findall(pattern, raw, re.I):
+                          if film_id not in candidate_ids:
+                              candidate_ids.append(film_id)
+              add_candidates(old.get('allocineUrl', ''))
+              if normalize(title) == normalize('La Maison de nos rêves'):
+                  add_candidates('fichefilm_gen_cfilm=1000031247')
+              queries = [
+                  ('AlloCiné', 'https://www.allocine.fr/rechercher/?q=' + quote(title)),
+                  ('Bing', 'https://www.bing.com/search?q=' + quote('"' + title + '" film allocine')),
+                  ('Bing RSS', 'https://www.bing.com/search?format=rss&q=' + quote('"' + title + '" site:allocine.fr/film/')),
+                  ('Google', 'https://www.google.com/search?q=' + quote('"' + title + '" site:allocine.fr/film/')),
+                  ('DuckDuckGo', 'https://www.google.com/search?gbv=1&q=' + quote(title + ' allocine fichefilm')),
+                  ('DuckDuckGo HTML', 'https://html.duckduckgo.com/html/?q=' + quote(title + ' site:allocine.fr/film/')),
+                  ('Bing sans guillemets', 'https://www.bing.com/search?q=' + quote(title + ' allocine fichefilm_gen_cfilm')),
+              ]
+              for source, url in queries:
+                  try:
+                      response = session.get(url, timeout=25)
+                      response.raise_for_status()
+                      before = len(candidate_ids)
+                      add_candidates(response.text)
+                      # Les liens de résultats peuvent ne pas comporter de numéro
+                      # sous la forme canonique : les diagnostiquer explicitement.
+                      print(f'Recherche {source} pour {title}: +{len(candidate_ids)-before} candidat(s), HTTP {response.status_code}')
+                  except requests.RequestException as exc:
+                      print(f'Recherche {source} indisponible pour {title}: {exc}')
+              print(f'AlloCiné {title}: {len(candidate_ids)} fiche(s) candidate(s)')
+              for film_id in candidate_ids[:25]:
+                  url = f'https://www.allocine.fr/film/fichefilm_gen_cfilm={film_id}.html'
+                  try:
+                      page = get_page(url)
+                  except requests.RequestException as exc:
+                      print(f'Fiche non accessible {film_id}: {exc}')
+                      continue
+                  names = []
+                  for tag in page.select('h1, meta[property="og:title"], meta[name="twitter:title"]'):
+                      names.append(tag.get('content', '') if tag.name == 'meta' else tag.get_text(' ', strip=True))
+                  verified = any(normalize(re.split(r'\s+-\s+AlloCin[eé]', name, flags=re.I)[0]) == normalize(title) for name in names)
+                  if not verified:
+                      print(f'Fiche écartée pour {title}: {film_id}; titres={names[:2]}')
+                      continue
+                  text = page.get_text(' ', strip=True)
+                  result = {'allocineUrl': url}
+                  press = re.search(r'\bPresse\s+([0-5][,.]\d)\b', text, re.I)
+                  audience = re.search(r'\bSpectateurs\s+([0-5][,.]\d)\b', text, re.I)
+                  if press:
+                      result['press'] = press.group(1).replace('.', ',')
+                  if audience:
+                      result['audience'] = audience.group(1).replace('.', ',')
+                  header = text[:3000]
+                  duration = re.search(r'\b(\d+)h\s*(\d{1,2})min\b', header, re.I)
+                  if duration:
+                      result['duration'] = f'{int(duration.group(1))} h {int(duration.group(2)):02d}'
+                  genre_match = re.search(r'\b\d+h\s*\d{1,2}min\s*\|\s*([^|]{3,60}?)\s+De\s+', header)
+                  if genre_match:
+                      result['genre'] = genre_match.group(1).strip()
+                  director_match = re.search(r'\bDe\s+(.{2,80}?)\s*\|\s*Par\s+', header)
+                  if director_match:
+                      result['director'] = director_match.group(1).strip()
+                  print(f'Fiche AlloCiné vérifiée pour {title}: {url}; champs={list(result)}')
+                  return result
+              print(f'Aucune fiche AlloCiné certaine pour {title}')
+              return {}
+
+          with open('films.json', encoding='utf-8') as f:
+              old_data = json.load(f)
+          old_by_title = {normalize(f.get('title', '')): f for f in old_data.get('films', [])}
+          soup = get_page(CINEMA_URL)
+          programme = None
+          for script in soup.find_all('script'):
+              content = script.string or script.get_text()
+              match = re.search(r'\bvar\s+gProg\s*=\s*(\{.*?\})\s*;', content, re.S)
+              if match:
+                  try:
+                      candidate = json.loads(match.group(1))
+                  except (ValueError, TypeError):
+                      continue
+                  if candidate.get('ticketing_web_id') == '99S05SBN':
+                      programme = candidate
+                      break
+          if not programme or not isinstance(programme.get('events'), list):
+              raise SystemExit('Arrêt de sécurité : données gProg introuvables. films.json inchangé.')
+          today = datetime.now(ZoneInfo('Europe/Paris')).date()
+          last_day = today + timedelta(days=14)
+          films = []
+          seen = set()
+          for event in programme['events']:
+              title = str(event.get('title') or '').strip()
+              if not title:
+                  continue
+              sessions = {}
+              session_versions = {}
+              for show in event.get('sessions', []):
+                  stamp = str(show.get('date') or '')
+                  if not re.fullmatch(r'\d{12}', stamp):
+                      continue
+                  try:
+                      show_day = date(int(stamp[:4]), int(stamp[4:6]), int(stamp[6:8]))
+                  except ValueError:
+                      continue
+                  if not today <= show_day <= last_day:
+                      continue
+                  day = show_day.isoformat()
+                  hour = f'{stamp[8:10]}:{stamp[10:12]}'
+                  sessions.setdefault(day, []).append(hour)
+                  features = [str(v).lower() for v in (show.get('display_features') or [])]
+                  raw_features = [str(v).lower() for v in (show.get('features') or [])]
+                  version = None
+                  if 'vost' in features or ('vo' in raw_features and 'subtitle' in raw_features):
+                      version = 'VOST'
+                  elif 'vf' in features or 'vf' in raw_features:
+                      version = 'VF'
+                  elif 'vo' in features or 'vo' in raw_features:
+                      version = 'VO'
+                  if version:
+                      session_versions.setdefault(day, {})[hour] = version
+              if not sessions:
+                  continue
+              key = normalize(title)
+              if key in seen:
+                  print(f'Doublon ignoré : {title}')
+                  continue
+              seen.add(key)
+              old = old_by_title.get(key, {})
+              # Les données de la billetterie sont directement liées au film.
+              genre = str(event.get('localized_genres') or '').strip()
+              director = str(event.get('director') or '').strip()
+              synopsis = str(event.get('synopsis') or '').strip()
+              poster = str(event.get('bill_url') or '').strip()
+              duration_raw = str(event.get('duration') or '').strip()
+              duration = ''
+              if duration_raw.isdigit() and int(duration_raw) > 0:
+                  minutes = int(duration_raw)
+                  duration = f'{minutes // 60} h {minutes % 60:02d}' if minutes >= 60 else f'{minutes} min'
+              # Conserver les notes déjà vérifiées, sans en inventer.
+              film = {
+                  'id': old.get('id') or slug(title),
+                  'title': title,
+                  'genre': genre or old.get('genre') or 'Non renseigné',
+                  'duration': duration or old.get('duration') or 'Non renseignée',
+                  'director': director or old.get('director') or 'Non renseigné',
+                  'press': old.get('press'),
+                  'audience': old.get('audience'),
+                  'synopsis': synopsis or old.get('synopsis') or '',
+                  'sessions': {day: sorted(set(times)) for day, times in sessions.items()},
+                  'sessionVersions': session_versions,
+                  'source': CINEMA_URL,
+                  'poster': poster or old.get('poster') or '',
+              }
+              if old.get('allocineUrl'):
+                  film['allocineUrl'] = old['allocineUrl']
+              if film['poster']:
+                  film['posterNote'] = 'Affiche du film (billetterie)'
+              notes = allocine_metadata(title)
+              for champ in ('press', 'audience', 'allocineUrl'):
+                  if notes.get(champ):
+                      film[champ] = notes[champ]
+              films.append(film)
+          print(f'Données structurées : {len(programme["events"])} événements, {len(films)} films avec séances dans la période.')
+          if len(films) < 3:
+              raise SystemExit(f'Arrêt de sécurité : seulement {len(films)} films trouvés. films.json inchangé.')
+          new_data = {
+              'cinema': old_data.get('cinema', 'Le Grand Palace'),
+              'city': old_data.get('city', 'Les Sables-d’Olonne'),
+              'lastChecked': today.isoformat(),
+              'weekLabel': f"Programme actualisé le {today.strftime('%d/%m/%Y')}",
+              'films': films,
+          }
+          with open('films.json', 'w', encoding='utf-8') as f:
+              json.dump(new_data, f, ensure_ascii=False, indent=2)
+              f.write('\n')
+          print(f'Programme actualisé : {len(films)} films, du {today} au {last_day}.')
+          PYCODE
+      - name: Publier la mise à jour dans GitHub
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add films.json
+          if git diff --cached --quiet; then
+            echo "Aucun changement du programme à publier."
+          else
+            git commit -m "Actualisation hebdomadaire du programme cinéma"
+            git push
+          fi
