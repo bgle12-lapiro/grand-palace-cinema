@@ -333,6 +333,10 @@ jobs:
                   film['allocineUrl'] = old['allocineUrl']
               if film['poster']:
                   film['posterNote'] = 'Affiche du film (billetterie)'
+                  notes = allocine_metadata(title)
+              for champ in ('press', 'audience', 'allocineUrl'):
+                  if notes.get(champ):
+                      film[champ] = notes[champ]
               films.append(film)
           print(f'Données structurées : {len(programme["events"])} événements, {len(films)} films avec séances dans la période.')
           if len(films) < 3:
