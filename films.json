@@ -14,9 +14,6 @@
       "audience": "3,0",
       "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste. A l’approche de la première représentation, entre accidents inexpliqués et révélations troublantes, Anastasia se trouve plongée dans une histoire d'amour impossible, à la frontière du réel et du fantastique.",
       "sessions": {
-        "2026-11-13": [
-          "14:00"
-        ],
         "2026-11-14": [
           "14:00"
         ],
@@ -28,9 +25,6 @@
         ]
       },
       "sessionVersions": {
-        "2026-11-13": {
-          "14:00": "VF"
-        },
         "2026-11-14": {
           "14:00": "VF"
         },
@@ -314,7 +308,7 @@
       "duration": "1 h 36",
       "director": "Khalil Cherti",
       "press": "3,8",
-      "audience": "4,0",
+      "audience": "4,1",
       "synopsis": "Charlie et Hicham, la trentaine, s’aiment follement mais ne parviennent pas à avoir d’enfant : leur couple est infertile. Ils entament alors un parcours d’Aide Médicale à la Procréation. Pendant trois ans, entre espoirs et déceptions, ils vont mettre leur amour et leurs corps à l’épreuve, vivre une odyssée qui va les bouleverser…",
       "sessions": {
         "2026-11-13": [
@@ -571,7 +565,7 @@
       "duration": "1 h 27",
       "director": "Philippe de Chauveron",
       "press": "2,7",
-      "audience": "2,6",
+      "audience": "2,5",
       "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l'ancestrale fabrique familiale de balances.",
       "sessions": {
         "2026-11-13": [
