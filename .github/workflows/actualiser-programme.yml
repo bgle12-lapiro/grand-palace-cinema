@@ -197,7 +197,7 @@ jobs:
                           if film_id not in candidate_ids:
                               candidate_ids.append(film_id)
               add_candidates(old.get('allocineUrl', ''))
-                  add_candidates('fichefilm_gen_cfilm=' + fiches_connues[normalize(title)]) if normalize(title) in fiches_connues else None
+              add_candidates('fichefilm_gen_cfilm=' + fiches_connues[normalize(title)]) if normalize(title) in fiches_connues else None
               if normalize(title) == normalize('La Maison de nos rêves'):
                   add_candidates('fichefilm_gen_cfilm=1000031247')
               queries = [
