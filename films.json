@@ -318,8 +318,8 @@
       "genre": "Histoire, Drame, Thriller, Judiciaire, Biographie, Biopic",
       "duration": "1 h 42",
       "director": "Lauriane Escaffre, Yvo Muller",
-      "press": null,
-      "audience": null,
+      "press": "3,3",
+      "audience": "4,2",
       "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre. Au nom de toutes.",
       "sessions": {
         "2026-11-15": [
@@ -351,7 +351,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRITYIL/361FTO48.webp",
-      "posterNote": "Affiche du film (billetterie)"
+      "posterNote": "Affiche du film (billetterie)",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=323550.html"
     },
     {
       "id": "ce-qui-nous-mene-a-toi",
@@ -456,8 +457,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRXGT5X/TIKWQMMM.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=296642.html"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=296642.html",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "carlo-acutis-un-saint-pour-notre-temps",
@@ -466,7 +467,7 @@
       "duration": "1 h 26",
       "director": "Luca Salmaso",
       "press": null,
-      "audience": null,
+      "audience": "3,9",
       "synopsis": "La vie de saint Carlo Acutis, avec les témoignages inédits de ses proches.",
       "sessions": {
         "2026-11-15": [
@@ -480,7 +481,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRPZGRL/SLGZ5W6X.webp",
-      "posterNote": "Affiche du film (billetterie)"
+      "posterNote": "Affiche du film (billetterie)",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000040300.html"
     },
     {
       "id": "camembert",
@@ -503,8 +505,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FR5SQOQ/F36L9J48.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=316136.html"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=316136.html",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "claude",
@@ -527,8 +529,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRYZEOA/OOO25ILS.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000038378.html"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000038378.html",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "quand-la-mer-monte",
@@ -551,8 +553,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FR1SNOJ/O0EQVG6X.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=57392.html"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=57392.html",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "la-nuit-de-la-glisse-2026-the-call",
@@ -575,8 +577,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRGMMJM/NL78NV7U.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000051726.html"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000051726.html",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "c-du-monde-australie",
@@ -668,8 +670,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRSR6ZF/2IUZ05CQ.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000018371.html"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000018371.html",
+      "posterNote": "Affiche du film (billetterie)"
     }
   ]
 }
