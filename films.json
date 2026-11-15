@@ -351,8 +351,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRITYIL/361FTO48.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=323550.html"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=323550.html",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "ce-qui-nous-mene-a-toi",
@@ -481,8 +481,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRPZGRL/SLGZ5W6X.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000040300.html"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000040300.html",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "camembert",
