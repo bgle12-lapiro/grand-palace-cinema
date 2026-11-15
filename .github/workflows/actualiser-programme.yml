@@ -178,6 +178,7 @@ jobs:
                   'changer l eau des fleurs': '1000018371',
                   'camembert': '316136',
                   'claude': '1000038378',
+                  'carlo acutis un saint pour notre temps': '1000040300',
               }
               old = old_by_title.get(normalize(title), {})
               candidate_ids = []
