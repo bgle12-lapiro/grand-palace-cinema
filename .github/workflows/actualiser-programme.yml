@@ -171,6 +171,14 @@ jobs:
 
           def allocine_metadata(title):
               # Réutiliser d'abord une fiche déjà vérifiée, si elle existe.
+               fiches_connues = {
+                   'l ile des souvenirs': '296642',
+                   'quand la mer monte': '57392',
+                   'la nuit de la glisse 2026 the call': '1000051726',
+                   'changer l eau des fleurs': '1000018371',
+                   'camembert': '316136',
+                   'claude': '1000038378',
+                  }
               old = old_by_title.get(normalize(title), {})
               candidate_ids = []
               def add_candidates(raw):
@@ -189,6 +197,7 @@ jobs:
                           if film_id not in candidate_ids:
                               candidate_ids.append(film_id)
               add_candidates(old.get('allocineUrl', ''))
+                  add_candidates('fichefilm_gen_cfilm=' + fiches_connues[normalize(title)]) if normalize(title) in fiches_connues else None
               if normalize(title) == normalize('La Maison de nos rêves'):
                   add_candidates('fichefilm_gen_cfilm=1000031247')
               queries = [
