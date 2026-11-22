@@ -10,8 +10,8 @@
       "genre": "Action, Science-Fiction, Aventure, Drame, Fantastique",
       "duration": "2 h 39",
       "director": "Francis Lawrence",
-      "press": null,
-      "audience": null,
+      "press": "3,0",
+      "audience": "3,9",
       "synopsis": "Alors que le jour se lève sur les 50e Hunger Games annuels, la peur s'empare des districts de Panem. Cette année, en l'honneur du Quarter Quell, deux fois plus de tributs seront tirés au sort. Dans le District 12, Haymitch Abernathy essaie de ne pas trop penser à ses chances. Tout ce qui lui importe est d'être avec la fille qu'il aime. Mais lorsque qu'il est appelé, tous ses rêves s'effondrent. Il est arraché à sa famille et à son amour, transporté au Capitole avec les trois autres tributs du District 12 : une jeune amie qui est presque une sœur pour lui, un parieur compulsif, et la fille la plus prétentieuse de la ville. Alors que les Jeux commencent, Haymitch comprend qu'il a été piégé pour échouer. Mais il est prêt à se battre... et faire en sorte que ce combat résonne bien au-delà de l'arène.",
       "sessions": {
         "2026-11-22": [
@@ -41,7 +41,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRN9L1N/MZMKYBYJ.webp",
-      "posterNote": "Affiche du film (billetterie)"
+      "posterNote": "Affiche du film (billetterie)",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000004528.html"
     },
     {
       "id": "karma",
@@ -78,8 +79,8 @@
       "genre": "Drame, Biopic, Biographie",
       "duration": "1 h 30",
       "director": "Mounia Meddour",
-      "press": null,
-      "audience": null,
+      "press": "2,8",
+      "audience": "3,9",
       "synopsis": "L’incroyable histoire vraie de Malika Bellaribi, la « diva des banlieues » : d’un bidonville de Nanterre jusqu’au Théâtre du Châtelet. Victime d’un grave accident à l’enfance, confrontée aux discriminations et à un drame intime, elle s’accroche à son rêve ambitieux : devenir mezzo-soprano.",
       "sessions": {
         "2026-11-22": [
@@ -109,7 +110,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FR61F7C/2I3EIO3Y.webp",
-      "posterNote": "Affiche du film (billetterie)"
+      "posterNote": "Affiche du film (billetterie)",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000018671.html"
     },
     {
       "id": "l-affaire-marie-claire",
@@ -259,12 +261,11 @@
       "genre": "Thriller, Drame, Suspense",
       "duration": "1 h 27",
       "director": "Alexandre Smia",
-      "press": null,
-      "audience": null,
+      "press": "3,4",
+      "audience": "3,7",
       "synopsis": "Fraîchement élu, le président Paul Archambault doit affronter une crise sans précédent : son homologue russe, cible d'un attentat, brandit un ultimatum nucléaire menaçant un allié de la France. Face au risque d'escalade militaire, le président réunit son état-major dans le bunker de l'Elysée. Dans le secret du Poste de Commandement Jupiter, Paul va devoir prendre une décision vertigineuse.",
       "sessions": {
         "2026-11-22": [
-          "16:40",
           "20:35"
         ],
         "2026-11-23": [
@@ -278,7 +279,6 @@
       },
       "sessionVersions": {
         "2026-11-22": {
-          "16:40": "VF",
           "20:35": "VF"
         },
         "2026-11-23": {
@@ -292,7 +292,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRE4NP7/6ORFV2XR.webp",
-      "posterNote": "Affiche du film (billetterie)"
+      "posterNote": "Affiche du film (billetterie)",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000022995.html"
     },
     {
       "id": "wild-horse-nine",
@@ -304,17 +305,11 @@
       "audience": "3,9",
       "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
       "sessions": {
-        "2026-11-22": [
-          "16:55"
-        ],
         "2026-11-23": [
           "16:55"
         ]
       },
       "sessionVersions": {
-        "2026-11-22": {
-          "16:55": "VF"
-        },
         "2026-11-23": {
           "16:55": "VF"
         }
@@ -372,7 +367,7 @@
       "duration": "1 h 51",
       "director": "Thierry Donard, Olivier Sautet",
       "press": null,
-      "audience": "2,9",
+      "audience": "2,8",
       "synopsis": "THE CALL suit une nouvelle génération d'athlètes extraordinaires répondant à l'appel de la nature : en quête de la ligne parfaite, du geste juste et de cet instant fugace où l'engagement, la maîtrise et les éléments ne font qu'un.",
       "sessions": {
         "2026-11-22": [
@@ -571,7 +566,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FR13E4M/AO7ZNPRE.webp",
-      "posterNote": "Affiche du film (billetterie)"
+      "posterNote": "Affiche du film (billetterie)",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000028341.html"
     },
     {
       "id": "ruy-blas-comedie-francaise",
