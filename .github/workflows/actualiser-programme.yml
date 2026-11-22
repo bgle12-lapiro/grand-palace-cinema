@@ -48,6 +48,11 @@ jobs:
               'claude': '1000038378',
               'carlo acutis un saint pour notre temps': '1000040300',
               'la maison de nos reves': '1000031247',
+              'en haut de la pile': '1000028341',
+              'hunger games lever de soleil sur la moisson': '1000004528',
+              'jupiter': '1000022995',
+              'malika': '1000018671',
+              'mochy': '1000013643',
           }
 
           def norm(s):
@@ -90,29 +95,28 @@ jobs:
               return (m.group(1) + ',' + m.group(2)) if m else None
 
           def extract_scores(soup):
-              # Restreindre les notes à leurs libellés : ne pas confondre avec
-              # notes d'avis individuels, bandeaux, films recommandés, etc.
-              # Chercher en priorité dans les blocs de notation AlloCiné.
+              # Notes relevées uniquement sur la fiche du film vérifiée.
+              # Le bloc de tête AlloCiné peut afficher "Presse 3,4" ou
+              # "Presse [nombre de critiques] 3,4" selon le rendu.
               result = {}
+              main = soup.select_one('main') or soup
+              header = main.get_text(' ', strip=True)[:2500]
+              for label, field in (('Presse', 'press'), ('Spectateurs', 'audience')):
+                  match = re.search(r'\b'+label+r'\b\s*[:\-]?\s*([0-5][,.]\d)(?=\s|$)', header, re.I)
+                  if match:
+                      result[field] = score(match.group(1))
+              # En secours, blocs de notation courts et explicitement libellés.
               for block in soup.select('[class*="rating"], [class*="Rating"], [data-testid*="rating"]'):
-                  text = block.get_text(' ', strip=True)
-                  if len(text) > 250:
+                  t = block.get_text(' ', strip=True)
+                  if len(t) > 180:
                       continue
                   for label, field in (('Presse', 'press'), ('Spectateurs', 'audience')):
-                      if field in result or not re.search(r'\b'+label+r'\b', text, re.I):
+                      if field in result:
                           continue
-                      match = re.search(r'\b'+label+r'\b.{0,75}?([0-5][,.]\d)\b', text, re.I)
+                      match = re.search(r'\b'+label+r'\b\s*[:\-]?\s*([0-5][,.]\d)(?=\s|$)', t, re.I)
                       if match:
                           result[field] = score(match.group(1))
-              # Secours : chercher uniquement dans le début du contenu principal.
-              main = soup.select_one('main') or soup
-              text = main.get_text(' ', strip=True)[:4500]
-              for label, field in (('Presse', 'press'), ('Spectateurs', 'audience')):
-                  if field not in result:
-                      match = re.search(r'\b'+label+r'\b\s*[:\-]?\s*([0-5][,.]\d)\b', text, re.I)
-                      if match:
-                          result[field] = score(match.group(1))
-              return {k:v for k,v in result.items() if v}
+              return {k: v for k, v in result.items() if v}
 
           def allocine_metadata(title, old):
               candidates = []
@@ -153,7 +157,7 @@ jobs:
                       continue
                   result = {'allocineUrl': url}
                   result.update(extract_scores(soup))
-                  print('AlloCiné vérifié:', title, result)
+                  print('AlloCiné vérifié:', title, result, '| notes absentes:', [k for k in ('press','audience') if k not in result])
                   return result
               print('Fiche AlloCiné non vérifiée:', title)
               return {}
