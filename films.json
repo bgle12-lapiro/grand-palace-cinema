@@ -1,48 +1,32 @@
 {
   "cinema": "Le Grand Palace",
   "city": "Les Sables-d’Olonne",
-  "lastChecked": "2026-11-22",
-  "weekLabel": "Programme actualisé le 22/11/2026",
+  "lastChecked": "2026-11-25",
+  "weekLabel": "Programme actualisé le 25/11/2026",
   "films": [
     {
-      "id": "hunger-games-lever-de-soleil-sur-la-moisson",
-      "title": "Hunger Games : Lever de soleil sur la moisson",
-      "genre": "Action, Science-Fiction, Aventure, Drame, Fantastique",
-      "duration": "2 h 39",
-      "director": "Francis Lawrence",
-      "press": "3,0",
-      "audience": "3,9",
-      "synopsis": "Alors que le jour se lève sur les 50e Hunger Games annuels, la peur s'empare des districts de Panem. Cette année, en l'honneur du Quarter Quell, deux fois plus de tributs seront tirés au sort. Dans le District 12, Haymitch Abernathy essaie de ne pas trop penser à ses chances. Tout ce qui lui importe est d'être avec la fille qu'il aime. Mais lorsque qu'il est appelé, tous ses rêves s'effondrent. Il est arraché à sa famille et à son amour, transporté au Capitole avec les trois autres tributs du District 12 : une jeune amie qui est presque une sœur pour lui, un parieur compulsif, et la fille la plus prétentieuse de la ville. Alors que les Jeux commencent, Haymitch comprend qu'il a été piégé pour échouer. Mais il est prêt à se battre... et faire en sorte que ce combat résonne bien au-delà de l'arène.",
+      "id": "moulin",
+      "title": "Moulin",
+      "genre": "Histoire, Drame, Biopic, Guerre, Biographie",
+      "duration": "2 h 14",
+      "director": "Lászlo Nemes",
+      "press": "3,3",
+      "audience": "3,6",
+      "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu’il tente de réunifier les forces de l’Armée Secrète Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable. Son ultime combat face à la manipulation et la brutalité commence. Le destin de la France libre en dépend.",
       "sessions": {
-        "2026-11-22": [
-          "19:55"
-        ],
-        "2026-11-23": [
-          "16:00",
-          "19:55"
-        ],
-        "2026-11-24": [
-          "16:00",
-          "19:55"
+        "2026-11-29": [
+          "16:30"
         ]
       },
       "sessionVersions": {
-        "2026-11-22": {
-          "19:55": "VF"
-        },
-        "2026-11-23": {
-          "16:00": "VF",
-          "19:55": "VOST"
-        },
-        "2026-11-24": {
-          "16:00": "VF",
-          "19:55": "VF"
+        "2026-11-29": {
+          "16:30": "VF"
         }
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FRN9L1N/MZMKYBYJ.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000004528.html"
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRLXIDH/YUNFORSL.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000020311.html",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "karma",
@@ -54,19 +38,43 @@
       "audience": "4,0",
       "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans une communauté religieuse dans laquelle elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
       "sessions": {
-        "2026-11-23": [
-          "14:10"
+        "2026-11-25": [
+          "14:30"
         ],
-        "2026-11-24": [
-          "14:10"
+        "2026-11-26": [
+          "14:30"
+        ],
+        "2026-11-28": [
+          "14:30"
+        ],
+        "2026-11-29": [
+          "14:30"
+        ],
+        "2026-11-30": [
+          "14:30"
+        ],
+        "2026-12-01": [
+          "14:30"
         ]
       },
       "sessionVersions": {
-        "2026-11-23": {
-          "14:10": "VF"
+        "2026-11-25": {
+          "14:30": "VF"
         },
-        "2026-11-24": {
-          "14:10": "VF"
+        "2026-11-26": {
+          "14:30": "VF"
+        },
+        "2026-11-28": {
+          "14:30": "VF"
+        },
+        "2026-11-29": {
+          "14:30": "VF"
+        },
+        "2026-11-30": {
+          "14:30": "VF"
+        },
+        "2026-12-01": {
+          "14:30": "VF"
         }
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
@@ -80,38 +88,68 @@
       "duration": "1 h 30",
       "director": "Mounia Meddour",
       "press": "2,8",
-      "audience": "3,9",
+      "audience": "3,8",
       "synopsis": "L’incroyable histoire vraie de Malika Bellaribi, la « diva des banlieues » : d’un bidonville de Nanterre jusqu’au Théâtre du Châtelet. Victime d’un grave accident à l’enfance, confrontée aux discriminations et à un drame intime, elle s’accroche à son rêve ambitieux : devenir mezzo-soprano.",
       "sessions": {
-        "2026-11-22": [
-          "20:35"
+        "2026-11-25": [
+          "16:30",
+          "20:30"
         ],
-        "2026-11-23": [
-          "14:10",
-          "20:35"
+        "2026-11-26": [
+          "16:30",
+          "20:30"
         ],
-        "2026-11-24": [
-          "14:10",
-          "20:35"
+        "2026-11-27": [
+          "16:30"
+        ],
+        "2026-11-28": [
+          "16:30",
+          "20:30"
+        ],
+        "2026-11-29": [
+          "17:10",
+          "20:30"
+        ],
+        "2026-11-30": [
+          "16:30",
+          "20:30"
+        ],
+        "2026-12-01": [
+          "16:30"
         ]
       },
       "sessionVersions": {
-        "2026-11-22": {
-          "20:35": "VF"
+        "2026-11-25": {
+          "16:30": "VF",
+          "20:30": "VF"
         },
-        "2026-11-23": {
-          "14:10": "VF",
-          "20:35": "VF"
+        "2026-11-26": {
+          "16:30": "VF",
+          "20:30": "VF"
         },
-        "2026-11-24": {
-          "14:10": "VF",
-          "20:35": "VF"
+        "2026-11-27": {
+          "16:30": "VF"
+        },
+        "2026-11-28": {
+          "16:30": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-29": {
+          "17:10": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-30": {
+          "16:30": "VF",
+          "20:30": "VF"
+        },
+        "2026-12-01": {
+          "16:30": "VF"
         }
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FR61F7C/2I3EIO3Y.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000018671.html"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000018671.html",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "l-affaire-marie-claire",
@@ -123,21 +161,31 @@
       "audience": "4,1",
       "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre. Au nom de toutes.",
       "sessions": {
-        "2026-11-23": [
-          "14:15",
-          "20:30"
+        "2026-11-26": [
+          "14:55"
         ],
-        "2026-11-24": [
-          "14:15"
+        "2026-11-27": [
+          "14:50"
+        ],
+        "2026-11-30": [
+          "14:55"
+        ],
+        "2026-12-01": [
+          "14:55"
         ]
       },
       "sessionVersions": {
-        "2026-11-23": {
-          "14:15": "VF",
-          "20:30": "VF"
+        "2026-11-26": {
+          "14:55": "VF"
         },
-        "2026-11-24": {
-          "14:15": "VF"
+        "2026-11-27": {
+          "14:50": "VF"
+        },
+        "2026-11-30": {
+          "14:55": "VF"
+        },
+        "2026-12-01": {
+          "14:55": "VF"
         }
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
@@ -152,31 +200,65 @@
       "duration": "1 h 31",
       "director": "Matthieu Rumani, Nicolas Slomka",
       "press": "3,3",
-      "audience": "3,7",
+      "audience": "3,8",
       "synopsis": "Stan, trentenaire d’origine modeste, rencontre pour la première fois la famille de sa petite amie Cléo. Mais le clan Roussel n’est pas exactement comme les autres : France, l’impressionnante maîtresse de maison, est la directrice d’un prestigieux festival de photographie. Autour d’elle gravitent un amant tout aussi brillant et cultivé, un père professeur de philosophie, un fils journaliste, une sœur professeur aux beaux-arts et un neveu en prépa littéraire. Stan découvre alors la tradition familiale : à chaque anniversaire de France, on lance une partie de Trivial Pursuit. Il sait qu’il n’a aucune chance face à ces amoureux de la culture, mais il n’a pas le choix : toute la famille doit participer, sans exception. Qu’est-ce qui pourrait mal tourner ? Après tout ce n’est qu’un jeu de société…",
       "sessions": {
-        "2026-11-22": [
+        "2026-11-25": [
+          "16:55",
           "20:30"
         ],
-        "2026-11-23": [
-          "14:40",
+        "2026-11-26": [
+          "16:55",
           "20:30"
         ],
-        "2026-11-24": [
-          "14:40",
+        "2026-11-27": [
+          "16:55"
+        ],
+        "2026-11-28": [
+          "16:55",
+          "20:30"
+        ],
+        "2026-11-29": [
+          "15:05",
+          "16:55",
+          "20:30"
+        ],
+        "2026-11-30": [
+          "16:55",
+          "20:30"
+        ],
+        "2026-12-01": [
+          "16:55",
           "20:30"
         ]
       },
       "sessionVersions": {
-        "2026-11-22": {
+        "2026-11-25": {
+          "16:55": "VF",
           "20:30": "VF"
         },
-        "2026-11-23": {
-          "14:40": "VF",
+        "2026-11-26": {
+          "16:55": "VF",
           "20:30": "VF"
         },
-        "2026-11-24": {
-          "14:40": "VF",
+        "2026-11-27": {
+          "16:55": "VF"
+        },
+        "2026-11-28": {
+          "16:55": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-29": {
+          "15:05": "VF",
+          "16:55": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-30": {
+          "16:55": "VF",
+          "20:30": "VF"
+        },
+        "2026-12-01": {
+          "16:55": "VF",
           "20:30": "VF"
         }
       },
@@ -186,68 +268,186 @@
       "posterNote": "Affiche du film (billetterie)"
     },
     {
-      "id": "moulin",
-      "title": "Moulin",
-      "genre": "Histoire, Drame, Biopic, Guerre, Biographie",
-      "duration": "2 h 14",
-      "director": "Lászlo Nemes",
-      "press": "3,3",
-      "audience": "3,6",
-      "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu’il tente de réunifier les forces de l’Armée Secrète Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable. Son ultime combat face à la manipulation et la brutalité commence. Le destin de la France libre en dépend.",
+      "id": "ce-qui-nous-mene-a-toi",
+      "title": "Ce qui nous mène à toi",
+      "genre": "Drame",
+      "duration": "1 h 35",
+      "director": "Khalil Cherti",
+      "press": "3,8",
+      "audience": "4,0",
+      "synopsis": "Charlie et Hicham, la trentaine, s’aiment follement mais ne parviennent pas à avoir d’enfant : leur couple est infertile. Ils entament alors un parcours d’Aide Médicale à la Procréation. Pendant trois ans, entre espoirs et déceptions, ils vont mettre leur amour et leurs corps à l’épreuve, vivre une odyssée qui va les bouleverser…",
       "sessions": {
-        "2026-11-23": [
-          "16:10"
+        "2026-11-25": [
+          "14:20"
         ],
-        "2026-11-24": [
-          "16:10"
+        "2026-11-28": [
+          "14:20"
+        ],
+        "2026-11-29": [
+          "14:20"
         ]
       },
       "sessionVersions": {
-        "2026-11-23": {
-          "16:10": "VF"
+        "2026-11-25": {
+          "14:20": "VF"
         },
-        "2026-11-24": {
-          "16:10": "VF"
+        "2026-11-28": {
+          "14:20": "VF"
+        },
+        "2026-11-29": {
+          "14:20": "VF"
         }
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FRLXIDH/YUNFORSL.webp",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000020311.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRBLCMC/LUZ0BUG6.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000037363.html",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "hunger-games-lever-de-soleil-sur-la-moisson",
+      "title": "Hunger Games : Lever de soleil sur la moisson",
+      "genre": "Action, Science-Fiction, Aventure, Drame, Fantastique",
+      "duration": "2 h 39",
+      "director": "Francis Lawrence",
+      "press": "3,0",
+      "audience": "3,8",
+      "synopsis": "Alors que le jour se lève sur les 50e Hunger Games annuels, la peur s'empare des districts de Panem. Cette année, en l'honneur du Quarter Quell, deux fois plus de tributs seront tirés au sort. Dans le District 12, Haymitch Abernathy essaie de ne pas trop penser à ses chances. Tout ce qui lui importe est d'être avec la fille qu'il aime. Mais lorsque qu'il est appelé, tous ses rêves s'effondrent. Il est arraché à sa famille et à son amour, transporté au Capitole avec les trois autres tributs du District 12 : une jeune amie qui est presque une sœur pour lui, un parieur compulsif, et la fille la plus prétentieuse de la ville. Alors que les Jeux commencent, Haymitch comprend qu'il a été piégé pour échouer. Mais il est prêt à se battre... et faire en sorte que ce combat résonne bien au-delà de l'arène.",
+      "sessions": {
+        "2026-11-25": [
+          "14:00",
+          "16:10",
+          "19:50"
+        ],
+        "2026-11-26": [
+          "16:10",
+          "19:50"
+        ],
+        "2026-11-27": [
+          "14:15",
+          "19:00"
+        ],
+        "2026-11-28": [
+          "14:00",
+          "16:10",
+          "19:50"
+        ],
+        "2026-11-29": [
+          "16:10",
+          "19:50"
+        ],
+        "2026-11-30": [
+          "16:10",
+          "19:50"
+        ],
+        "2026-12-01": [
+          "16:10",
+          "19:50"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-25": {
+          "14:00": "VF",
+          "16:10": "VF",
+          "19:50": "VF"
+        },
+        "2026-11-26": {
+          "16:10": "VF",
+          "19:50": "VOST"
+        },
+        "2026-11-27": {
+          "14:15": "VF",
+          "19:00": "VF"
+        },
+        "2026-11-28": {
+          "14:00": "VF",
+          "16:10": "VF",
+          "19:50": "VF"
+        },
+        "2026-11-29": {
+          "16:10": "VF",
+          "19:50": "VF"
+        },
+        "2026-11-30": {
+          "16:10": "VF",
+          "19:50": "VOST"
+        },
+        "2026-12-01": {
+          "16:10": "VF",
+          "19:50": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRN9L1N/MZMKYBYJ.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000004528.html",
       "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "scrooge",
       "title": "Scrooge",
-      "genre": "Fantastique, Drame, Comédie, Aventure",
+      "genre": "Fantastique, Drame, Horreur, Aventure",
       "duration": "1 h 55",
       "director": "Ti West",
       "press": "2,4",
       "audience": "3,8",
       "synopsis": "Ebenezer Scrooge est un vieil homme avare, pingre et solitaire. Bien évidemment, il déteste et méprise Noël et tout ce qui engendre le bonheur. C'est alors qu'il reçoit la visite du fantôme d'un ancien associé ainsi que par les esprits de Noëls du passé, du présent et du futur.",
       "sessions": {
-        "2026-11-22": [
-          "20:20"
+        "2026-11-25": [
+          "14:10",
+          "16:20"
         ],
-        "2026-11-23": [
-          "16:25",
-          "20:20"
+        "2026-11-26": [
+          "14:10",
+          "16:20"
         ],
-        "2026-11-24": [
-          "16:25",
-          "20:20"
+        "2026-11-27": [
+          "14:10",
+          "16:20"
+        ],
+        "2026-11-28": [
+          "14:10",
+          "16:20"
+        ],
+        "2026-11-29": [
+          "14:10",
+          "16:20"
+        ],
+        "2026-11-30": [
+          "14:10",
+          "16:20"
+        ],
+        "2026-12-01": [
+          "14:10",
+          "16:20"
         ]
       },
       "sessionVersions": {
-        "2026-11-22": {
-          "20:20": "VF"
+        "2026-11-25": {
+          "14:10": "VF",
+          "16:20": "VF"
         },
-        "2026-11-23": {
-          "16:25": "VF",
-          "20:20": "VF"
+        "2026-11-26": {
+          "14:10": "VF",
+          "16:20": "VF"
         },
-        "2026-11-24": {
-          "16:25": "VF",
-          "20:20": "VF"
+        "2026-11-27": {
+          "14:10": "VF",
+          "16:20": "VF"
+        },
+        "2026-11-28": {
+          "14:10": "VF",
+          "16:20": "VF"
+        },
+        "2026-11-29": {
+          "14:10": "VF",
+          "16:20": "VF"
+        },
+        "2026-11-30": {
+          "14:10": "VF",
+          "16:20": "VF"
+        },
+        "2026-12-01": {
+          "14:10": "VF",
+          "16:20": "VF"
         }
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
@@ -265,57 +465,68 @@
       "audience": "3,7",
       "synopsis": "Fraîchement élu, le président Paul Archambault doit affronter une crise sans précédent : son homologue russe, cible d'un attentat, brandit un ultimatum nucléaire menaçant un allié de la France. Face au risque d'escalade militaire, le président réunit son état-major dans le bunker de l'Elysée. Dans le secret du Poste de Commandement Jupiter, Paul va devoir prendre une décision vertigineuse.",
       "sessions": {
-        "2026-11-22": [
-          "20:35"
+        "2026-11-25": [
+          "14:20",
+          "20:30"
         ],
-        "2026-11-23": [
-          "16:40",
-          "20:35"
+        "2026-11-26": [
+          "14:20",
+          "20:30"
         ],
-        "2026-11-24": [
-          "16:40",
-          "20:35"
+        "2026-11-27": [
+          "14:20",
+          "19:00"
+        ],
+        "2026-11-28": [
+          "14:20",
+          "20:30"
+        ],
+        "2026-11-29": [
+          "14:20",
+          "20:30"
+        ],
+        "2026-11-30": [
+          "14:20",
+          "20:30"
+        ],
+        "2026-12-01": [
+          "14:20",
+          "20:30"
         ]
       },
       "sessionVersions": {
-        "2026-11-22": {
-          "20:35": "VF"
+        "2026-11-25": {
+          "14:20": "VF",
+          "20:30": "VF"
         },
-        "2026-11-23": {
-          "16:40": "VF",
-          "20:35": "VF"
+        "2026-11-26": {
+          "14:20": "VF",
+          "20:30": "VF"
         },
-        "2026-11-24": {
-          "16:40": "VF",
-          "20:35": "VF"
+        "2026-11-27": {
+          "14:20": "VF",
+          "19:00": "VF"
+        },
+        "2026-11-28": {
+          "14:20": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-29": {
+          "14:20": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-30": {
+          "14:20": "VF",
+          "20:30": "VF"
+        },
+        "2026-12-01": {
+          "14:20": "VF",
+          "20:30": "VF"
         }
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FRE4NP7/6ORFV2XR.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000022995.html"
-    },
-    {
-      "id": "wild-horse-nine",
-      "title": "Wild Horse Nine",
-      "genre": "Thriller, Comédie, Drame, Crime, Policier",
-      "duration": "1 h 57",
-      "director": "Martin McDonagh",
-      "press": "3,8",
-      "audience": "3,9",
-      "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
-      "sessions": {
-        "2026-11-23": [
-          "16:55"
-        ]
-      },
-      "sessionVersions": {
-        "2026-11-23": {
-          "16:55": "VF"
-        }
-      },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FRQ5S88/FWDY5ZH2.webp",
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000022995.html",
       "posterNote": "Affiche du film (billetterie)"
     },
     {
@@ -328,30 +539,60 @@
       "audience": "2,9",
       "synopsis": "Dans une famille de croque-morts, deux sœurs et un frère se retrouvent pour les funérailles de leur mère. Le personnel étant en grève, ils doivent accomplir le protocole funéraire par eux-mêmes.  Comment s’accorder pour brûler maman ?",
       "sessions": {
-        "2026-11-22": [
-          "17:10",
+        "2026-11-25": [
+          "14:10",
           "20:30"
         ],
-        "2026-11-23": [
-          "17:10",
+        "2026-11-26": [
+          "14:10",
           "20:30"
         ],
-        "2026-11-24": [
-          "17:10",
+        "2026-11-27": [
+          "14:10"
+        ],
+        "2026-11-28": [
+          "14:10",
+          "20:30"
+        ],
+        "2026-11-29": [
+          "14:10",
+          "20:30"
+        ],
+        "2026-11-30": [
+          "14:10",
+          "20:30"
+        ],
+        "2026-12-01": [
+          "14:10",
           "20:30"
         ]
       },
       "sessionVersions": {
-        "2026-11-22": {
-          "17:10": "VF",
+        "2026-11-25": {
+          "14:10": "VF",
           "20:30": "VF"
         },
-        "2026-11-23": {
-          "17:10": "VF",
+        "2026-11-26": {
+          "14:10": "VF",
           "20:30": "VF"
         },
-        "2026-11-24": {
-          "17:10": "VF",
+        "2026-11-27": {
+          "14:10": "VF"
+        },
+        "2026-11-28": {
+          "14:10": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-29": {
+          "14:10": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-30": {
+          "14:10": "VF",
+          "20:30": "VF"
+        },
+        "2026-12-01": {
+          "14:10": "VF",
           "20:30": "VF"
         }
       },
@@ -361,141 +602,204 @@
       "posterNote": "Affiche du film (billetterie)"
     },
     {
-      "id": "la-nuit-de-la-glisse-2026-the-call",
-      "title": "LA NUIT DE LA GLISSE 2026 THE CALL",
-      "genre": "Documentaire, Sport Event",
-      "duration": "1 h 51",
-      "director": "Thierry Donard, Olivier Sautet",
-      "press": null,
-      "audience": "2,8",
-      "synopsis": "THE CALL suit une nouvelle génération d'athlètes extraordinaires répondant à l'appel de la nature : en quête de la ligne parfaite, du geste juste et de cet instant fugace où l'engagement, la maîtrise et les éléments ne font qu'un.",
-      "sessions": {
-        "2026-11-22": [
-          "18:00"
-        ]
-      },
-      "sessionVersions": {
-        "2026-11-22": {
-          "18:00": "VF"
-        }
-      },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FRGMMJM/NL78NV7U.webp",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000051726.html",
-      "posterNote": "Affiche du film (billetterie)"
-    },
-    {
-      "id": "ce-qui-nous-mene-a-toi",
-      "title": "Ce qui nous mène à toi",
-      "genre": "Drame",
-      "duration": "1 h 35",
-      "director": "Khalil Cherti",
-      "press": "3,8",
-      "audience": "4,0",
-      "synopsis": "Charlie et Hicham, la trentaine, s’aiment follement mais ne parviennent pas à avoir d’enfant : leur couple est infertile. Ils entament alors un parcours d’Aide Médicale à la Procréation. Pendant trois ans, entre espoirs et déceptions, ils vont mettre leur amour et leurs corps à l’épreuve, vivre une odyssée qui va les bouleverser…",
-      "sessions": {
-        "2026-11-22": [
-          "20:30"
-        ],
-        "2026-11-23": [
-          "14:45"
-        ],
-        "2026-11-24": [
-          "14:45",
-          "16:45"
-        ]
-      },
-      "sessionVersions": {
-        "2026-11-22": {
-          "20:30": "VF"
-        },
-        "2026-11-23": {
-          "14:45": "VF"
-        },
-        "2026-11-24": {
-          "14:45": "VF",
-          "16:45": "VF"
-        }
-      },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FRBLCMC/LUZ0BUG6.webp",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000037363.html",
-      "posterNote": "Affiche du film (billetterie)"
-    },
-    {
-      "id": "un-bon-patron",
-      "title": "Un bon patron",
-      "genre": "Comédie",
-      "duration": "1 h 27",
-      "director": "Philippe de Chauveron",
-      "press": "2,7",
-      "audience": "2,5",
-      "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l'ancestrale fabrique familiale de balances.",
-      "sessions": {
-        "2026-11-23": [
-          "14:20"
-        ],
-        "2026-11-24": [
-          "14:20"
-        ]
-      },
-      "sessionVersions": {
-        "2026-11-23": {
-          "14:20": "VF"
-        },
-        "2026-11-24": {
-          "14:20": "VF"
-        }
-      },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FR8X5VA/O9G0SECQ.webp",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000031925.html",
-      "posterNote": "Affiche du film (billetterie)"
-    },
-    {
-      "id": "c-du-monde-australie",
-      "title": "C.DU MONDE AUSTRALIE",
-      "genre": "Documentaire",
-      "duration": "1 h 45",
-      "director": "Non renseigné",
+      "id": "billie-a-la-croisee-des-mondes",
+      "title": "Billie, à la croisée des mondes",
+      "genre": "Animation, Familial, Aventure, Fantastique, Comédie",
+      "duration": "1 h 43",
+      "director": "Jason Hand, Josie Trinidad",
       "press": null,
       "audience": null,
-      "synopsis": "",
+      "synopsis": "Une adolescente maladroite et sa mère supra-organisée découvrent que ce qui la rend unique pourrait bien provenir de pouvoirs magiques capables non seulement de chambouler leur vie mais aussi le monde secret des sortilèges…",
       "sessions": {
-        "2026-11-23": [
-          "17:00"
-        ]
-      },
-      "sessionVersions": {
-        "2026-11-23": {
-          "17:00": "VF"
-        }
-      },
-      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": ""
-    },
-    {
-      "id": "la-maison-des-femmes",
-      "title": "La Maison des femmes",
-      "genre": "Drame",
-      "duration": "1 h 50",
-      "director": "Mélisa Godet",
-      "press": "3,6",
-      "audience": "4,2",
-      "synopsis": "À la Maison des femmes, entre soin, écoute et solidarité, une équipe se bat chaque jour pour accompagner les femmes victimes de violences dans leur reconstruction. Dans ce lieu unique, Diane, Manon, Inès, Awa et leurs collègues accueillent, soutiennent, redonnent confiance. Ensemble, avec leurs forces, leurs fragilités, leurs convictions et une énergie inépuisable.",
-      "sessions": {
-        "2026-11-24": [
+        "2026-11-25": [
+          "14:35",
+          "17:00",
+          "20:00"
+        ],
+        "2026-11-26": [
+          "14:35",
+          "17:00",
+          "20:00"
+        ],
+        "2026-11-27": [
+          "14:35",
+          "16:50",
+          "19:00"
+        ],
+        "2026-11-28": [
+          "14:35",
+          "17:00",
+          "20:00"
+        ],
+        "2026-11-29": [
+          "14:35",
+          "17:00",
+          "20:00"
+        ],
+        "2026-11-30": [
+          "14:35",
+          "17:00",
+          "20:00"
+        ],
+        "2026-12-01": [
+          "14:35",
+          "17:00",
           "20:00"
         ]
       },
       "sessionVersions": {
-        "2026-11-24": {
+        "2026-11-25": {
+          "14:35": "VF",
+          "17:00": "VF",
+          "20:00": "VF"
+        },
+        "2026-11-26": {
+          "14:35": "VF",
+          "17:00": "VF",
+          "20:00": "VF"
+        },
+        "2026-11-27": {
+          "14:35": "VF",
+          "16:50": "VF",
+          "19:00": "VF"
+        },
+        "2026-11-28": {
+          "14:35": "VF",
+          "17:00": "VF",
+          "20:00": "VF"
+        },
+        "2026-11-29": {
+          "14:35": "VF",
+          "17:00": "VF",
+          "20:00": "VF"
+        },
+        "2026-11-30": {
+          "14:35": "VF",
+          "17:00": "VF",
+          "20:00": "VF"
+        },
+        "2026-12-01": {
+          "14:35": "VF",
+          "17:00": "VF",
           "20:00": "VF"
         }
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
-      "poster": "https://images.monnaie-services.com/movie_poster/120/FRVNGZA/Y6LZZ97U.webp",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000012019.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRYZMGE/7LQV3FW0.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "un-bon-petit-soldat",
+      "title": "Un bon petit soldat",
+      "genre": "Drame",
+      "duration": "1 h 42",
+      "director": "Stéphane Brizé",
+      "press": null,
+      "audience": null,
+      "synopsis": "Nouvellement embauchée dans le département des Ressources Humaines d’une grande compagnie d’assurances, Carla Moretti doit travailler à réconcilier le bien-être des salariés avec les objectifs de performance de l’entreprise. Jusqu’à ce qu’elle découvre un cas de management toxique dans un des services dont elle a la responsabilité. Entre compromis et compromissions, la ligne de crête sur laquelle elle évolue devient de plus en plus étroite.",
+      "sessions": {
+        "2026-11-25": [
+          "16:00",
+          "20:30"
+        ],
+        "2026-11-26": [
+          "16:00",
+          "20:30"
+        ],
+        "2026-11-27": [
+          "16:00",
+          "19:00"
+        ],
+        "2026-11-28": [
+          "16:00",
+          "20:30"
+        ],
+        "2026-11-29": [
+          "16:00",
+          "20:30"
+        ],
+        "2026-11-30": [
+          "16:00",
+          "20:30"
+        ],
+        "2026-12-01": [
+          "16:00",
+          "20:30"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-25": {
+          "16:00": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-26": {
+          "16:00": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-27": {
+          "16:00": "VF",
+          "19:00": "VF"
+        },
+        "2026-11-28": {
+          "16:00": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-29": {
+          "16:00": "VF",
+          "20:30": "VF"
+        },
+        "2026-11-30": {
+          "16:00": "VF",
+          "20:30": "VF"
+        },
+        "2026-12-01": {
+          "16:00": "VF",
+          "20:30": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRMLE0L/TOJOI999.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "wild-horse-nine",
+      "title": "Wild Horse Nine",
+      "genre": "Thriller, Comédie, Drame, Crime, Policier",
+      "duration": "1 h 57",
+      "director": "Martin McDonagh",
+      "press": "3,8",
+      "audience": "3,9",
+      "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
+      "sessions": {
+        "2026-11-26": [
+          "14:00"
+        ],
+        "2026-11-27": [
+          "14:00"
+        ],
+        "2026-11-30": [
+          "14:00"
+        ],
+        "2026-12-01": [
+          "14:00"
+        ]
+      },
+      "sessionVersions": {
+        "2026-11-26": {
+          "14:00": "VF"
+        },
+        "2026-11-27": {
+          "14:00": "VF"
+        },
+        "2026-11-30": {
+          "14:00": "VF"
+        },
+        "2026-12-01": {
+          "14:00": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRQ5S88/FWDY5ZH2.webp",
       "posterNote": "Affiche du film (billetterie)"
     },
     {
@@ -566,8 +870,8 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FR13E4M/AO7ZNPRE.webp",
-      "posterNote": "Affiche du film (billetterie)",
-      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000028341.html"
+      "allocineUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000028341.html",
+      "posterNote": "Affiche du film (billetterie)"
     },
     {
       "id": "ruy-blas-comedie-francaise",
@@ -613,6 +917,51 @@
       },
       "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
       "poster": "https://images.monnaie-services.com/movie_poster/120/FREMGJY/MU4G7DV7.webp",
+      "posterNote": "Affiche du film (billetterie)"
+    },
+    {
+      "id": "c-du-monde-argentine",
+      "title": "C.DU MONDE ARGENTINE",
+      "genre": "Documentaire",
+      "duration": "1 h 45",
+      "director": "Non renseigné",
+      "press": null,
+      "audience": null,
+      "synopsis": "",
+      "sessions": {
+        "2026-12-07": [
+          "17:00"
+        ]
+      },
+      "sessionVersions": {
+        "2026-12-07": {
+          "17:00": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": ""
+    },
+    {
+      "id": "les-jours-d-apres",
+      "title": "Les Jours d'après",
+      "genre": "Drame",
+      "duration": "1 h 30",
+      "director": "Stéphanie Pillonca",
+      "press": null,
+      "audience": null,
+      "synopsis": "Dans un charmant village de campagne, Louise, la cinquantaine, revient seule dans sa maison natale pour la vider. Entre les retrouvailles avec ses amis d'enfance, la beauté de la nature, les passages de ses enfants et de son mari, et la complicité renaissante avec Marc, son amour de jeunesse, elle se découvre portée vers un nouvel élan : se réinventer, interroger ses désirs, se réconcilier avec soi-même. Une étape de vie charnière où toutes les femmes peuvent choisir d'avancer, s'autoriser à rebondir et ouvrir un nouveau chapitre vers l'avenir.",
+      "sessions": {
+        "2026-12-07": [
+          "20:00"
+        ]
+      },
+      "sessionVersions": {
+        "2026-12-07": {
+          "20:00": "VF"
+        }
+      },
+      "source": "https://www.ticketingcine.com/cine/99S05SBN.html",
+      "poster": "https://images.monnaie-services.com/movie_poster/120/FRLS5WU/594MYMMM.webp",
       "posterNote": "Affiche du film (billetterie)"
     }
   ]
